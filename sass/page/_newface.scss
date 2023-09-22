@@ -1,0 +1,77 @@
+.newface-body {
+  background: #000;
+}
+.newface {
+  background-color: #000;
+  color: #fff;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .inner {
+    border: 1px solid #00a400;
+    padding: 80px 124px 128px;
+    padding-left: 124px;
+    padding-right: 124px;
+    padding-top: 80px;
+    color: #00a400;
+
+    @include sp {
+      border: 0;
+      padding: 40rem 5.6% 128px;
+    }
+  }
+
+  .section-title {
+    padding: 8px 0;
+    background-color: #00a400;
+    color: #fff;
+    font-family: "Osaka", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    @include sp {
+      font-size: 28rem;
+      background-color: #1e1e1e;
+      padding: 24rem 0;
+    }
+  }
+
+  .therapists-listwrap {
+    @include sp {
+      gap: calc(50vw / (1119 / 100)) 0;
+    }
+  }
+
+  .therapist {
+    &-img {
+      &-wrap {
+        @include sp {
+          padding: 20rem;
+        }
+        @include pc {
+          width: 42%;
+        }
+      }
+    }
+
+    &-list {
+      &-realtime {
+        margin-top: 5px;
+        position: initial;
+        width: 100%;
+        background-color: #ff338c;
+
+        @include sp {
+          margin-top: 0;
+          padding: 6rem 0 6rem 0;
+          height: calc(57vw / (1119 / 100));
+          font-size: 26rem;
+        }
+
+        &-none {
+          height: calc(57vw / (1119 / 100));
+        }
+      }
+    }
+  }
+}

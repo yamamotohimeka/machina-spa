@@ -1,0 +1,260 @@
+.ranking-body {
+  background: #000;
+}
+.ranking {
+  background-color: #000;
+  color: #fff;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .inner {
+    border: 1px solid #00a400;
+    padding: 80px 124px 128px;
+    padding-left: 124px;
+    padding-right: 124px;
+    padding-top: 80px;
+    color: #00a400;
+    @include sp {
+      border: 0;
+      padding: 40rem 5.6% 0;
+    }
+  }
+
+  .section-title {
+    padding: 8px 0;
+    background-color: #00a400;
+    color: #fff;
+    font-family: "Osaka", sans-serif;
+    font-size: 24px;
+    text-align: center;
+
+    @include sp {
+      font-size: 28rem;
+      background-color: #1e1e1e;
+      padding: 24rem 0;
+    }
+  }
+
+  .therapist {
+    &-list-wrap {
+      margin-bottom: 0;
+    }
+    &-page-list {
+      width: 100%;
+      flex-wrap: nowrap;
+
+      @include sp {
+        border: none;
+      }
+    }
+
+    &-contentwrap {
+      display: flex;
+      align-items: flex-start;
+      gap: calc(30vw / (1119 / 100));
+
+      .option-fee-pc {
+        padding: 4px 10px;
+      }
+
+      @include sp {
+        margin-bottom: 0;
+      }
+    }
+
+    &-ranking {
+      margin-top: 112px;
+      padding: 34px 20px;
+      border: 1px solid #00a400;
+      height: 160px;
+      position: relative;
+
+      @include sp {
+        margin: 0 auto calc(60vw / (1119 / 100)) auto;
+        height: calc(250vw / (1119 / 100));
+        width: 50%;
+        padding: calc(60vw / (1119 / 100)) 0;
+      }
+
+      &-wrap {
+        display: flex;
+        gap: 0 10px;
+        padding-top: calc(50vw / (1119 / 100));
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 14px solid #00a400;
+        border-right: 14px solid transparent;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 14px solid #00a400;
+        border-left: 14px solid transparent;
+      }
+
+      img {
+        width: 120px;
+        @include sp {
+          width: calc(200vw / (1199 / 100));
+          padding-bottom: 0;
+        }
+      }
+      p {
+        font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro",
+          serif;
+        font-size: 52px;
+        text-align: center;
+        font-style: italic;
+        @include sp {
+          font-size: calc(70vw / (1199 / 100));
+        }
+      }
+
+      &-top {
+        display: flex;
+        align-items: flex-end;
+        gap: 0 10px;
+        margin-top: 0;
+        padding: 0px;
+        border: none;
+        border-bottom: 1px solid #00a400;
+        height: auto;
+        img {
+          width: calc(120vw / (1199 / 100));
+          padding-bottom: calc(20vw / (1199 / 100));
+        }
+        p {
+          font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro",
+            serif;
+          font-size: calc(100vw / (1199 / 100));
+          text-align: center;
+          font-style: italic;
+        }
+      }
+    }
+
+    &-info-flexwrap {
+      display: flex;
+      flex-direction: column;
+
+      @include sp {
+        gap: calc(22vw / (1119 / 100)) 0;
+      }
+    }
+    &-infowrap {
+      margin-bottom: 10px;
+      color: #fff;
+      align-items: flex-start;
+
+      @include sp {
+        margin-bottom: 0;
+      }
+    }
+
+    &-tall {
+      text-align: left;
+    }
+
+    &-img-wrap {
+      width: 30%;
+      @include sp {
+        width: 100%;
+        padding: 0;
+      }
+
+      .newDate {
+        right: 476px;
+
+        @include sp {
+          top: calc(120vw / (1119 / 100));
+          right: calc(480vw / (1119 / 100));
+          font-size: calc(38vw / (1119 / 100));
+          width: calc(340vw / (1119 / 100));
+          background-size: calc(340vw / (1119 / 100)) auto;
+
+          &::before {
+            top: calc(25vw / (1119 / 100));
+            left: 20rem;
+            background-size: calc(23vw / (1119 / 100)) calc(26vw / (1119 / 100));
+            width: calc(23vw / (1119 / 100));
+            height: calc(26vw / (1119 / 100));
+          }
+        }
+      }
+    }
+  }
+
+  &-twitter {
+    width: 50px;
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  &-text {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    border: solid 1px #00a400;
+    padding: 16px 14px;
+    text-align: left;
+
+    a:visited,
+    a:link {
+      color: inherit;
+    }
+
+    @include sp {
+      margin-top: calc(40vw / (1119 / 100));
+      padding: calc(16vw / (1119 / 100)) calc(14vw / (1119 / 100));
+      font-size: calc(34vw / (1119 / 100));
+    }
+  }
+
+  &-realtime {
+    &-wrap {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+    }
+
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff338c;
+    width: 100%;
+    height: 38px;
+
+    @include sp {
+      padding: 6rem 0 6rem 0;
+      font-size: 26rem;
+      height: 40rem;
+    }
+  }
+
+  &-worktime {
+    padding: 10px;
+    border: 1px solid #00a400;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    @include sp {
+      padding: 6rem 0 6rem 0;
+      font-size: 26rem;
+    }
+  }
+}
