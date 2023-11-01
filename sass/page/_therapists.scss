@@ -17,7 +17,7 @@
   @include pc {
     font-size: 21px;
     @include osaka;
-    background: #00a400;
+    background: $Pink;
     text-align: center;
     padding: 8px 0;
     font-weight: 400;
@@ -45,7 +45,7 @@
   @include pc {
     padding: 40px 24px 80px;
     justify-content: space-between;
-    border: solid #00a400 1px;
+    border: solid $Pink 1px;
   }
 
   @include sp {
@@ -54,7 +54,7 @@
 }
 
 .therapist-page-list {
-  border: solid #00a400 1px;
+  border: solid $Pink 1px;
   width: 48%;
   position: relative;
   margin-bottom: 24px;
@@ -69,7 +69,7 @@
     flex-wrap: wrap;
     padding: 16px 10px;
     justify-content: space-around;
-    border: solid 1px #00a400;
+    border: solid 1px $Pink;
   }
 }
 
@@ -116,7 +116,7 @@
     display: none;
   }
 
-  background: #00a400;
+  background: $Pink;
   color: #fff;
   font-size: 17px;
   text-align: center;
@@ -216,14 +216,14 @@
     display: inline-block;
     font-size: 15px;
     line-height: 1.8;
-    border-top: solid 2px #00a400;
+    border-top: solid 2px $Pink;
     padding: 16px 14px 0;
     text-align: left;
   }
 }
 
 .option-fee-sp {
-  background: #00a400;
+  background: $Pink;
   color: #fff;
   @include matisse;
   padding: 6rem 0 6rem 0;
@@ -276,7 +276,7 @@
     .item {
       margin-top: 4px;
       display: block;
-      background-color: #ff338c;
+      background-color: #a50721;
       &:nth-child(2) {
         background-color: #6d003f;
       }

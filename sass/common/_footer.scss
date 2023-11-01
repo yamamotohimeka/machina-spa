@@ -31,7 +31,7 @@
     width: 48%;
     @include osaka;
     font-size: 20rem;
-    border: solid #00a400 1px;
+    border: solid $Pink 1px;
     padding: 16rem 0;
     font-size: 21rem;
 
@@ -55,7 +55,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 66rem 0 33rem;
-  color: #00a400;
+  color: $Pink;
   @include osaka;
 
   @include pc {
@@ -181,7 +181,7 @@
 .footer-sp-list {
   display: block;
   width: 33%;
-  background: #00a400;
+  background: $Pink;
   //background: rgba(0,164,0,0.8);
 
   a {
@@ -263,7 +263,7 @@
   font-size: 12px;
   color: #fff;
   text-align: right;
-  background: #00a400;
+  background: $Pink;
   padding: 8px;
 }
 

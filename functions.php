@@ -51,11 +51,11 @@ function admin_analytics_menu_link() {
 	?>
 <script>
 jQuery(function($) {
-  var menu_slug = 'attendance_manage';
-  $('a.toplevel_page_' + menu_slug).prop({
-    href: "../admin_scheduler/",
-    target: "_blank"
-  });
+    var menu_slug = 'attendance_manage';
+    $('a.toplevel_page_' + menu_slug).prop({
+        href: "../admin_scheduler/",
+        target: "_blank"
+    });
 });
 </script><?php
 }
@@ -66,15 +66,15 @@ function hidden_checkbox() {
 <script>
 // hidden checkbox relations
 jQuery(function($) {
-  var check = $('[data-name="attmgr_ex_attr_staff"]');
-  if (check) {
-    var checktf = check.find('input[type="checkbox"]').prop('checked');
-    if (checktf = true) {
-      $('#attmgr_ex_attr_staff').prop('checked', true);
-    } else {
-      $('#attmgr_ex_attr_staff').prop('checked', false);
+    var check = $('[data-name="attmgr_ex_attr_staff"]');
+    if (check) {
+        var checktf = check.find('input[type="checkbox"]').prop('checked');
+        if (checktf = true) {
+            $('#attmgr_ex_attr_staff').prop('checked', true);
+        } else {
+            $('#attmgr_ex_attr_staff').prop('checked', false);
+        }
     }
-  }
 });
 </script>
 <?php
@@ -123,9 +123,9 @@ function sortable_userlist() {
 <script src="js/sort-user.js"></script>
 <style>
 .ui-sortable-helper {
-  width: 100%;
-  white-space: nowrap;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    white-space: nowrap;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
 }
 </style>
 <?php
@@ -170,7 +170,7 @@ add_action( 'init', 'create_post_type' );
 function lastfirst_name() {
 	?><script>
 jQuery(function($) {
-  $('#last_name').closest('tr').after($('#first_name').closest('tr'));
+    $('#last_name').closest('tr').after($('#first_name').closest('tr'));
 });
 </script><?php
 }

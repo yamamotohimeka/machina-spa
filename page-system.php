@@ -22,30 +22,31 @@
       <dl class="place-list">
         <div class="item">
           <dt class="length"><em>60</em>分コース</dt>
-          <dd class="value"><em>13,000</em>円</dd>
+          <dd class="value"><em>10,000</em>円</dd>
         </div>
         <div class="item">
           <dt class="length"><em>90</em>分コース</dt>
-          <dd class="value"><em>15,000</em>円</dd>
+          <dd class="value"><em>13,000</em>円</dd>
         </div>
         <div class="item">
           <dt class="length"><em>120</em>分コース</dt>
-          <dd class="value"><em>20,000</em>円</dd>
+          <dd class="value"><em>16,000</em>円</dd>
         </div>
         <div class="item">
           <dt class="length"><em>150</em>分コース</dt>
-          <dd class="value"><em>25,000</em>円</dd>
+          <dd class="value"><em>20,000</em>円</dd>
         </div>
 
       </dl>
       <div class="extend">
-        <span class="length">延長/10分</span>
+        <span class="length">延長/20分</span>
         <span class="ellipsis">・・・・・・・</span>
-        <span class="value">2,000円</span>
+        <span class="value">3,000円</span>
       </div>
       <div class="nominate">
-        <span>セラピスト指名</span><span class="dots">・・・・</span><span>1,000～</span>
-        <span>本指名</span><span class="dots">・・・・</span><span>1,000円</span>
+        <span>ブロンズ</span><span class="dots">・・・・</span><span>1,000円</span>
+        <span>シルバー</span><span class="dots">・・・・</span><span>2,000円</span>
+        <span>ゴールド</span><span class="dots">・・・・</span><span>3,000円</span>
       </div>
     </div>
 

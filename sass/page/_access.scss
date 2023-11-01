@@ -1,4 +1,4 @@
-.access{
+.access {
   @include pc {
     padding-bottom: 72px;
   }
@@ -6,7 +6,7 @@
     padding-bottom: 88rem;
     @include inner;
     @include pc {
-      border: 1px solid #00a400;
+      border: 1px solid $Pink;
       padding-bottom: 40px;
     }
   }
@@ -18,14 +18,13 @@
     &-text {
       margin-bottom: 16rem;
       font-size: 18rem;
-      color: #00a400;
+      color: $Pink;
       @include pc {
         font-size: 18px;
       }
     }
   }
   &-room-name {
-    
     color: #fff;
     font-size: 24px;
     @include sp {

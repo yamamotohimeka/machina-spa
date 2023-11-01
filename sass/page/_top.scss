@@ -29,7 +29,7 @@
     font-size: 26rem;
     color: #fff;
     text-align: center;
-    background: #006d00;
+    background: #8b0179;
     width: 50%;
     line-height: 1.4;
 
@@ -49,7 +49,7 @@
 }
 
 .mainvisual-menu-list:last-of-type {
-  background: #00a400;
+  background: $Pink;
 }
 
 .main-inner {
@@ -119,7 +119,7 @@
   @include pc {
     font-size: 21px;
     color: #fff;
-    background: #00a400;
+    background: $Pink;
     padding: 8px 0;
     margin-bottom: 50px;
   }
@@ -154,7 +154,7 @@
 
 .therapist-list {
   width: 48.5%;
-  border: #00a400 solid 1px;
+  border: $Pink solid 1px;
   @include matisse;
   text-align: center;
   color: #fff;
@@ -209,7 +209,7 @@
   }
 
   &-option {
-    background-color: #00a400;
+    background-color: $Pink;
     padding: 7rem 0 6rem 0;
     transform: translateY(1px);
 
@@ -221,7 +221,7 @@
 
   &-realtime {
     color: #fff;
-    background-color: #ff338c;
+    background-color: #a50721;
     position: absolute;
     padding: 5px 0;
     width: 101%;
@@ -346,12 +346,12 @@
 }
 
 .twitter-title {
-  background: #0093dd;
+  background: #fff;
   text-align: center;
   padding: 10rem 0;
 
   img {
-    width: 29%;
+    width: 6%;
   }
 
   @include sp {
@@ -414,11 +414,22 @@
 }
 
 .about {
-  text-align: center;
-  padding: 90rem 0 0;
-  background: #fff;
-  color: #000;
+  margin: 0 auto;
   padding: 70rem 0;
+  width: 1200px;
+  text-align: center;
+  color: #000;
+  @include sp {
+    width: 100%;
+  }
+
+  &-bg {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    background: url(../images/about-bg.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 
   @include sp {
     padding: 72px 0 0;
@@ -426,12 +437,12 @@
 
   &-title {
     font-size: 41rem;
-    border-bottom: #b0904a solid 1px;
+    border-bottom: $Pink solid 1px;
     display: inline-block;
     padding: 0 20rem;
-    color: #b0904a;
+    color: $Pink;
     @include ryumin;
-    margin-bottom: 10rem;
+    margin-bottom: 70rem;
 
     @include pc {
       font-size: 31px;
@@ -445,98 +456,89 @@
         font-size: 48px;
       }
     }
+  }
 
-    &-text {
-      font-size: 37rem;
-      line-height: 1.4;
-      margin-bottom: 100rem;
+  &-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 40px;
+    @include sp {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    img {
+      width: 336px;
+      @include sp {
+        width: 40%;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+
+      @include sp {
+        margin-bottom: 48rem;
+      }
+    }
+    &:nth-of-type(2) {
+      @include sp {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+    &wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      @include sp {
+        width: 88.8%;
+        margin: 0 auto;
+      }
+    }
+    &-flexwrap {
+      @include sp {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    &-title {
+      font-size: 35rem;
       @include ryumin;
-      color: #b0904a;
+      color: $Pink;
+      margin-bottom: 25rem;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+
+      @include sp {
+        justify-content: center;
+      }
+
+      @include pc {
+        margin-bottom: 12px;
+      }
 
       @include pc {
         font-size: 29px;
-        margin-bottom: 96px;
       }
     }
-  }
-}
 
-.about-contentwrap {
-  @include pc {
-    display: flex;
-  }
-}
+    &-text {
+      font-size: 21rem;
+      line-height: 1.5;
+      margin-bottom: 25rem;
+      @include ryumin;
+      font-weight: bold;
+      text-align: left;
 
-.about-content-flexwrap {
-  width: 676px;
-  margin-bottom: 168px;
-
-  @include sp {
-    width: 100%;
-    margin-bottom: 0;
-  }
-}
-
-.about-content {
-  margin-bottom: 66rem;
-
-  &:last-of-type {
-    margin-bottom: 0;
-
-    @include sp {
-      margin-bottom: 48rem;
+      @include pc {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
     }
-  }
-
-  @include pc {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 0;
-  }
-
-  &-title {
-    font-size: 35rem;
-    @include ryumin;
-    color: #b0904a;
-    margin-bottom: 25rem;
-    display: flex;
-    align-items: center;
-    @include ryumin;
-
-    @include pc {
-      margin-bottom: 12px;
-    }
-
-    span {
-      width: 7.7%;
-      display: inline-block;
-      margin-right: 10rem;
-    }
-
-    @include pc {
-      font-size: 29px;
-    }
-  }
-
-  &-text {
-    font-size: 21rem;
-    line-height: 1.4;
-    margin-bottom: 25rem;
-    text-align: left;
-
-    @include pc {
-      font-size: 12px;
-      margin-bottom: 0;
-      margin-left: 76px;
-    }
-  }
-}
-
-.about-content-text1 {
-  margin-bottom: 40rem;
-
-  @include pc {
-    margin-bottom: 8px;
   }
 }
 
@@ -554,16 +556,6 @@
   }
 }
 
-.pcabout-img-wrap {
-  @include sp {
-    display: none;
-  }
-
-  @include pc {
-    display: block;
-  }
-}
-
 .top-schedule-therapist-wrap .oil {
   word-spacing: 0;
   font-family: "fot-matisse-pron";
@@ -573,7 +565,7 @@
 
   .item {
     display: block;
-    background-color: #ff338c;
+    background-color: #a50721;
 
     &:nth-child(2) {
       background-color: #6d003f;

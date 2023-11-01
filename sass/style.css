@@ -105,7 +105,8 @@ input, select {
   box-sizing: border-box;
 }
 
-/* Scss Document */ /* Scss Document */
+/* Scss Document */
+/* Scss Document */
 :root {
   font-size: 0.1333333333vw;
 }
@@ -152,7 +153,8 @@ ul {
   color: #000;
 }
 
-/* Scss Document */ /* Scss Document */
+/* Scss Document */
+/* Scss Document */
 @keyframes tabAnim {
   0% {
     opacity: 0;
@@ -190,7 +192,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .header-innerwrap {
-    border-bottom: solid #00a400 1px;
+    border-bottom: solid #BA00A1 1px;
     transform: translateY(1px);
     padding-bottom: 30px;
   }
@@ -239,10 +241,9 @@ ul {
 }
 .header-logo-text {
   font-family: "Osaka", sans-serif;
-  color: #00a400;
+  color: #BA00A1;
   font-size: 26rem;
   margin-left: 24rem;
-  margin-bottom: 24rem;
 }
 @media screen and (min-width: 1200px) {
   .header-logo-text {
@@ -257,7 +258,7 @@ ul {
 }
 
 .header-sns-lineid {
-  background: #00a400;
+  background: #BA00A1;
   border-radius: 4px;
   font-size: 16px;
   display: flex;
@@ -323,7 +324,7 @@ ul {
 
 .header-pc-shopinfo {
   font-family: "Osaka", sans-serif;
-  color: #00a400;
+  color: #BA00A1;
 }
 @media screen and (max-width: 1199px) {
   .header-pc-shopinfo {
@@ -348,7 +349,7 @@ ul {
   font-size: 24rem;
   font-family: "Osaka", sans-serif;
   text-align: center;
-  background: #00a400;
+  background: #BA00A1;
   padding: 10rem 0;
 }
 @media screen and (min-width: 1200px) {
@@ -513,7 +514,7 @@ ul {
   width: 48%;
   font-family: "Osaka", sans-serif;
   font-size: 20rem;
-  border: solid #00a400 1px;
+  border: solid #BA00A1 1px;
   padding: 16rem 0;
   font-size: 21rem;
 }
@@ -536,7 +537,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   padding: 66rem 0 33rem;
-  color: #00a400;
+  color: #BA00A1;
   font-family: "Osaka", sans-serif;
 }
 @media screen and (min-width: 1200px) {
@@ -661,7 +662,7 @@ ul {
 .footer-sp-list {
   display: block;
   width: 33%;
-  background: #00a400;
+  background: #BA00A1;
 }
 .footer-sp-list a {
   display: block;
@@ -735,7 +736,7 @@ ul {
   font-size: 12px;
   color: #fff;
   text-align: right;
-  background: #00a400;
+  background: #BA00A1;
   padding: 8px;
 }
 @media screen and (max-width: 1199px) {
@@ -835,7 +836,7 @@ ul {
 .global-nav .nav-li {
   width: 100%;
   list-style-type: none;
-  border-bottom: 1px solid #00a400;
+  border-bottom: 1px solid #BA00A1;
   font-size: 23rem;
   text-align: center;
 }
@@ -903,7 +904,7 @@ ul {
   font-size: 26rem;
   color: #fff;
   text-align: center;
-  background: #006d00;
+  background: #8b0179;
   width: 50%;
   line-height: 1.4;
 }
@@ -922,7 +923,7 @@ ul {
 }
 
 .mainvisual-menu-list:last-of-type {
-  background: #00a400;
+  background: #BA00A1;
 }
 
 .main-inner {
@@ -999,7 +1000,7 @@ ul {
   .therapists-title {
     font-size: 21px;
     color: #fff;
-    background: #00a400;
+    background: #BA00A1;
     padding: 8px 0;
     margin-bottom: 50px;
   }
@@ -1037,7 +1038,7 @@ ul {
 
 .therapist-list {
   width: 48.5%;
-  border: #00a400 solid 1px;
+  border: #BA00A1 solid 1px;
   font-family: fot-matisse-pron, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1097,7 +1098,7 @@ ul {
   }
 }
 .therapist-list-option {
-  background-color: #00a400;
+  background-color: #BA00A1;
   padding: 7rem 0 6rem 0;
   transform: translateY(1px);
 }
@@ -1109,7 +1110,7 @@ ul {
 }
 .therapist-list-realtime {
   color: #fff;
-  background-color: #ff338c;
+  background-color: #a50721;
   position: absolute;
   padding: 5px 0;
   width: 101%;
@@ -1237,12 +1238,12 @@ ul {
 }
 
 .twitter-title {
-  background: #0093dd;
+  background: #fff;
   text-align: center;
   padding: 10rem 0;
 }
 .twitter-title img {
-  width: 29%;
+  width: 6%;
 }
 @media screen and (max-width: 1199px) {
   .twitter-title {
@@ -1306,11 +1307,23 @@ ul {
 }
 
 .about {
-  text-align: center;
-  padding: 90rem 0 0;
-  background: #fff;
-  color: #000;
+  margin: 0 auto;
   padding: 70rem 0;
+  width: 1200px;
+  text-align: center;
+  color: #000;
+}
+@media screen and (max-width: 1199px) {
+  .about {
+    width: 100%;
+  }
+}
+.about-bg {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  background: url(../images/about-bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 @media screen and (max-width: 1199px) {
   .about {
@@ -1319,14 +1332,14 @@ ul {
 }
 .about-title {
   font-size: 41rem;
-  border-bottom: #b0904a solid 1px;
+  border-bottom: #BA00A1 solid 1px;
   display: inline-block;
   padding: 0 20rem;
-  color: #b0904a;
+  color: #BA00A1;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
-  margin-bottom: 10rem;
+  margin-bottom: 70rem;
 }
 @media screen and (min-width: 1200px) {
   .about-title {
@@ -1342,41 +1355,26 @@ ul {
     font-size: 48px;
   }
 }
-.about-title-text {
-  font-size: 37rem;
-  line-height: 1.4;
-  margin-bottom: 100rem;
-  font-family: a-otf-ryumin-pr6n, serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #b0904a;
-}
-@media screen and (min-width: 1200px) {
-  .about-title-text {
-    font-size: 29px;
-    margin-bottom: 96px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about-contentwrap {
-    display: flex;
-  }
-}
-
-.about-content-flexwrap {
-  width: 676px;
-  margin-bottom: 168px;
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  gap: 40px;
 }
 @media screen and (max-width: 1199px) {
-  .about-content-flexwrap {
-    width: 100%;
-    margin-bottom: 0;
+  .about-content {
+    flex-direction: column;
+    gap: 10px;
   }
 }
-
-.about-content {
-  margin-bottom: 66rem;
+.about-content img {
+  width: 336px;
+}
+@media screen and (max-width: 1199px) {
+  .about-content img {
+    width: 40%;
+  }
 }
 .about-content:last-of-type {
   margin-bottom: 0;
@@ -1386,10 +1384,26 @@ ul {
     margin-bottom: 48rem;
   }
 }
-@media screen and (min-width: 1200px) {
-  .about-content {
+@media screen and (max-width: 1199px) {
+  .about-content:nth-of-type(2) {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+}
+.about-contentwrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .about-contentwrap {
+    width: 88.8%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .about-content-flexwrap {
+    width: 100%;
     margin-bottom: 0;
   }
 }
@@ -1398,23 +1412,21 @@ ul {
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
-  color: #b0904a;
+  color: #BA00A1;
   margin-bottom: 25rem;
   display: flex;
   align-items: center;
-  font-family: a-otf-ryumin-pr6n, serif;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: bold;
+}
+@media screen and (max-width: 1199px) {
+  .about-content-title {
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .about-content-title {
     margin-bottom: 12px;
   }
-}
-.about-content-title span {
-  width: 7.7%;
-  display: inline-block;
-  margin-right: 10rem;
 }
 @media screen and (min-width: 1200px) {
   .about-content-title {
@@ -1423,24 +1435,18 @@ ul {
 }
 .about-content-text {
   font-size: 21rem;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 25rem;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-weight: bold;
   text-align: left;
 }
 @media screen and (min-width: 1200px) {
   .about-content-text {
-    font-size: 12px;
+    font-size: 20px;
     margin-bottom: 0;
-    margin-left: 76px;
-  }
-}
-
-.about-content-text1 {
-  margin-bottom: 40rem;
-}
-@media screen and (min-width: 1200px) {
-  .about-content-text1 {
-    margin-bottom: 8px;
   }
 }
 
@@ -1459,17 +1465,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .pcabout-img-wrap {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .pcabout-img-wrap {
-    display: block;
-  }
-}
-
 .top-schedule-therapist-wrap .oil {
   word-spacing: 0;
   font-family: "fot-matisse-pron";
@@ -1479,7 +1474,7 @@ ul {
 }
 .top-schedule-therapist-wrap .oil .item {
   display: block;
-  background-color: #ff338c;
+  background-color: #a50721;
 }
 .top-schedule-therapist-wrap .oil .item:nth-child(2) {
   background-color: #6d003f;
@@ -1513,7 +1508,7 @@ ul {
   .page-title {
     font-size: 21px;
     font-family: "Osaka", sans-serif;
-    background: #00a400;
+    background: #BA00A1;
     text-align: center;
     padding: 8px 0;
     font-weight: 400;
@@ -1549,7 +1544,7 @@ ul {
   .therapists-listwrap {
     padding: 40px 24px 80px;
     justify-content: space-between;
-    border: solid #00a400 1px;
+    border: solid #BA00A1 1px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1559,7 +1554,7 @@ ul {
 }
 
 .therapist-page-list {
-  border: solid #00a400 1px;
+  border: solid #BA00A1 1px;
   width: 48%;
   position: relative;
   margin-bottom: 24px;
@@ -1576,7 +1571,7 @@ ul {
     flex-wrap: wrap;
     padding: 16px 10px;
     justify-content: space-around;
-    border: solid 1px #00a400;
+    border: solid 1px #BA00A1;
   }
 }
 
@@ -1616,7 +1611,7 @@ ul {
 }
 
 .option-fee-pc {
-  background: #00a400;
+  background: #BA00A1;
   color: #fff;
   font-size: 17px;
   text-align: center;
@@ -1732,14 +1727,14 @@ ul {
     display: inline-block;
     font-size: 15px;
     line-height: 1.8;
-    border-top: solid 2px #00a400;
+    border-top: solid 2px #BA00A1;
     padding: 16px 14px 0;
     text-align: left;
   }
 }
 
 .option-fee-sp {
-  background: #00a400;
+  background: #BA00A1;
   color: #fff;
   font-family: fot-matisse-pron, sans-serif;
   font-weight: 500;
@@ -1796,7 +1791,7 @@ ul {
 .page-therapists .oil .item {
   margin-top: 4px;
   display: block;
-  background-color: #ff338c;
+  background-color: #a50721;
 }
 .page-therapists .oil .item:nth-child(2) {
   background-color: #6d003f;
@@ -2165,7 +2160,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .page-schedule-border {
-    border: solid 1px #00a400;
+    border: solid 1px #BA00A1;
   }
 }
 .page-schedule .date-tab {
@@ -2184,7 +2179,7 @@ ul {
   position: relative;
   width: 14%;
   font-size: 21rem;
-  background-color: #00a400;
+  background-color: #BA00A1;
   padding: 16rem;
   color: #fff;
   text-align: center;
@@ -2206,7 +2201,7 @@ ul {
   }
 }
 .page-schedule-title-day {
-  border-bottom: 2px solid #00a400;
+  border-bottom: 2px solid #BA00A1;
   margin-bottom: 40rem;
   padding-bottom: 16rem;
   color: #fff;
@@ -2285,7 +2280,7 @@ ul {
 }
 .page-schedule .oil .item {
   display: block;
-  background-color: #ff338c;
+  background-color: #a50721;
   line-height: 30px;
 }
 .page-schedule .oil .item:nth-child(2) {
@@ -2356,7 +2351,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .author-wrapper {
-    border: solid 1px #00a400;
+    border: solid 1px #BA00A1;
     padding: 40px 56px;
   }
   .author-wrapper:after {
@@ -2374,7 +2369,7 @@ ul {
 
 .author-img-wrap {
   padding: 32rem;
-  border: #00a400 solid 1px;
+  border: #BA00A1 solid 1px;
   width: 88.8%;
   margin: 0 auto;
   position: relative;
@@ -2425,7 +2420,7 @@ ul {
   .author-title-sp {
     display: block;
     font-size: 21px;
-    background: #00a400;
+    background: #BA00A1;
     padding: 8px 0 8px 16px;
   }
 }
@@ -2436,7 +2431,7 @@ ul {
   font-style: normal;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #00a400;
+  border-bottom: solid 1px #BA00A1;
   padding-top: 16rem;
   padding-bottom: 8rem;
   margin-bottom: 16rem;
@@ -2463,7 +2458,7 @@ ul {
 
 .author-option {
   font-size: 34rem;
-  background: #00a400;
+  background: #BA00A1;
   padding: 4rem 16rem;
   text-align: center;
 }
@@ -2508,7 +2503,7 @@ ul {
 
 .author-schedule-title {
   color: #fff;
-  background: #00a400;
+  background: #BA00A1;
   padding: 8rem 0;
   text-align: center;
 }
@@ -2531,7 +2526,7 @@ ul {
 .attend-list {
   display: flex;
   align-items: center;
-  border-bottom: #00a400 solid 1px;
+  border-bottom: #BA00A1 solid 1px;
 }
 
 .cell-date {
@@ -2656,7 +2651,7 @@ ul {
 .options .oil .item {
   font-size: 17px;
   width: 100%;
-  background-color: #ff338c;
+  background-color: #a50721;
   line-height: 34px;
   margin-bottom: 8px;
 }
@@ -2701,7 +2696,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .access-inner {
-    border: 1px solid #00a400;
+    border: 1px solid #BA00A1;
     padding-bottom: 40px;
   }
 }
@@ -2716,7 +2711,7 @@ ul {
 .access-info-text {
   margin-bottom: 16rem;
   font-size: 18rem;
-  color: #00a400;
+  color: #BA00A1;
 }
 @media screen and (min-width: 1200px) {
   .access-info-text {
@@ -2766,12 +2761,12 @@ ul {
   margin-left: auto;
 }
 .system .inner {
-  border: 1px solid #00a400;
+  border: 1px solid #BA00A1;
   padding: 80px 124px 128px;
   padding-left: 124px;
   padding-right: 124px;
   padding-top: 80px;
-  color: #00a400;
+  color: #BA00A1;
 }
 @media screen and (max-width: 1199px) {
   .system .inner {
@@ -2781,7 +2776,7 @@ ul {
 }
 .system .section-title {
   padding: 8px 0;
-  background-color: #00a400;
+  background-color: #BA00A1;
   color: #fff;
   font-family: "Osaka", sans-serif;
   font-size: 24px;
@@ -2805,14 +2800,14 @@ ul {
   content: "";
   width: 70px;
   height: 1px;
-  background-color: #00a400;
+  background-color: #BA00A1;
   margin-right: 54px;
 }
 .system .about-reserve .title::after {
   content: "";
   width: 70px;
   height: 1px;
-  background-color: #00a400;
+  background-color: #BA00A1;
   margin-left: 54px;
 }
 .system .about-reserve .list {
@@ -2852,7 +2847,7 @@ ul {
   max-width: 408px;
   margin: 0 auto 48px;
   line-height: 54px;
-  background-color: #00a400;
+  background-color: #BA00A1;
   font-size: 25px;
   color: #fff;
   text-align: center;
@@ -2869,7 +2864,7 @@ ul {
   font-size: 55px;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
-  border-bottom: 1px solid #00a400;
+  border-bottom: 1px solid #BA00A1;
   margin-bottom: 48px;
 }
 .system .course .place-list .item:last-child {
@@ -2888,7 +2883,7 @@ ul {
 .system .course .extend {
   display: flex;
   justify-content: center;
-  border: 1px solid #00a400;
+  border: 1px solid #BA00A1;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -2903,7 +2898,7 @@ ul {
 }
 .system .course .nominate {
   width: 588px;
-  border: 1px solid #00a400;
+  border: 1px solid #BA00A1;
   margin-left: auto;
   margin-right: auto;
   font-size: 32px;
@@ -3020,12 +3015,12 @@ ul {
   margin-left: auto;
 }
 .ranking .inner {
-  border: 1px solid #00a400;
+  border: 1px solid #BA00A1;
   padding: 80px 124px 128px;
   padding-left: 124px;
   padding-right: 124px;
   padding-top: 80px;
-  color: #00a400;
+  color: #BA00A1;
 }
 @media screen and (max-width: 1199px) {
   .ranking .inner {
@@ -3035,7 +3030,7 @@ ul {
 }
 .ranking .section-title {
   padding: 8px 0;
-  background-color: #00a400;
+  background-color: #BA00A1;
   color: #fff;
   font-family: "Osaka", sans-serif;
   font-size: 24px;
@@ -3076,7 +3071,7 @@ ul {
 .ranking .therapist-ranking {
   margin-top: 112px;
   padding: 34px 20px;
-  border: 1px solid #00a400;
+  border: 1px solid #BA00A1;
   height: 160px;
   position: relative;
 }
@@ -3100,7 +3095,7 @@ ul {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 14px solid #00a400;
+  border-top: 14px solid #BA00A1;
   border-right: 14px solid transparent;
 }
 .ranking .therapist-ranking::after {
@@ -3110,7 +3105,7 @@ ul {
   right: 0;
   width: 0;
   height: 0;
-  border-bottom: 14px solid #00a400;
+  border-bottom: 14px solid #BA00A1;
   border-left: 14px solid transparent;
 }
 .ranking .therapist-ranking img {
@@ -3140,7 +3135,7 @@ ul {
   margin-top: 0;
   padding: 0px;
   border: none;
-  border-bottom: 1px solid #00a400;
+  border-bottom: 1px solid #BA00A1;
   height: auto;
 }
 .ranking .therapist-ranking-top img {
@@ -3215,7 +3210,7 @@ ul {
   color: #fff;
   font-size: 15px;
   line-height: 1.8;
-  border: solid 1px #00a400;
+  border: solid 1px #BA00A1;
   padding: 16px 14px;
   text-align: left;
 }
@@ -3234,7 +3229,7 @@ ul {
   padding: 10px;
   color: #fff;
   font-size: 16px;
-  background-color: #ff338c;
+  background-color: #a50721;
   width: 100%;
   height: 38px;
 }
@@ -3253,7 +3248,7 @@ ul {
 }
 .ranking-worktime {
   padding: 10px;
-  border: 1px solid #00a400;
+  border: 1px solid #BA00A1;
   font-size: 16px;
   color: #fff;
   width: 100%;
@@ -3324,7 +3319,7 @@ ul {
   margin-top: 5px;
   position: initial;
   width: 100%;
-  background-color: #ff338c;
+  background-color: #a50721;
 }
 @media screen and (max-width: 1199px) {
   .newface .therapist-list-realtime {
@@ -3380,13 +3375,11 @@ ul {
   }
 }
 
-form#attmgr_admin_scheduler table.attmgr_admin_scheduler th,
-form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
+form#attmgr_admin_scheduler table.attmgr_admin_scheduler th, form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
   padding: 16rem;
 }
 @media screen and (min-width: 1200px) {
-  form#attmgr_admin_scheduler table.attmgr_admin_scheduler th,
-  form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
+  form#attmgr_admin_scheduler table.attmgr_admin_scheduler th, form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
     padding: 8px;
   }
 }

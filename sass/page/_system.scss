@@ -6,12 +6,12 @@
   margin-right: auto;
   margin-left: auto;
   .inner {
-    border: 1px solid #00a400;
+    border: 1px solid $Pink;
     padding: 80px 124px 128px;
     padding-left: 124px;
     padding-right: 124px;
     padding-top: 80px;
-    color: #00a400;
+    color: $Pink;
     @include sp {
       border: 0;
       padding: 40rem 5.6% 128px;
@@ -19,9 +19,9 @@
   }
   .section-title {
     padding: 8px 0;
-    background-color: #00a400;
+    background-color: $Pink;
     color: #fff;
-    font-family: 'Osaka', sans-serif;
+    font-family: "Osaka", sans-serif;
     font-size: 24px;
     text-align: center;
     @include sp {
@@ -41,14 +41,14 @@
         content: "";
         width: 70px;
         height: 1px;
-        background-color: #00a400;
+        background-color: $Pink;
         margin-right: 54px;
       }
       &::after {
         content: "";
         width: 70px;
         height: 1px;
-        background-color: #00a400;
+        background-color: $Pink;
         margin-left: 54px;
       }
     }
@@ -61,7 +61,7 @@
       font-size: 18px;
       line-height: 2.4;
     }
-    
+
     @include sp {
       .title {
         margin-bottom: 48rem;
@@ -83,8 +83,7 @@
       }
     }
   }
-  
-  
+
   .course {
     margin-bottom: 120px;
     .title {
@@ -92,7 +91,7 @@
       max-width: 408px;
       margin: 0 auto 48px;
       line-height: 54px;
-      background-color: #00a400;
+      background-color: $Pink;
       font-size: 25px;
       color: #fff;
       text-align: center;
@@ -110,7 +109,7 @@
         font-size: 55px;
         font-family: a-otf-ryumin-pr6n, serif;
         font-weight: 300;
-        border-bottom: 1px solid #00a400;
+        border-bottom: 1px solid $Pink;
         margin-bottom: 48px;
         &:last-child {
           border-bottom: 0;
@@ -130,7 +129,7 @@
     .extend {
       display: flex;
       justify-content: center;
-      border: 1px solid #00a400;
+      border: 1px solid $Pink;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 48px;
@@ -145,7 +144,7 @@
     }
     .nominate {
       width: 588px;
-      border: 1px solid #00a400;
+      border: 1px solid $Pink;
       margin-left: auto;
       margin-right: auto;
       font-size: 32px;
@@ -161,7 +160,7 @@
         margin-right: 0.4em;
       }
     }
-    
+
     @include sp {
       .title {
         font-size: 32rem;
@@ -198,8 +197,7 @@
       }
     }
   }
-  
-  
+
   .guideline {
     color: #fff;
     .title {

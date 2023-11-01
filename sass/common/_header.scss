@@ -13,7 +13,7 @@
 
 .header-innerwrap {
   @include pc {
-    border-bottom: solid #00a400 1px;
+    border-bottom: solid $Pink 1px;
     transform: translateY(1px);
     padding-bottom: 30px;
   }
@@ -54,10 +54,9 @@
 
   &-text {
     @include osaka;
-    color: #00a400;
+    color: $Pink;
     font-size: 26rem;
     margin-left: 24rem;
-    margin-bottom: 24rem;
 
     @include pc {
       font-size: 25px;
@@ -76,7 +75,7 @@
     display: none;
   }
 
-  background: #00a400;
+  background: $Pink;
   border-radius: 4px;
   font-size: 16px;
   display: flex;
@@ -147,7 +146,7 @@
   }
 
   @include osaka;
-  color: #00a400;
+  color: $Pink;
 
   &-time {
     font-size: 16px;
@@ -170,7 +169,7 @@
   font-size: 24rem;
   @include osaka;
   text-align: center;
-  background: #00a400;
+  background: $Pink;
   padding: 10rem 0;
 
   @include pc {

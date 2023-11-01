@@ -53,7 +53,7 @@
   padding-top: 48rem;
 
   @include pc {
-    border: solid 1px #00a400;
+    border: solid 1px $Pink;
     padding: 40px 56px;
 
     &:after {
@@ -72,7 +72,7 @@
 
 .author-img-wrap {
   padding: 32rem;
-  border: #00a400 solid 1px;
+  border: $Pink solid 1px;
   @include inner;
   position: relative;
 
@@ -108,7 +108,7 @@
   @include pc {
     display: block;
     font-size: 21px;
-    background: #00a400;
+    background: $Pink;
     padding: 8px 0 8px 16px;
   }
 }
@@ -117,7 +117,7 @@
   @include matisse;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #00a400;
+  border-bottom: solid 1px $Pink;
   padding-top: 16rem;
   padding-bottom: 8rem;
   margin-bottom: 16rem;
@@ -142,7 +142,7 @@
 
 .author-option {
   font-size: 34rem;
-  background: #00a400;
+  background: $Pink;
   padding: 4rem 16rem;
   text-align: center;
   @include pc {
@@ -177,7 +177,7 @@
 
 .author-schedule-title {
   color: #fff;
-  background: #00a400;
+  background: $Pink;
   padding: 8rem 0;
   text-align: center;
 
@@ -198,7 +198,7 @@
 .attend-list {
   display: flex;
   align-items: center;
-  border-bottom: #00a400 solid 1px;
+  border-bottom: $Pink solid 1px;
 }
 
 .cell-date {
@@ -306,7 +306,7 @@
     .item {
       font-size: 17px;
       width: 100%;
-      background-color: #ff338c;
+      background-color: #a50721;
       line-height: 34px;
       margin-bottom: 8px;
       &:nth-of-type(2) {
