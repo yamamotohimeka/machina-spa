@@ -44,9 +44,9 @@
         <span class="value">3,000円</span>
       </div>
       <div class="nominate">
-        <span>ブロンズ</span><span class="dots">・・・・</span><span>1,000円</span>
-        <span>シルバー</span><span class="dots">・・・・</span><span>2,000円</span>
-        <span>ゴールド</span><span class="dots">・・・・</span><span>3,000円</span>
+        <div class="nominate-inner"><span class="nominate-rank">ブロンズ</span><span>1,000円</span></div>
+        <div class="nominate-inner"><span class="nominate-rank">シルバー</span><span>2,000円</span></div>
+        <div class="nominate-inner"><span class="nominate-rank">ゴールド</span><span>3,000円</span></div>
       </div>
     </div>
 

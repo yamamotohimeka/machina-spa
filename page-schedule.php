@@ -67,10 +67,14 @@
                       print('<div class="page-schedule-staff-prof-content">');
                     }
                     if($option_fee && $user_id) {
-                      print('<p class="therapist-list-option">'.'指名料+'.get_the_author_meta('option_fee', $val->staff_id).'</p>');
-                    }elseif($user_id) {
-                      print('<p class="therapist-list-option">'.'指名料+1000'.'</p>');
-                    }
+                      $status = get_the_author_meta('option_fee', $val->staff_id);
+                      if($status == 'BRONZE'){ //値（Value）が「landscape」だったら
+                      print('<img src="'.get_template_directory_uri().'/images/bronze.jpg" alt="bronze"></span></a></p>');
+                      }elseif( $status == 'SILVER'){
+                      print('<img src="'.get_template_directory_uri().'/images/silver.jpg" alt="silver"></span></a></p>');
+                      }elseif( $status == 'GOLD'){
+                      print('<img src="'.get_template_directory_uri().'/images/gold.jpg" alt="gold"></span></a></p>');
+                      }                    }
                     if($user_id){
                       print('</div></li>');
                     }

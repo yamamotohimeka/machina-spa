@@ -116,7 +116,6 @@
     display: none;
   }
 
-  background: $Pink;
   color: #fff;
   font-size: 17px;
   text-align: center;
@@ -223,13 +222,8 @@
 }
 
 .option-fee-sp {
-  background: $Pink;
   color: #fff;
   @include matisse;
-  padding: 6rem 0 6rem 0;
-
-  font-size: 26rem;
-
   @include pc {
     display: none;
   }

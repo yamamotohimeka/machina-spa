@@ -30,12 +30,19 @@
           <a href="<?php echo home_url().'/?author='.$uid;?>"
             class="expand-link"><?php echo get_avatar($uid ,420);?></a>
         </div>
-
         <?php if($girls->option_fee): ?>
-        <p class="option-fee-pc">指名料+<?php echo $girls->option_fee;?></p>
-        <?php else : ?>
-        <p class="option-fee-pc">指名料+1000</p>
-        <?php endif; ?>
+        <p class="option-fee-pc">
+          <?php   $status = get_the_author_meta('option_fee', $girls->ID);
+                      if($status == 'BRONZE'){ //値（Value）が「landscape」だったら
+                      print('<img src="'.get_template_directory_uri().'/images/bronze.jpg" alt="bronze"></span></a></p>');
+                      }elseif( $status == 'SILVER'){
+                      print('<img src="'.get_template_directory_uri().'/images/silver.jpg" alt="silver"></span></a></p>');
+                      }elseif( $status == 'GOLD'){
+                      print('<img src="'.get_template_directory_uri().'/images/gold.jpg" alt="gold"></span></a></p>');
+                      } ?>
+        </p>
+        <?php endif ;?>
+
 
         <span class="pc">
           <?php 
@@ -81,9 +88,15 @@
         </span>
 
         <?php if($girls->option_fee): ?>
-        <p class="option-fee-sp">指名料+<?php echo $girls->option_fee;?></p>
-        <?php else : ?>
-        <p class="option-fee-sp">指名料+1000</p>
+        <p class="option-fee-sp">
+          <?php   $status = get_the_author_meta('option_fee', $girls->ID);
+                      if($status == 'BRONZE'){ //値（Value）が「landscape」だったら
+                      print('<img src="'.get_template_directory_uri().'/images/bronze.jpg" alt="bronze"></span></a></p>');
+                      }elseif( $status == 'SILVER'){
+                      print('<img src="'.get_template_directory_uri().'/images/silver.jpg" alt="silver"></span></a></p>');
+                      }elseif( $status == 'GOLD'){
+                      print('<img src="'.get_template_directory_uri().'/images/gold.jpg" alt="gold"></span></a></p>');
+                      } ?></p>
         <?php endif;?>
       </div>
 

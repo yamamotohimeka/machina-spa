@@ -143,21 +143,33 @@
       }
     }
     .nominate {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
       width: 588px;
       border: 1px solid $Pink;
-      margin-left: auto;
-      margin-right: auto;
       font-size: 32px;
       font-family: a-otf-ryumin-pr6n, serif;
       line-height: 1.8;
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto;
-      flex-wrap: wrap;
-      text-align: center;
-      .dots {
-        letter-spacing: -0.4em;
-        margin-right: 0.4em;
+
+      &-inner {
+        display: flex;
+        gap: 100px;
+        border: 1px solid $Pink;
+        @include sp {
+          gap: 20%;
+        }
+      }
+
+      &-rank {
+        background-color: $Pink;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+      }
+      span {
+        text-align: center;
       }
     }
 

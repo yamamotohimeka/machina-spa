@@ -80,9 +80,7 @@
 
             <div class="options">
               <?php if($udata->option_fee): ?>
-              <p class="author-option">指名料+<?php echo $udata->option_fee;?></p>
-              <?php else : ?>
-              <p class="author-option">指名料+1000</p>
+              <p class="author-option"><?php echo $udata->option_fee;?></p>
               <?php endif;?>
             </div>
           </div>

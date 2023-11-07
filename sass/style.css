@@ -1098,14 +1098,11 @@ ul {
   }
 }
 .therapist-list-option {
-  background-color: #BA00A1;
-  padding: 7rem 0 6rem 0;
   transform: translateY(1px);
 }
 @media screen and (min-width: 1200px) {
   .therapist-list-option {
     font-size: 15px;
-    padding: 7px 0 6px 0;
   }
 }
 .therapist-list-realtime {
@@ -1611,7 +1608,6 @@ ul {
 }
 
 .option-fee-pc {
-  background: #BA00A1;
   color: #fff;
   font-size: 17px;
   text-align: center;
@@ -1734,13 +1730,10 @@ ul {
 }
 
 .option-fee-sp {
-  background: #BA00A1;
   color: #fff;
   font-family: fot-matisse-pron, sans-serif;
   font-weight: 500;
   font-style: normal;
-  padding: 6rem 0 6rem 0;
-  font-size: 26rem;
 }
 @media screen and (min-width: 1200px) {
   .option-fee-sp {
@@ -2897,22 +2890,34 @@ ul {
   margin: 0 1em;
 }
 .system .course .nominate {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   width: 588px;
   border: 1px solid #BA00A1;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 32px;
   font-family: a-otf-ryumin-pr6n, serif;
   line-height: 1.8;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  flex-wrap: wrap;
+}
+.system .course .nominate-inner {
+  display: flex;
+  gap: 100px;
+  border: 1px solid #BA00A1;
+}
+@media screen and (max-width: 1199px) {
+  .system .course .nominate-inner {
+    gap: 20%;
+  }
+}
+.system .course .nominate-rank {
+  background-color: #BA00A1;
+  color: #fff;
+  width: 50%;
   text-align: center;
 }
-.system .course .nominate .dots {
-  letter-spacing: -0.4em;
-  margin-right: 0.4em;
+.system .course .nominate span {
+  text-align: center;
 }
 @media screen and (max-width: 1199px) {
   .system .course .title {
@@ -3057,11 +3062,12 @@ ul {
 }
 .ranking .therapist-contentwrap {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 2.6809651475vw;
 }
 .ranking .therapist-contentwrap .option-fee-pc {
-  padding: 4px 10px;
+  width: 40%;
 }
 @media screen and (max-width: 1199px) {
   .ranking .therapist-contentwrap {

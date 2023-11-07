@@ -51,11 +51,12 @@
 
     &-contentwrap {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
       gap: calc(30vw / (1119 / 100));
 
       .option-fee-pc {
-        padding: 4px 10px;
+        width: 40%;
       }
 
       @include sp {
