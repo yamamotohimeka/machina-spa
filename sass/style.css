@@ -2808,6 +2808,11 @@ ul {
   padding: 0 84px;
   list-style: square;
 }
+@media screen and (max-width: 1199px) {
+  .system .about-reserve .list {
+    margin-bottom: 6.5104166667vw;
+  }
+}
 .system .about-reserve .item {
   font-size: 18px;
   line-height: 2.4;
@@ -2834,6 +2839,11 @@ ul {
 }
 .system .course {
   margin-bottom: 120px;
+}
+@media screen and (max-width: 1199px) {
+  .system .course {
+    margin-bottom: 19.53125vw;
+  }
 }
 .system .course .title {
   border-radius: 20px;
@@ -2879,9 +2889,9 @@ ul {
   border: 1px solid #BA00A1;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-top: 48px;
   padding: 16px;
-  width: 588px;
+  width: 798px;
   font-family: a-otf-ryumin-pr6n, serif;
   font-size: 36px;
 }
@@ -2889,25 +2899,31 @@ ul {
   letter-spacing: -0.4em;
   margin: 0 1em;
 }
+@media screen and (max-width: 1199px) {
+  .system .course .extend {
+    margin-top: 3.90625vw;
+  }
+}
 .system .course .nominate {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 588px;
-  border: 1px solid #BA00A1;
-  font-size: 32px;
+  justify-content: space-between;
+  gap: 10px;
+  width: 84%;
+  font-size: 26px;
   font-family: a-otf-ryumin-pr6n, serif;
   line-height: 1.8;
 }
 .system .course .nominate-inner {
   display: flex;
-  gap: 100px;
+  width: 33%;
+  gap: 22px;
   border: 1px solid #BA00A1;
 }
 @media screen and (max-width: 1199px) {
   .system .course .nominate-inner {
     gap: 20%;
+    flex-direction: column;
   }
 }
 .system .course .nominate-rank {
@@ -2915,6 +2931,11 @@ ul {
   color: #fff;
   width: 50%;
   text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .system .course .nominate-rank {
+    width: 100%;
+  }
 }
 .system .course .nominate span {
   text-align: center;

@@ -19,7 +19,7 @@
     <meta property="og:description"
       content="大阪長堀橋駅・堺筋本町駅から徒歩1分圏内にある、南船場・堺筋本町のメンズエステ【MACHINA SPA】マキナスパ。当店は、南船場で極上のメンズエステをご提供しております。日頃のストレスを厳選されたセラピストがお客様の疲れ切った全身をアロマオイルで全身マッサージして心も身体も揉みほぐします。" />
     <meta property="og:site_name" content="大阪 南船場・堺筋本町のメンズエステ【MACHINA SPA】マキナスパ" />
-    <meta property="og:image" content="https://machina-spa.com/wp-content/themes/frogspa/images/machina-ogp.png" />
+    <meta property="og:image" content="https://machina-spa.com/wp-content/themes/machinaspa/images/machina-ogp.png" />
     <!-- /////////////////ogp -->
     <link rel="shortcut icon" href="https://machina-spa.com/wp-content/themes/machinaspa/images/favicon.png">
     <!--------------------スライダー見た目-------------------------------------------------->

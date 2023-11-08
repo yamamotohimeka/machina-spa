@@ -56,6 +56,9 @@
       margin-bottom: 96px;
       padding: 0 84px;
       list-style: square;
+      @include sp {
+        margin-bottom: calc(50vw / (768 / 100));
+      }
     }
     .item {
       font-size: 18px;
@@ -86,6 +89,9 @@
 
   .course {
     margin-bottom: 120px;
+    @include sp {
+      margin-bottom: calc(150vw / (768 / 100));
+    }
     .title {
       border-radius: 20px;
       max-width: 408px;
@@ -132,33 +138,37 @@
       border: 1px solid $Pink;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 48px;
+      margin-top: 48px;
       padding: 16px;
-      width: 588px;
+      width: 798px;
       font-family: a-otf-ryumin-pr6n, serif;
       font-size: 36px;
       .ellipsis {
         letter-spacing: -0.4em;
         margin: 0 1em;
       }
+      @include sp {
+        margin-top: calc(30vw / (768 / 100));
+      }
     }
     .nominate {
       margin: 0 auto;
       display: flex;
-      flex-direction: column;
-      gap: 4px;
-      width: 588px;
-      border: 1px solid $Pink;
-      font-size: 32px;
+      justify-content: space-between;
+      gap: 10px;
+      width: 84%;
+      font-size: 26px;
       font-family: a-otf-ryumin-pr6n, serif;
       line-height: 1.8;
 
       &-inner {
         display: flex;
-        gap: 100px;
+        width: 33%;
+        gap: 22px;
         border: 1px solid $Pink;
         @include sp {
           gap: 20%;
+          flex-direction: column;
         }
       }
 
@@ -167,6 +177,9 @@
         color: #fff;
         width: 50%;
         text-align: center;
+        @include sp {
+          width: 100%;
+        }
       }
       span {
         text-align: center;

@@ -15,10 +15,6 @@
 
 
     <div class="course">
-      <p class="introduction">
-        多量のホットオイル(水溶性)をたっぷりと使用し、全身を隈なくリンパドレナージュしていきます。<br>
-        心地良い快感に癒やされるリラクゼーション効果がとても高い当店自慢のコースとなります。
-      </p>
       <dl class="place-list">
         <div class="item">
           <dt class="length"><em>60</em>分コース</dt>
@@ -38,15 +34,15 @@
         </div>
 
       </dl>
-      <div class="extend">
-        <span class="length">延長/20分</span>
-        <span class="ellipsis">・・・・・・・</span>
-        <span class="value">3,000円</span>
-      </div>
       <div class="nominate">
         <div class="nominate-inner"><span class="nominate-rank">ブロンズ</span><span>1,000円</span></div>
         <div class="nominate-inner"><span class="nominate-rank">シルバー</span><span>2,000円</span></div>
         <div class="nominate-inner"><span class="nominate-rank">ゴールド</span><span>3,000円</span></div>
+      </div>
+      <div class="extend">
+        <span class="length">延長/20分</span>
+        <span class="ellipsis">・・・・・・・</span>
+        <span class="value">3,000円</span>
       </div>
     </div>
 
