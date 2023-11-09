@@ -87,21 +87,40 @@
           <div class="header-innerwrap">
             <div class="header-inner">
               <div class="header-logo-wrap">
-                <h1 class="header-logo"><a href="<?php echo home_url('/'); ?>"><img
-                      src="<?php echo get_template_directory_uri() ?>/images/header-logo.png" alt="MACHINASPAロゴ画像"></a>
-                </h1>
+
+                <div class="header-logo-wrap-top">
+                  <h1 class="header-logo">
+                    <a href="<?php echo home_url('/'); ?>">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/header-logo.png"
+                        alt="MACHINASPAロゴ画像"></a>
+                  </h1>
+                  <div class="toggle sp">
+                    <span></span>
+                  </div>
+                </div>
+
                 <div class="header-logo-text-wrap">
+                  <ul class="header-sns-listwrap">
+                    <li class="header-sns-list"><a href="http://frogspa.livedoor.blog/" target="_blank"><img
+                          src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
+                          alt="ブログアイコン"></a></li>
+                    <?php if($user_twitter) : ?>
+                    <li class="header-sns-list"><a href="https://twitter.com/<?php echo $user_twitter; ?>"
+                        target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
+                          alt="twitterアイコン"></a></li>
+                    <?php endif;?>
+                    <li class="header-sns-list"><a href="https://line.me/ti/p/71Sadk-PUI" target="_blank"><img
+                          src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
+                          alt="LNEアイコン"></a></li>
+                  </ul>
+
                   <p class="header-logo-text">南船場・堺筋本町</p>
                   <p class="header-sns-lineid"><a href="https://line.me/ti/p/71Sadk-PUI" target="_blank">LINE
                       ID<span>frogspa</span></a></p>
                 </div>
               </div>
 
-              <div class="toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+
 
               <nav class="global-nav">
                 <ul>
@@ -126,7 +145,7 @@
                 </ul>
               </nav>
 
-              <div class="header-sns-wrap">
+              <div class="header-sns-wrap pc">
                 <ul class="header-sns-listwrap">
                   <li class="header-sns-list"><a href="http://frogspa.livedoor.blog/" target="_blank"><img
                         src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"

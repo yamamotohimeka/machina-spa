@@ -32,16 +32,30 @@
 
 .header-logo-wrap {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  @include sp {
+    gap: 10px;
+    width: 100%;
+  }
 
   @include pc {
-    flex-direction: column;
     align-items: center;
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 }
 
 .header-logo {
-  width: 56.7%;
+  width: 100%;
+  @include sp {
+    img {
+      width: 100%;
+    }
+  }
 
   @include pc {
     margin-bottom: 8px;
@@ -55,8 +69,7 @@
   &-text {
     @include osaka;
     color: $Pink;
-    font-size: 26rem;
-    margin-left: 24rem;
+    font-size: 28rem;
 
     @include pc {
       font-size: 25px;
@@ -68,6 +81,8 @@
 
 .header-logo-text-wrap {
   display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .header-sns-lineid {
@@ -107,7 +122,6 @@
   @include osaka;
 
   @include sp {
-    display: none;
   }
 }
 

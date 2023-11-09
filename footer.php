@@ -304,7 +304,8 @@ $('.author-thumbnail-wrap li').on('mouseover', function(e) {
 <script>
 $(function() {
   $('.toggle').click(function() {
-    $(this).toggleClass("active");
+    $(this).toggleClass("active none");
+    $('.toggle img').toggleClass("active none");
     if ($(this).hasClass('active')) {
       $('.global-nav').addClass('active');
     } else {

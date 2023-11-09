@@ -580,3 +580,10 @@
     }
   }
 }
+
+.slick-dots li.slick-active button:before {
+  font-size: 16px;
+  @include sp {
+    font-size: 15rem;
+  }
+}

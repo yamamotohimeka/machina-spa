@@ -218,17 +218,32 @@ ul {
 
 .header-logo-wrap {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+}
+@media screen and (max-width: 1199px) {
+  .header-logo-wrap {
+    gap: 10px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header-logo-wrap {
-    flex-direction: column;
     align-items: center;
   }
 }
+.header-logo-wrap-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .header-logo {
-  width: 56.7%;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .header-logo img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header-logo {
@@ -242,8 +257,7 @@ ul {
 .header-logo-text {
   font-family: "Osaka", sans-serif;
   color: #BA00A1;
-  font-size: 26rem;
-  margin-left: 24rem;
+  font-size: 28rem;
 }
 @media screen and (min-width: 1200px) {
   .header-logo-text {
@@ -255,6 +269,8 @@ ul {
 
 .header-logo-text-wrap {
   display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .header-sns-lineid {
@@ -290,12 +306,6 @@ ul {
 .header-sns-wrap {
   font-family: "Osaka", sans-serif;
 }
-@media screen and (max-width: 1199px) {
-  .header-sns-wrap {
-    display: none;
-  }
-}
-
 .header-sns-listwrap {
   display: flex;
   align-items: center;
@@ -756,8 +766,8 @@ ul {
   z-index: 3;
   position: relative;
   z-index: 20000;
-  width: 64px;
-  height: 40rem;
+  width: 100rem;
+  height: 100rem;
 }
 @media screen and (max-width: 1199px) {
   .toggle {
@@ -767,33 +777,16 @@ ul {
 
 .toggle span {
   display: block;
-  position: absolute;
-  width: 100%;
-  border-bottom: solid 1px #fff;
+  width: 100rem;
+  height: 100rem;
   transition: 0.35s ease-in-out;
-}
-
-.toggle span:nth-child(1) {
-  top: 4rem;
-}
-
-.toggle span:nth-child(2) {
-  top: 20rem;
-}
-
-.toggle span:nth-child(3) {
-  top: 36rem;
+  background: url(../images/toggle-1.png) no-repeat;
+  background-size: 100rem 100rem;
 }
 
 .toggle.active span:nth-child(1) {
-  transform: rotate(-45deg);
-  top: 10rem;
-}
-
-.toggle.active span:nth-child(2),
-.toggle.active span:nth-child(3) {
-  transform: rotate(45deg);
-  top: 10rem;
+  background: url(../images/toggle-2.png) no-repeat;
+  background-size: 100rem 100rem;
 }
 
 .global-nav {
@@ -1483,6 +1476,15 @@ ul {
   }
   .top-schedule-therapist-wrap .oil .item {
     padding: 3rem 0;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .slick-dots li.slick-active button:before {
+    font-size: 15rem;
   }
 }
 
