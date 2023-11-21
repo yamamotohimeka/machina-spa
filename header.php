@@ -99,7 +99,7 @@
                   </div>
                 </div>
 
-                <div class="header-logo-text-wrap">
+                <div class="header-logo-text-wrap sp">
                   <ul class="header-sns-listwrap">
                     <li class="header-sns-list"><a href="http://frogspa.livedoor.blog/" target="_blank"><img
                           src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
