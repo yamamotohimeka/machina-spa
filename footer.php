@@ -33,7 +33,7 @@
       <p class="gotop"><a href="#header"><img src="<?php echo get_template_directory_uri() ?>/images/gotop.png"
             alt="矢印"></a></p>
       <p class="footer-logo-hours">営業時間 12:00-27:00（受付時間 10:00〜25:30）</p>
-      <p class="footer-logo-tel"><span>TEL.</span>080-3832-1844</p>
+      <p class="footer-logo-tel"><span>TEL.</span>080-4395-1844</p>
       <ul class="footer-logo-snswrap">
         <li class="footer-logo-snslist"><a href="http://frogspa.livedoor.blog/" target="_blank"><img
               src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
@@ -214,13 +214,13 @@
 
 <ul class="footer-sp-listwrap">
   <li class="footer-sp-list">
-    <a href="tel:080-3832-1844">
+    <a href="tel:08043951844">
       <p class="footer-sp-list-img"><img src="<?php echo get_template_directory_uri() ?>/images/tel-icon.png"
           alt="電話アイコン"></p>
     </a>
   </li>
   <li class="footer-sp-list">
-    <a href="sms:080-3832-1844">
+    <a href="sms:08043951844">
       <p class="footer-sp-list-img footer-sp-list-img-sms"><img
           src="<?php echo get_template_directory_uri() ?>/images/sms-icon.png" alt="SMSアイコン"></p>
     </a>

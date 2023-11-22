@@ -163,7 +163,7 @@
 
               <div class="header-pc-shopinfo">
                 <p class="header-pc-shopinfo-time">営業時間 12:00-27:00（受付時間 10:00〜25:30）</p>
-                <p class="header-pc-shopinfo-tel">TEL.<span>080-3832-1844</span></p>
+                <p class="header-pc-shopinfo-tel">TEL.<span>080-4395-1844</span></p>
                 <p class="header-credit"><a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide="
                     target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/credit.png" alt=""></a>
                 </p>
