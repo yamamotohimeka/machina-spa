@@ -15,7 +15,8 @@
       </li>
       <li class="footer-spnav-list"><a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide="
           target="_blank">クレジットカード決済<span>CREDIT CARD</span></a></li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/recruit'); ?> ">求人情報<span>RECRUIT</span></a>
+      <li class="footer-spnav-list"><a href="https://recruit-machinaspa.com/"
+          target="_blank">求人情報<span>RECRUIT</span></a>
       </li>
       <li class="footer-spnav-list"><a href="<?php echo home_url('/access'); ?>">アクセス<span>ACCESS</span></a></li>
       <li class="footer-spnav-list"><a href="http://frogspa.livedoor.blog/" target="_blank">ブログ<span>BLOG</span></a>
@@ -43,7 +44,7 @@
               src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
               alt="twitterアイコン"><span>X</span></a></li>
         <?php endif; ?>
-        <li class="footer-logo-snslist"><a href="https://line.me/ti/p/71Sadk-PUI" target="_blank"><img
+        <li class="footer-logo-snslist"><a href="https://line.me/ti/p/71Sadk-PUI"><img
               src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
               alt="LINEアイコン"><span>LINE</span></a></li>
       </ul>
@@ -61,7 +62,7 @@
             target="_blank">クレジットカード決済</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
         <li class="footer-pc-nav-list"><a href="http://frogspa.livedoor.blog/" target="_blank">ブログ</a></li>
-        <li class="footer-pc-nav-list"><a href="<?php echo home_url('/recruit'); ?>">求人情報</a></li>
+        <li class="footer-pc-nav-list"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a></li>
       </ul>
       <div class="footer-nav-imgwrap">
         <p class="footer-nav-img">
@@ -226,7 +227,7 @@
     </a>
   </li>
   <li class="footer-sp-list">
-    <a href="https://line.me/ti/p/71Sadk-PUI" target="_blank">
+    <a href="https://line.me/ti/p/bu-oYYu4nf#~">
       <p class="footer-sp-list-img"><img src="<?php echo get_template_directory_uri() ?>/images/line-icon.png"
           alt="LINEアイコン"></p>
     </a>

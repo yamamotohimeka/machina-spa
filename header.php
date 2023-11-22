@@ -116,7 +116,7 @@
 
                   <p class="header-logo-text">南船場・堺筋本町</p>
                   <p class="header-sns-lineid"><a href="https://line.me/ti/p/71Sadk-PUI" target="_blank">LINE
-                      ID<span>frogspa</span></a></p>
+                      ID<span>machinaspa</span></a></p>
                 </div>
               </div>
 
