@@ -158,9 +158,140 @@ function create_post_type() {
     'menu_position' => 5,
     'rewrite' => true,
     )
-  );
+  ); 
+    register_post_type('diary', array(
+    'label' => '写メ日記',
+    'labels' => array(
+      'singular_name' => '写メ日記',
+      'menu_name' => '写メ日記',
+      'add_new_item' => '新規写メ日記を追加',
+      'add_new' => '写メ日記を追加',
+      'new_item' => '新規写メ日記',
+      'edit_item'=>'写メ日記を編集',
+      'view_item' => '写メ日記詳細を表示',
+      'not_found' => '写メ日記は見つかりませんでした',
+      'not_found_in_trash' => 'ゴミ箱に写メ日記はありません。',
+      'search_items' => '写メ日記を検索',
+    ),
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'query_var' => true,
+    'has_archive' => 'diary',
+    'rewrite'     => array( 'slug' => 'diary' ),
+    'hierarchical' => false,
+    'menu_position' => 6,
+  ));
 }
+
 add_action( 'init', 'create_post_type' );
+add_action( 'init', function() { 
+  remove_post_type_support( 'diary', 'editor' ); 
+	remove_post_type_support( 'diary', 'title' );   
+
+}, 99);
+
+//投稿画面のすぐに公開ボタンを非表示
+function hide_publishing_actions(){
+    $my_post_type = 'diary';//カスタム投稿タイプの場合ここに名前を指定する
+    global $post;
+    if($post->post_type == $my_post_type){
+        echo '
+                <style type="text/css">
+                    .misc-pub-curtime
+                    {
+                        display:none;//非表示にしたいアクションのidを指定する
+                    };
+                </style>
+            ';
+    }
+}
+add_action('admin_head-post.php', 'hide_publishing_actions');
+add_action('admin_head-post-new.php', 'hide_publishing_actions');
+
+
+//記事タイトルを公開日＋投稿者に設定
+add_action('save_post', 'change_diary_title', 10, 3);
+function change_diary_title($post_ID, $post, $update) {
+    if($post->post_type == 'diary' && $post->post_status == 'publish') {
+        $user_id = get_field('user', $post_ID); // Get the user ID from ACF field
+        if ($user_id) {
+            $user_info = get_userdata($user_id);
+            $display_name = $user_info->display_name;
+            $new_title = get_the_date('Y-m-d', $post_ID) . ' - ' . $display_name;
+
+            // Avoid infinite loops of save_post action
+            remove_action('save_post', 'change_diary_title');
+            wp_update_post(array(
+                'ID' => $post_ID,
+                'post_title' => $new_title
+            ));
+            add_action('save_post', 'change_diary_title', 10, 3);
+        }
+    }
+}
+
+//管理画面 投稿一覧の日時を日本のUTCで
+// カスタム投稿タイプ 'diary' の一覧ページに 'display_name' カラムを追加
+add_filter('manage_diary_posts_columns', 'add_display_name_column');
+function add_display_name_column($columns) {
+    $new_columns = array();
+
+    foreach ($columns as $key => $title) {
+        $new_columns[$key] = $title;
+        if ($key == 'title') {
+            $new_columns['display_name'] = '表示名'; // 新しいカラム 'display_name' を追加
+        }
+    }
+
+    return $new_columns;
+}
+
+// 'display_name' カラムにユーザーの表示名を表示
+add_action('manage_diary_posts_custom_column', 'show_acf_user_column', 10, 2);
+function show_acf_user_column($column_name, $post_id) {
+    if ($column_name == 'display_name') {
+        $user_id = get_field('user', $post_id); // ACFフィールド 'user' からユーザーIDを取得
+        if ($user_id) {
+            $user_info = get_userdata($user_id);
+            $display_name = $user_info->display_name;
+            if ($display_name) {
+                echo esc_html($display_name);
+            }
+        }
+    }
+}
+
+// 'display_name' カラムでソート可能にする
+add_filter('manage_edit-diary_sortable_columns', 'custom_diary_sortable_columns');
+function custom_diary_sortable_columns($columns) {
+    $columns['display_name'] = 'display_name'; // カラム名を指定
+    $columns['diary_date_japan'] = 'diary_date_japan'; // カラム名を指定
+    return $columns;
+}
+
+// カスタム投稿タイプ 'diary' の一覧ページのカラムを変更
+function custom_diary_columns($columns) {
+    // 既存の日付列を削除
+    unset($columns['date']);
+
+    // 新しいカラム 'diary_date_japan' を追加
+    $columns['diary_date_japan'] = '日付';
+
+    return $columns;
+}
+add_filter('manage_edit-diary_columns', 'custom_diary_columns');
+
+// カラムの内容を表示
+function custom_diary_column_content($column, $post_id) {
+    if ($column === 'diary_date_japan') {
+        // ACFフィールド 'diary_date_japan' の値を取得して表示
+        echo esc_html(get_field('diary_date_japan', $post_id));
+    }
+}
+add_action('manage_diary_posts_custom_column', 'custom_diary_column_content', 10, 2);
+
 
 
 
@@ -215,3 +346,166 @@ add_action('wp_footer', function() {
   wp_enqueue_script( 'lazeload_twitter', get_stylesheet_directory_uri() .'/js/lazyload-twitter.js', [], 'v1.0.0' );
 
 }, 11);
+
+
+//記事内の最初の画像を取得
+function catch_that_image() {
+    global $post;
+    $first_img = '';
+
+    // ACFで設定された画像のURLを取得
+    $image = get_field('image_1', $post->ID);
+
+    if ($image) {
+        $first_img = $image;
+    } else {
+        // デフォルトの画像を指定
+        $first_img = "https://frog-spa.com/wp-content/themes/frogspa/images/noimage.jpg";
+    }
+
+    return $first_img;
+}
+
+
+
+
+// 投稿のアーカイブページを作成する
+function post_has_archive($args, $post_type)
+{
+    if ('post' == $post_type) {
+        $args['rewrite'] = true; // リライトを有効にする
+        $args['has_archive'] = 'diary'; // 任意のスラッグ名
+    }
+    return $args;
+}
+add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+//archiveページについて
+function custom_pre_get_posts($query) {
+  if(is_admin() || !$query->is_main_query()) {
+    return;
+  }
+  if($query->is_author()) {
+    $query->set('post_type', array('post', 'diary'));
+  }
+}
+add_action('pre_get_posts', 'custom_pre_get_posts');
+
+
+
+
+
+//diaryの記事スラッグ変更
+function auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
+    if ( preg_match( '/(%[0-9a-f]{2})+/', $slug ) ) {
+        $slug = utf8_uri_encode( $post_type ) . '-' . $post_ID;
+    }
+    return $slug;
+}
+add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4  );
+
+
+
+function custom_disable_redirect_canonical($redirect_url)
+{
+    if (is_author()) {
+        return false;
+    }
+    return $redirect_url;
+}
+
+add_filter('redirect_canonical', 'custom_disable_redirect_canonical');
+
+
+
+
+
+
+function fix_author_paged_query($query) {
+    if ($query->is_main_query() && is_author() && is_archive()) {
+        if (get_query_var('paged')) {
+            $query->set('post_type', 'diary');
+            $query->set('meta_query', array(
+                array(
+                    'key'   => 'user',
+                    'value' => get_query_var('author'),
+                ),
+            ));
+        }
+    }
+}
+add_action('pre_get_posts', 'fix_author_paged_query');
+
+// ページネーションのリンク修正
+function custom_pagination_links($args) {
+    $user_id = get_query_var('author');
+    $args['base'] = add_query_arg(array('author' => $user_id, 'paged' => '%#%'), home_url('/diary/'));
+    return $args;
+}
+add_filter('paginate_links', 'custom_pagination_links');
+
+// 投稿者別アーカイブページ作成
+function author_search_filter($query) {
+    if (is_author() && $query->is_main_query()) {
+        $user_id = get_query_var('author');
+        $query->set('post_type', array('diary'));
+        $query->set('meta_query', array(
+            array(
+                'key'   => 'user',
+                'value' => $user_id,
+            ),
+        ));
+    }
+}
+add_action('pre_get_posts', 'author_search_filter');
+
+
+function custom_diary_template($template) {
+    // 特定の条件を満たす場合
+    if (isset($_GET['author']) && is_numeric($_GET['author'])) {
+        // 'archive-author.php' テンプレートファイルが存在するか確認
+        $new_template = locate_template(array('archive-author.php'));
+
+        // 'archive-author.php' が存在する場合、そのテンプレートを使用
+        if (!empty($new_template)) {
+            return $new_template;
+        }
+    }
+
+    // 元のテンプレートを使用
+    return $template;
+}
+add_filter('template_include', 'custom_diary_template');
+
+
+//記事のUTCを日本に設定
+function enqueue_custom_admin_scripts() {
+    global $post_type;
+
+    // "diary" カスタム投稿タイプの場合にのみスクリプトを読み込む
+    if ('diary' === $post_type) {
+        wp_enqueue_script('custom-diary-timezone', get_template_directory_uri() . '/js/custom-diary-timezone.js', array('jquery'), null, true);
+    }
+}
+add_action('admin_enqueue_scripts', 'enqueue_custom_admin_scripts');
+
+
+//?cid= のパラメーターがある場合リアルタイム情報が出る
+function custom_rewrite_rule() {
+    add_rewrite_rule(
+        '^frog-spa/author/([^/]+)/?$',
+        'index.php?pagename=frog-spa&cid=$matches[1]',
+        'top'
+    );
+}
+add_action('init', 'custom_rewrite_rule');
+
+//?cid= のパラメーターを削除してサイトを表示
+function remove_query_string_redirect() {
+    if (is_author() && isset($_GET['cid'])) {
+        $author_url = get_author_posts_url(get_queried_object_id());
+        wp_redirect(remove_query_arg('cid', $author_url), 301);
+        exit();
+    }
+}
+add_action('template_redirect', 'remove_query_string_redirect');

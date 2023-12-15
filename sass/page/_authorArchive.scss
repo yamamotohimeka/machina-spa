@@ -1,0 +1,48 @@
+.authorArchive {
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+
+  @include sp {
+    padding-bottom: 80rem;
+  }
+
+  a {
+    color: #fff;
+  }
+  &__wrap {
+    width: 1200px;
+    margin: 0 auto 40px;
+    border: solid $Pink 1px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include sp {
+      width: 100%;
+    }
+  }
+  .diary__wrap {
+    width: 100%;
+
+    @include sp {
+      border: solid $Pink 1px;
+    }
+    .slider {
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+  .slick-dots li.slick-active button:before {
+    color: $Pink;
+    font-size: 14px;
+  }
+  .slick-dots li button:before {
+    color: $Pink;
+    font-size: 14px;
+  }
+  .slick-dots > li:first-child:last-child {
+    display: none;
+  }
+}

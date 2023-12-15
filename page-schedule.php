@@ -59,7 +59,7 @@
                       print('<p class="therapist-list-newDate newDate">'. $date->format('m月d日') .'入店</p>');
                     }
                     if($user_id){
-                      print('<p class="therapist-list-image">'.'<a href="'.home_url().'?author='.$val->staff_id.'" class="expand-link">'.get_avatar($val->staff_id, 420).'</a>'.'</p>');
+                      print('<p class="therapist-list-image">'.'<a href="'.get_author_posts_url($user_id).$c_id.'" class="expand-link">'.get_avatar($val->staff_id, 420).'</a>'.'</p>');
                       print('<p class="therapist-list-name">'.get_the_author_meta('display_name', $val->staff_id).'<span class="age">（'.get_the_author_meta('fage', $val->staff_id).'）</span></p>');
                       print('<p class="therapist-list-tall">'.'身長：'.get_the_author_meta('tall', $val->staff_id).' cm'.'</p>');
                       print('<p class="therapist-list-worktime">');

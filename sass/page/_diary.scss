@@ -1,0 +1,90 @@
+.diary {
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+
+  @include sp {
+    padding-bottom: 15%;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &__wrap {
+    width: 1200px;
+    margin: 0 auto 40px;
+    border: solid $Pink 1px;
+    padding: 1%;
+    display: flex;
+    gap: 40px;
+    @include sp {
+      width: 100%;
+      border: none;
+      flex-direction: column-reverse;
+      padding: 4%;
+    }
+  }
+
+  &__img {
+    width: 350px;
+  }
+
+  .slider {
+    padding: 0px 0 50px 0;
+    @include sp {
+      width: 100%;
+      padding: 0;
+    }
+    .slick-dots li button:before {
+      color: $Pink;
+      font-size: 14px;
+    }
+    .slick-dots > li:first-child:last-child {
+      display: none;
+    }
+    img {
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+
+  &__right {
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid $Pink;
+    padding-bottom: 5px;
+  }
+
+  &__text {
+    padding-top: 20px;
+    line-height: 1.5;
+  }
+
+  &__archive {
+    width: 1200px;
+    margin: 20px auto 0;
+    border: solid $Pink 1px;
+    padding: 0.5%;
+    background-color: $Pink;
+    text-align: center;
+
+    @include sp {
+      width: 100%;
+      padding: 2%;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      cursor: default;
+      display: block;
+    }
+  }
+}

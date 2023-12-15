@@ -49,25 +49,88 @@
 <main class="main">
   <div class="main-inner">
     <div class="top-therapists-bg">
+      <section class="top__diary">
+        <h3>写メ日記</h3>
+        <div class="archive__post-wrap">
+          <?php
+          $args = array(
+            'post_type' => 'diary', // カスタム投稿タイプのスラッグを指定してください
+            'posts_per_page' => 10, // 表示する投稿の数を指定してください。-1を指定するとすべての投稿が表示されます
+          );
+
+          $custom_query = new WP_Query($args);
+
+          if ($custom_query->have_posts()) {
+            while ($custom_query->have_posts()) {
+              $custom_query->the_post();
+              ?>
+          <div class="archive__post">
+            <div class="archive__post-img-wrap">
+              <div class="archive__post-img">
+                <a href="<?php the_permalink(); ?>">
+                  <img src="<?php echo catch_that_image(); ?>" />
+                  <div class="archive__post-content">
+                    <?php
+                          $text = get_field('text');
+                          $short_text = mb_substr($text, 0, 30);
+                          $short_text = strip_tags($short_text);
+                          echo $short_text;
+                          ?>...
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="archive__post-author">
+              <?php
+                    $user = get_field('user', $user_id);
+                    $user_object = get_userdata($user);
+                    $user_name = $user_object->display_name;
+                    $user_link = get_author_posts_url($user);
+                    echo '<a href="'.$user_link.'">' . $user_name . '</a>'; ?>
+            </div>
+
+            <time class="archive__time" datetime="<?php echo esc_attr(get_field('diary_date_japan', get_the_ID())); ?>">
+              <?php echo esc_html(get_field('diary_date_japan', get_the_ID())); ?>
+            </time>
+          </div>
+          <?php
+            }
+          }
+
+            wp_reset_postdata();?>
+
+        </div>
+        <div class="top__diary-more">
+          <a href="<?php echo home_url('/diary'); ?>">もっと見る</a>
+        </div>
+      </section>
+
+
       <div class="therapists-container top-therapists-container">
         <section class="therapists-wrap">
           <h2 class="therapists-title">本日出勤のセラピスト</h2>
-          <?php $day = current_time('Y-m-d'); ?>
+          <?php $currentDatetime = current_datetime(); ?>
+          <?php $day = $currentDatetime->format('Y-m-d'); ?>
           <div class="schedule-therapists-wrap  top-schedule-therapist-wrap">
             <div class="box">
               <ul class="therapist-list-wrap">
-                <?php
+                <?php     
                 if($rows) {
                 $count = 0;
                 $image = get_field('prof-img1');
-
+                
                 foreach($rows as $val) {
                   if($val->date === $day ) {
                     $count += 1;
                     $user_id = get_the_author_meta('ID', $val->staff_id);
                     $newfaceDate = get_the_author_meta('newface_date', $val->staff_id);
                     $date = DateTime::createFromFormat('Ymd', $newfaceDate);
-                
+                    $user_link = get_author_posts_url($user_id);
+                    $user_name = get_the_author_meta('nicename', $val->staff_id);
+                    $c_id = "?cid=".$user_id;
+                    $option_fee = get_the_author_meta('option_fee', $val->staff_id);
+
+                    
                     if($user_id) {  // ユーザーIDが存在する場合のみ<li>ブロックを出力
                       print('<li class="therapist-list">');
                       print('<p class="therapist-list-realtime"></p>');
@@ -76,7 +139,7 @@
                       print('<p class="therapist-list-newDate newDate">'. $date->format('m月d日') .'入店</p>');
                     }
                     if($user_id){
-                      print('<p class="therapist-list-image">'.'<a href="'.home_url().'?author='.$val->staff_id.'" class="expand-link">'.get_avatar($val->staff_id, 420).'</a>'.'</p>');
+                      print('<p class="therapist-list-image">'.'<a href="'.get_author_posts_url($user_id).$c_id.'" class="expand-link">'.get_avatar($val->staff_id, 420).'</a>'.'</p>');
                       print('<p class="therapist-list-name">'.get_the_author_meta('display_name', $val->staff_id).'<span class="age">（'.get_the_author_meta('fage', $val->staff_id).'）</span></p>');
                       print('<p class="therapist-list-tall">'.'身長：'.get_the_author_meta('tall', $val->staff_id).' cm'.'</p>');
                       print('<p class="therapist-list-worktime">');
@@ -85,7 +148,8 @@
                       }
                       print( preg_replace('/([0-9]{2})\:([0-9]{2})\:(00)/','$1:$2', $val->starttime).'～'.preg_replace('/([0-9]{2})\:([0-9]{2})\:(00)/','$1:$2', $val->endtime).'</p>');
                       print('<div class="page-schedule-staff-prof-content">');
-                      print('<p class="therapist-list-option">');
+                    }
+                    if($option_fee && $user_id) {
                       $status = get_the_author_meta('option_fee', $val->staff_id);
                       if($status == 'BRONZE'){ //値（Value）が「landscape」だったら
                       print('<img src="'.get_template_directory_uri().'/images/bronze.jpg" alt="bronze"></span></a></p>');
@@ -93,14 +157,15 @@
                       print('<img src="'.get_template_directory_uri().'/images/silver.jpg" alt="silver"></span></a></p>');
                       }elseif( $status == 'GOLD'){
                       print('<img src="'.get_template_directory_uri().'/images/gold.jpg" alt="gold"></span></a></p>');
-                      }
-                      echo '</p>';
+                      }                    }
+                    if($user_id){
                       print('</div></li>');
+                    }
                       } elseif($val == end($rows) && $count == 0) {
                       print('<li class="panel-nostaff">現在出勤情報はございません。</li>');
-                  }
+                  }    
                 }
-              }  }
+              }  
               ?>
               </ul>
             </div>
@@ -109,22 +174,13 @@
                 <img src="<?php echo get_template_directory_uri() ?>/images/arrow-right.png" alt="矢印"></span></a></p>
         </section>
 
-        <section class="twitter">
-          <h2 class="twitter-title"><img src="<?php echo get_template_directory_uri() ?>/images/twitter.png"
-              alt="twitterアイコン"></h2>
-          <div class="twitter-inner">
-            <?php if($user_twitter) : ?>
-            <div class="twitter-wrap">
-              <a class="twitter-timeline" data-lang="ja" data-height="666"
-                href="https://twitter.com/<?php echo $user_twitter; ?>?ref_src=twsrc%5Etfw">Tweets by
-                frogspa184</a>
-            </div>
-            <p class="twitter-link"><a href="https://twitter.com/<?php echo $user_twitter; ?>"
-                target="_blank">Xで表示<span>
-                  <img src="<?php echo get_template_directory_uri() ?>/images/arrow-right.png" alt="矢印"></span></a></p>
-            <?php endif;?>
-          </div>
-        </section>
+
+
+
+
+
+
+
       </div>
     </div>
     <div class="about-bg">

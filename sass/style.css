@@ -179,6 +179,10 @@ ul {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
 .header {
   padding: 20rem 0;
   background: #000;
@@ -192,7 +196,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .header-innerwrap {
-    border-bottom: solid #BA00A1 1px;
+    border-bottom: solid #ba00a1 1px;
     transform: translateY(1px);
     padding-bottom: 30px;
   }
@@ -256,7 +260,7 @@ ul {
 }
 .header-logo-text {
   font-family: "Osaka", sans-serif;
-  color: #BA00A1;
+  color: #ba00a1;
   font-size: 28rem;
 }
 @media screen and (min-width: 1200px) {
@@ -274,7 +278,7 @@ ul {
 }
 
 .header-sns-lineid {
-  background: #BA00A1;
+  background: #ba00a1;
   border-radius: 4px;
   font-size: 16px;
   display: flex;
@@ -334,7 +338,7 @@ ul {
 
 .header-pc-shopinfo {
   font-family: "Osaka", sans-serif;
-  color: #BA00A1;
+  color: #ba00a1;
 }
 @media screen and (max-width: 1199px) {
   .header-pc-shopinfo {
@@ -359,7 +363,7 @@ ul {
   font-size: 24rem;
   font-family: "Osaka", sans-serif;
   text-align: center;
-  background: #BA00A1;
+  background: #ba00a1;
   padding: 10rem 0;
 }
 @media screen and (min-width: 1200px) {
@@ -524,7 +528,7 @@ ul {
   width: 48%;
   font-family: "Osaka", sans-serif;
   font-size: 20rem;
-  border: solid #BA00A1 1px;
+  border: solid #ba00a1 1px;
   padding: 16rem 0;
   font-size: 21rem;
 }
@@ -547,7 +551,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   padding: 66rem 0 33rem;
-  color: #BA00A1;
+  color: #ba00a1;
   font-family: "Osaka", sans-serif;
 }
 @media screen and (min-width: 1200px) {
@@ -672,7 +676,7 @@ ul {
 .footer-sp-list {
   display: block;
   width: 33%;
-  background: #BA00A1;
+  background: #ba00a1;
 }
 .footer-sp-list a {
   display: block;
@@ -746,7 +750,7 @@ ul {
   font-size: 12px;
   color: #fff;
   text-align: right;
-  background: #BA00A1;
+  background: #ba00a1;
   padding: 8px;
 }
 @media screen and (max-width: 1199px) {
@@ -829,7 +833,7 @@ ul {
 .global-nav .nav-li {
   width: 100%;
   list-style-type: none;
-  border-bottom: 1px solid #BA00A1;
+  border-bottom: 1px solid #ba00a1;
   font-size: 23rem;
   text-align: center;
 }
@@ -916,7 +920,7 @@ ul {
 }
 
 .mainvisual-menu-list:last-of-type {
-  background: #BA00A1;
+  background: #ba00a1;
 }
 
 .main-inner {
@@ -969,7 +973,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .therapists-wrap {
-    width: 71%;
+    width: 100%;
     padding-bottom: 0;
   }
 }
@@ -993,7 +997,7 @@ ul {
   .therapists-title {
     font-size: 21px;
     color: #fff;
-    background: #BA00A1;
+    background: #ba00a1;
     padding: 8px 0;
     margin-bottom: 50px;
   }
@@ -1023,15 +1027,21 @@ ul {
     gap: 60rem 0;
   }
 }
+.therapist-list-wrap:before {
+  content: "";
+  display: block;
+  width: 24.3%;
+  order: 1;
+}
 .therapist-list-wrap:after {
   content: "";
   display: block;
-  width: 30%;
+  width: 24.3%;
 }
 
 .therapist-list {
   width: 48.5%;
-  border: #BA00A1 solid 1px;
+  border: #ba00a1 solid 1px;
   font-family: fot-matisse-pron, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1046,7 +1056,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .therapist-list {
-    width: 32.3%;
+    width: 24.3%;
     padding-top: 16px;
     margin-bottom: 20px;
   }
@@ -1322,10 +1332,10 @@ ul {
 }
 .about-title {
   font-size: 41rem;
-  border-bottom: #BA00A1 solid 1px;
+  border-bottom: #ba00a1 solid 1px;
   display: inline-block;
   padding: 0 20rem;
-  color: #BA00A1;
+  color: #ba00a1;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
@@ -1402,7 +1412,7 @@ ul {
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
-  color: #BA00A1;
+  color: #ba00a1;
   margin-bottom: 25rem;
   display: flex;
   align-items: center;
@@ -1488,6 +1498,126 @@ ul {
   }
 }
 
+.top__diary {
+  padding: 40px 0 100px;
+  width: 100%;
+  color: #fff;
+}
+.top__diary a {
+  color: #fff;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    padding: 40px 0 0;
+  }
+}
+.top__diary h3 {
+  margin-bottom: 20px;
+  padding: 8px 0;
+  font-size: 21px;
+  text-align: center;
+  background: #ba00a1;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary h3 {
+    font-size: 28rem;
+    font-family: "Osaka", sans-serif;
+    text-align: center;
+    color: #fff;
+    background: #1e1e1e;
+    padding: 32rem 0;
+    margin-bottom: 24rem;
+  }
+}
+.top__diary-more {
+  margin: 80px 0 10px auto;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #ba00a1;
+  border-radius: 5%;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary-more {
+    margin: 5% 2% 15% auto;
+  }
+}
+.top__diary .archive__post {
+  width: 19%;
+  gap: 10px 0;
+  font-size: 13px;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary .archive__post {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300rem;
+  }
+}
+.top__diary .archive__post-wrap {
+  width: 100%;
+  gap: 20px 0;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary .archive__post-wrap {
+    overflow-x: scroll;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 560rem;
+    gap: 10px;
+  }
+}
+.top__diary .archive__post-img {
+  height: 300px;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary .archive__post-img {
+    height: 400rem;
+    width: 300rem;
+  }
+}
+.top__diary .archive__post-img-wrap {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary .archive__post-img-wrap {
+    height: 400rem;
+  }
+}
+.top__diary .archive__post-img img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1199px) {
+  .top__diary .archive__post-img img {
+    height: 400rem;
+  }
+}
+.top__diary .archive__post-author {
+  font-weight: bold;
+}
+.top__diary .archive__post-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1199px) {
+  .top__diary .archive__post-content {
+    width: 100%;
+  }
+}
+
 .page-title {
   width: 100%;
   background: #1e1e1e;
@@ -1507,7 +1637,7 @@ ul {
   .page-title {
     font-size: 21px;
     font-family: "Osaka", sans-serif;
-    background: #BA00A1;
+    background: #ba00a1;
     text-align: center;
     padding: 8px 0;
     font-weight: 400;
@@ -1543,7 +1673,7 @@ ul {
   .therapists-listwrap {
     padding: 40px 24px 80px;
     justify-content: space-between;
-    border: solid #BA00A1 1px;
+    border: solid #ba00a1 1px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1553,7 +1683,7 @@ ul {
 }
 
 .therapist-page-list {
-  border: solid #BA00A1 1px;
+  border: solid #ba00a1 1px;
   width: 48%;
   position: relative;
   margin-bottom: 24px;
@@ -1570,7 +1700,7 @@ ul {
     flex-wrap: wrap;
     padding: 16px 10px;
     justify-content: space-around;
-    border: solid 1px #BA00A1;
+    border: solid 1px #ba00a1;
   }
 }
 
@@ -1725,7 +1855,7 @@ ul {
     display: inline-block;
     font-size: 15px;
     line-height: 1.8;
-    border-top: solid 2px #BA00A1;
+    border-top: solid 2px #ba00a1;
     padding: 16px 14px 0;
     text-align: left;
   }
@@ -2123,7 +2253,7 @@ ul {
   font-size: 16px;
   font-family: "Osaka", sans-serif;
   color: #fff;
-  background: #00a400;
+  background: #ba00a1;
   justify-content: center;
   align-content: center;
   padding: 4px 8px;
@@ -2155,7 +2285,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .page-schedule-border {
-    border: solid 1px #BA00A1;
+    border: solid 1px #ba00a1;
   }
 }
 .page-schedule .date-tab {
@@ -2174,7 +2304,7 @@ ul {
   position: relative;
   width: 14%;
   font-size: 21rem;
-  background-color: #BA00A1;
+  background-color: #ba00a1;
   padding: 16rem;
   color: #fff;
   text-align: center;
@@ -2196,7 +2326,7 @@ ul {
   }
 }
 .page-schedule-title-day {
-  border-bottom: 2px solid #BA00A1;
+  border-bottom: 2px solid #ba00a1;
   margin-bottom: 40rem;
   padding-bottom: 16rem;
   color: #fff;
@@ -2308,6 +2438,90 @@ ul {
 .author-newDate::before {
   top: 7px;
 }
+.author-diary {
+  margin-bottom: 72rem;
+  float: right;
+  width: 528px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  .author-diary {
+    width: 88.8%;
+    float: none;
+    margin: 0 auto;
+  }
+}
+.author-diary a,
+.author-diary a:visited {
+  color: inherit;
+  display: block;
+}
+.author-diary h2 {
+  padding: 12px 0;
+  width: 528px;
+  color: #fff;
+  font-size: 21px;
+  background: #ba00a1;
+  text-align: center;
+  float: left;
+}
+@media screen and (max-width: 1199px) {
+  .author-diary h2 {
+    width: 100%;
+    float: none;
+  }
+}
+.author-diary-inner {
+  border-bottom: 1px solid #ba00a1;
+  padding-top: 6%;
+}
+.author-diary-inner:last-child {
+  border: none;
+}
+.author-diary__text {
+  padding-bottom: 6%;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.author-diary time {
+  display: block;
+  padding: 1% 0 3%;
+  text-align: center;
+}
+.author-diary-wrap {
+  border: 1px solid #ba00a1;
+  padding: 2% 15%;
+  overflow-x: hidden;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1199px) {
+  .author-diary-wrap {
+    width: 100%;
+  }
+}
+.author-diary-wrap .slider {
+  padding: 0px 0 3% 0;
+}
+.author-diary-wrap .slider .slick-dots li button:before {
+  color: #ba00a1;
+  font-size: 14px;
+}
+.author-diary-wrap .slider .slick-dots > li:first-child:last-child {
+  display: none;
+}
+.author-diary__img {
+  margin: 0 auto;
+}
+.author-diary__archive {
+  width: 100%;
+  background-color: #ba00a1;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  margin: 30px 0 80px;
+}
 
 .author .new:before {
   width: 210rem;
@@ -2346,7 +2560,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .author-wrapper {
-    border: solid 1px #BA00A1;
+    border: solid 1px #ba00a1;
     padding: 40px 56px;
   }
   .author-wrapper:after {
@@ -2364,7 +2578,7 @@ ul {
 
 .author-img-wrap {
   padding: 32rem;
-  border: #BA00A1 solid 1px;
+  border: #ba00a1 solid 1px;
   width: 88.8%;
   margin: 0 auto;
   position: relative;
@@ -2415,7 +2629,7 @@ ul {
   .author-title-sp {
     display: block;
     font-size: 21px;
-    background: #BA00A1;
+    background: #ba00a1;
     padding: 8px 0 8px 16px;
   }
 }
@@ -2425,8 +2639,8 @@ ul {
   font-weight: 500;
   font-style: normal;
   display: flex;
-  align-items: center;
-  border-bottom: solid 1px #BA00A1;
+  align-items: flex-end;
+  border-bottom: solid 1px #ba00a1;
   padding-top: 16rem;
   padding-bottom: 8rem;
   margin-bottom: 16rem;
@@ -2449,13 +2663,15 @@ ul {
 
 .author-name {
   margin-bottom: 8rem;
+  padding-right: 1em;
 }
 
 .author-option {
   font-size: 34rem;
-  background: #BA00A1;
+  background: #ba00a1;
   padding: 4rem 16rem;
   text-align: center;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .author-option {
@@ -2498,7 +2714,7 @@ ul {
 
 .author-schedule-title {
   color: #fff;
-  background: #BA00A1;
+  background: #ba00a1;
   padding: 8rem 0;
   text-align: center;
 }
@@ -2521,7 +2737,7 @@ ul {
 .attend-list {
   display: flex;
   align-items: center;
-  border-bottom: #BA00A1 solid 1px;
+  border-bottom: #ba00a1 solid 1px;
 }
 
 .cell-date {
@@ -2549,16 +2765,6 @@ ul {
 }
 .cell-hour .shop {
   margin-left: 1em;
-}
-
-.author-twitter {
-  margin-bottom: 72rem;
-}
-@media screen and (min-width: 1200px) {
-  .author-twitter {
-    float: right;
-    width: 528px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -2691,7 +2897,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .access-inner {
-    border: 1px solid #BA00A1;
+    border: 1px solid #ba00a1;
     padding-bottom: 40px;
   }
 }
@@ -2706,7 +2912,7 @@ ul {
 .access-info-text {
   margin-bottom: 16rem;
   font-size: 18rem;
-  color: #BA00A1;
+  color: #ba00a1;
 }
 @media screen and (min-width: 1200px) {
   .access-info-text {
@@ -2756,12 +2962,12 @@ ul {
   margin-left: auto;
 }
 .system .inner {
-  border: 1px solid #BA00A1;
+  border: 1px solid #ba00a1;
   padding: 80px 124px 128px;
   padding-left: 124px;
   padding-right: 124px;
   padding-top: 80px;
-  color: #BA00A1;
+  color: #ba00a1;
 }
 @media screen and (max-width: 1199px) {
   .system .inner {
@@ -2771,7 +2977,7 @@ ul {
 }
 .system .section-title {
   padding: 8px 0;
-  background-color: #BA00A1;
+  background-color: #ba00a1;
   color: #fff;
   font-family: "Osaka", sans-serif;
   font-size: 24px;
@@ -2795,14 +3001,14 @@ ul {
   content: "";
   width: 70px;
   height: 1px;
-  background-color: #BA00A1;
+  background-color: #ba00a1;
   margin-right: 54px;
 }
 .system .about-reserve .title::after {
   content: "";
   width: 70px;
   height: 1px;
-  background-color: #BA00A1;
+  background-color: #ba00a1;
   margin-left: 54px;
 }
 .system .about-reserve .list {
@@ -2852,7 +3058,7 @@ ul {
   max-width: 408px;
   margin: 0 auto 48px;
   line-height: 54px;
-  background-color: #BA00A1;
+  background-color: #ba00a1;
   font-size: 25px;
   color: #fff;
   text-align: center;
@@ -2869,7 +3075,7 @@ ul {
   font-size: 55px;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
-  border-bottom: 1px solid #BA00A1;
+  border-bottom: 1px solid #ba00a1;
   margin-bottom: 48px;
 }
 .system .course .place-list .item:last-child {
@@ -2888,7 +3094,7 @@ ul {
 .system .course .extend {
   display: flex;
   justify-content: center;
-  border: 1px solid #BA00A1;
+  border: 1px solid #ba00a1;
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
@@ -2920,7 +3126,7 @@ ul {
   display: flex;
   width: 33%;
   gap: 22px;
-  border: 1px solid #BA00A1;
+  border: 1px solid #ba00a1;
 }
 @media screen and (max-width: 1199px) {
   .system .course .nominate-inner {
@@ -2929,7 +3135,7 @@ ul {
   }
 }
 .system .course .nominate-rank {
-  background-color: #BA00A1;
+  background-color: #ba00a1;
   color: #fff;
   width: 50%;
   text-align: center;
@@ -3043,12 +3249,12 @@ ul {
   margin-left: auto;
 }
 .ranking .inner {
-  border: 1px solid #BA00A1;
+  border: 1px solid #ba00a1;
   padding: 80px 124px 128px;
   padding-left: 124px;
   padding-right: 124px;
   padding-top: 80px;
-  color: #BA00A1;
+  color: #ba00a1;
 }
 @media screen and (max-width: 1199px) {
   .ranking .inner {
@@ -3058,7 +3264,7 @@ ul {
 }
 .ranking .section-title {
   padding: 8px 0;
-  background-color: #BA00A1;
+  background-color: #ba00a1;
   color: #fff;
   font-family: "Osaka", sans-serif;
   font-size: 24px;
@@ -3100,7 +3306,7 @@ ul {
 .ranking .therapist-ranking {
   margin-top: 112px;
   padding: 34px 20px;
-  border: 1px solid #BA00A1;
+  border: 1px solid #ba00a1;
   height: 160px;
   position: relative;
 }
@@ -3124,7 +3330,7 @@ ul {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 14px solid #BA00A1;
+  border-top: 14px solid #ba00a1;
   border-right: 14px solid transparent;
 }
 .ranking .therapist-ranking::after {
@@ -3134,7 +3340,7 @@ ul {
   right: 0;
   width: 0;
   height: 0;
-  border-bottom: 14px solid #BA00A1;
+  border-bottom: 14px solid #ba00a1;
   border-left: 14px solid transparent;
 }
 .ranking .therapist-ranking img {
@@ -3164,7 +3370,7 @@ ul {
   margin-top: 0;
   padding: 0px;
   border: none;
-  border-bottom: 1px solid #BA00A1;
+  border-bottom: 1px solid #ba00a1;
   height: auto;
 }
 .ranking .therapist-ranking-top img {
@@ -3239,7 +3445,7 @@ ul {
   color: #fff;
   font-size: 15px;
   line-height: 1.8;
-  border: solid 1px #BA00A1;
+  border: solid 1px #ba00a1;
   padding: 16px 14px;
   text-align: left;
 }
@@ -3277,7 +3483,7 @@ ul {
 }
 .ranking-worktime {
   padding: 10px;
-  border: 1px solid #BA00A1;
+  border: 1px solid #ba00a1;
   font-size: 16px;
   color: #fff;
   width: 100%;
@@ -3301,12 +3507,12 @@ ul {
   margin-left: auto;
 }
 .newface .inner {
-  border: 1px solid #00a400;
+  border: 1px solid #ba00a1;
   padding: 80px 124px 128px;
   padding-left: 124px;
   padding-right: 124px;
   padding-top: 80px;
-  color: #00a400;
+  color: #ba00a1;
 }
 @media screen and (max-width: 1199px) {
   .newface .inner {
@@ -3316,7 +3522,7 @@ ul {
 }
 .newface .section-title {
   padding: 8px 0;
-  background-color: #00a400;
+  background-color: #ba00a1;
   color: #fff;
   font-family: "Osaka", sans-serif;
   font-size: 24px;
@@ -3392,7 +3598,7 @@ ul {
 .attmgr_admin_scheduler tr:first-child th {
   position: sticky;
   top: 0;
-  background-color: #00a400;
+  background-color: #ba00a1;
   color: #fff;
   z-index: 100000;
   padding: 2.4rem 0;
@@ -3404,11 +3610,13 @@ ul {
   }
 }
 
-form#attmgr_admin_scheduler table.attmgr_admin_scheduler th, form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
+form#attmgr_admin_scheduler table.attmgr_admin_scheduler th,
+form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
   padding: 16rem;
 }
 @media screen and (min-width: 1200px) {
-  form#attmgr_admin_scheduler table.attmgr_admin_scheduler th, form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
+  form#attmgr_admin_scheduler table.attmgr_admin_scheduler th,
+  form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
     padding: 8px;
   }
 }
@@ -3583,4 +3791,291 @@ form#attmgr_admin_scheduler table.attmgr_admin_scheduler th, form#attmgr_admin_s
   .oil-variety .oil2 .description br {
     display: none;
   }
+}
+
+.diary {
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+}
+@media screen and (max-width: 1199px) {
+  .diary {
+    padding-bottom: 15%;
+  }
+}
+.diary a {
+  color: #fff;
+}
+.diary__wrap {
+  width: 1200px;
+  margin: 0 auto 40px;
+  border: solid #ba00a1 1px;
+  padding: 1%;
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .diary__wrap {
+    width: 100%;
+    border: none;
+    flex-direction: column-reverse;
+    padding: 4%;
+  }
+}
+.diary__img {
+  width: 350px;
+}
+.diary .slider {
+  padding: 0px 0 50px 0;
+}
+@media screen and (max-width: 1199px) {
+  .diary .slider {
+    width: 100%;
+    padding: 0;
+  }
+}
+.diary .slider .slick-dots li button:before {
+  color: #ba00a1;
+  font-size: 14px;
+}
+.diary .slider .slick-dots > li:first-child:last-child {
+  display: none;
+}
+@media screen and (max-width: 1199px) {
+  .diary .slider img {
+    width: 100%;
+  }
+}
+.diary__right {
+  width: 100%;
+}
+.diary__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid #ba00a1;
+  padding-bottom: 5px;
+}
+.diary__text {
+  padding-top: 20px;
+  line-height: 1.5;
+}
+.diary__archive {
+  width: 1200px;
+  margin: 20px auto 0;
+  border: solid #ba00a1 1px;
+  padding: 0.5%;
+  background-color: #ba00a1;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .diary__archive {
+    width: 100%;
+    padding: 2%;
+  }
+}
+.diary__archive a {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+  display: block;
+}
+
+.archive {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 200px;
+}
+.archive a {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+  display: block;
+}
+.archive__wrap {
+  width: 1200px;
+  margin: 0 auto;
+  border: solid #ba00a1 1px;
+  padding: 1%;
+}
+@media screen and (max-width: 1199px) {
+  .archive__wrap {
+    width: 100%;
+    padding: 2%;
+    border: none;
+  }
+}
+.archive__wrap .pagination {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+.archive__wrap .pagination .page-numbers {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 15px;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px #999;
+  background: #fff;
+}
+.archive__wrap .pagination .current {
+  padding: 10px 15px;
+  background: #ba00a1;
+  color: #fff;
+}
+.archive__wrap .pagination .prev,
+.archive__wrap .pagination .next {
+  background: transparent;
+  box-shadow: none;
+  color: #ba00a1;
+}
+.archive__wrap .pagination .dots {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+.archive__wrap .pagination .nav-links {
+  display: flex;
+  justify-content: center;
+}
+.archive__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 22px;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 1199px) {
+  .archive__inner {
+    gap: 2%;
+  }
+}
+.archive__time {
+  text-align: center;
+}
+.archive__post {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  width: 270px;
+}
+.archive__post-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .archive__post {
+    width: 49%;
+  }
+}
+.archive__post-img {
+  height: 360px;
+}
+@media screen and (max-width: 1199px) {
+  .archive__post-img {
+    width: 100%;
+    height: 450rem;
+  }
+}
+.archive__post-img img {
+  max-height: 360px;
+}
+@media screen and (max-width: 1199px) {
+  .archive__post-img img {
+    width: 100%;
+    height: 450rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.archive__post-author {
+  color: #fff;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.archive__post-author a {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+}
+.archive__post-content {
+  line-height: 1.4;
+  font-size: 0.8em;
+  padding-bottom: 1em;
+}
+.archive .diary__wrap .slider {
+  padding: 0px 0 50px 0;
+}
+.archive .diary__wrap .slider .slick-dots li button:before {
+  color: #ba00a1;
+  font-size: 14px;
+}
+.archive .diary__wrap .slider .slick-dots > li:first-child:last-child {
+  display: none;
+}
+.archive .diary__img {
+  width: 350px;
+}
+.archive .diary__img img {
+  width: 350px;
+}
+.archive .diary__text {
+  line-height: 1.5;
+}
+
+.authorArchive {
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+}
+@media screen and (max-width: 1199px) {
+  .authorArchive {
+    padding-bottom: 80rem;
+  }
+}
+.authorArchive a {
+  color: #fff;
+}
+.authorArchive__wrap {
+  width: 1200px;
+  margin: 0 auto 40px;
+  border: solid #ba00a1 1px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .authorArchive__wrap {
+    width: 100%;
+  }
+}
+.authorArchive .diary__wrap {
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .authorArchive .diary__wrap {
+    border: solid #ba00a1 1px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .authorArchive .diary__wrap .slider {
+    width: 100%;
+  }
+}
+.authorArchive .slick-dots li.slick-active button:before {
+  color: #ba00a1;
+  font-size: 14px;
+}
+.authorArchive .slick-dots li button:before {
+  color: #ba00a1;
+  font-size: 14px;
+}
+.authorArchive .slick-dots > li:first-child:last-child {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

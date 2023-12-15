@@ -19,6 +19,7 @@
           $newfaceDate = get_the_author_meta('newface_date', $girls->ID);
           $date = DateTime::createFromFormat('Ymd', $newfaceDate);
           $user_twitter = get_field('twitter_shop','user_1');
+          $user_link = get_author_posts_url($uid);
           ?>
 
 
@@ -38,8 +39,7 @@
               </div>
               <?php endif;?>
               <div class="therapist-img">
-                <a href="<?php echo home_url().'/?author='.$uid;?>"
-                  class="expand-link"><?php echo get_avatar( $uid ,420);?></a>
+                <a href="<?php echo $user_link;?>" class="expand-link"><?php echo get_avatar( $uid ,420);?></a>
               </div>
             </div>
 
@@ -132,11 +132,10 @@
                 </div>
                 <?php endif ;?>
                 <div class="therapist-img">
-                  <a href="<?php echo home_url().'/?author='.$uid;?>"
-                    class="expand-link"><?php echo get_avatar( $uid ,420);?></a>
+                  <a href="<?php echo $user_link;?>" class="expand-link"><?php echo get_avatar( $uid ,420);?></a>
                 </div>
                 <div class="ranking-text">
-                  <p><a href="<?php echo home_url().'/?author='.$uid;?>">
+                  <p><a href="<?php echo $user_link;?>">
                       <?php echo mb_substr($userData->user_description, 0, 54).'...'; ?></a>
                   </p>
                 </div>

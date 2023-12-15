@@ -13,7 +13,9 @@
         $uid =$girls->ID;
         $userData = get_userdata($uid);
         $newfaceDate = get_the_author_meta('newface_date', $girls->ID);
-        $date = DateTime::createFromFormat('Ymd', $newfaceDate);
+        $date = DateTime::createFromFormat('Ymd', $newfaceDate);        
+        $user_link = get_author_posts_url($uid);
+
         ?>
 
     <?php if($userData->attmgr_ex_attr_staff && $newfaceDate): ?>
@@ -27,8 +29,7 @@
         </div>
 
         <div class="therapist-img">
-          <a href="<?php echo home_url().'/?author='.$uid;?>"
-            class="expand-link"><?php echo get_avatar($uid ,420);?></a>
+          <a href="<?php echo $user_link;?>" class="expand-link"><?php echo get_avatar($uid ,420);?></a>
         </div>
         <?php if($girls->option_fee): ?>
         <p class="option-fee-pc">
@@ -67,7 +68,7 @@
                 class="age">（<?php if(!empty($girls->fage)) echo $girls->fage;?>）</span></p>
             <p class="therapist-tall">身長：<?php echo $girls->tall;?><span>cm</span></p>
           </div>
-          <p class="therapist-more"><a href="<?php echo home_url().'/?author='.$uid;?>">もっとみる</a></p>
+          <p class="therapist-more"><a href="<?php echo $user_link;?>">もっとみる</a></p>
         </div>
         <p class="therapist-text">
           <?php echo $userData->user_description;?>

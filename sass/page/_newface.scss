@@ -9,12 +9,12 @@
   margin-left: auto;
 
   .inner {
-    border: 1px solid #00a400;
+    border: 1px solid $Pink;
     padding: 80px 124px 128px;
     padding-left: 124px;
     padding-right: 124px;
     padding-top: 80px;
-    color: #00a400;
+    color: $Pink;
 
     @include sp {
       border: 0;
@@ -24,7 +24,7 @@
 
   .section-title {
     padding: 8px 0;
-    background-color: #00a400;
+    background-color: $Pink;
     color: #fff;
     font-family: "Osaka", sans-serif;
     font-size: 24px;

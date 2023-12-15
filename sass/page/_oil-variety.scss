@@ -10,7 +10,7 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   .mainvisual {
     margin-bottom: 32px;
     background-color: #fff;
@@ -25,7 +25,7 @@
       }
     }
   }
-  
+
   .oil1 {
     @include ryumin;
     color: #5787b5;
@@ -136,7 +136,7 @@
       }
     }
   }
-  
+
   .oil2 {
     @extend .oil1;
     background-color: #fbfaee;

@@ -17,6 +17,89 @@
       top: 7px;
     }
   }
+  &-diary {
+    margin-bottom: 72rem;
+    float: right;
+    width: 528px;
+    font-size: 18px;
+    @include sp {
+      width: 88.8%;
+      float: none;
+      margin: 0 auto;
+    }
+    a,
+    a:visited {
+      color: inherit;
+      display: block;
+    }
+
+    h2 {
+      padding: 12px 0;
+      width: 528px;
+      color: #fff;
+      font-size: 21px;
+      background: $Pink;
+      text-align: center;
+      float: left;
+      @include sp {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    &-inner {
+      border-bottom: 1px solid $Pink;
+      padding-top: 6%;
+      &:last-child {
+        border: none;
+      }
+    }
+    &__text {
+      padding-bottom: 6%;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    time {
+      display: block;
+      padding: 1% 0 3%;
+      text-align: center;
+    }
+
+    &-wrap {
+      border: 1px solid $Pink;
+      padding: 2% 15%;
+      overflow-x: hidden;
+      height: 1200px;
+      display: flex;
+      flex-direction: column;
+      @include sp {
+        width: 100%;
+      }
+
+      .slider {
+        padding: 0px 0 3% 0;
+        .slick-dots li button:before {
+          color: $Pink;
+          font-size: 14px;
+        }
+        .slick-dots > li:first-child:last-child {
+          display: none;
+        }
+      }
+    }
+    &__img {
+      margin: 0 auto;
+    }
+    &__archive {
+      width: 100%;
+      background-color: $Pink;
+      text-align: center;
+      padding: 10px 0;
+      color: #fff;
+      margin: 30px 0 80px;
+    }
+  }
 }
 
 .author .new:before {
@@ -116,7 +199,7 @@
 .author-size-wrap {
   @include matisse;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   border-bottom: solid 1px $Pink;
   padding-top: 16rem;
   padding-bottom: 8rem;
@@ -138,6 +221,7 @@
 
 .author-name {
   margin-bottom: 8rem;
+  padding-right: 1em;
 }
 
 .author-option {
@@ -145,6 +229,7 @@
   background: $Pink;
   padding: 4rem 16rem;
   text-align: center;
+  width: 100%;
   @include pc {
     font-size: 17px;
   }
@@ -227,14 +312,6 @@
   }
 }
 
-.author-twitter {
-  margin-bottom: 72rem;
-
-  @include pc {
-    float: right;
-    width: 528px;
-  }
-}
 .twitter-inner {
   @include sp {
     width: 90%;

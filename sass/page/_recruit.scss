@@ -26,7 +26,8 @@
 
   // メインビジュアル
   &-mainvisual {
-    background: url(../images/page-recruit-image.jpg) no-repeat top left / 100% auto;
+    background: url(../images/page-recruit-image.jpg) no-repeat top left / 100%
+      auto;
     color: #b0904a;
 
     @include pc {
@@ -187,7 +188,6 @@
   }
 }
 
-
 .page-recruit-header-wrap {
   @include pc {
     background: #e9eaea;
@@ -309,7 +309,7 @@
   font-size: 16px;
   @include osaka;
   color: #fff;
-  background: #00a400;
+  background: $Pink;
   justify-content: center;
   align-content: center;
   padding: 4px 8px;

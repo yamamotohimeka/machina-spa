@@ -97,7 +97,7 @@
   padding-bottom: 72rem;
 
   @include pc {
-    width: 71%;
+    width: 100%;
     padding-bottom: 0;
   }
 }
@@ -145,10 +145,16 @@
   @include sp {
     gap: 60rem 0;
   }
+  &:before {
+    content: "";
+    display: block;
+    width: 24.3%;
+    order: 1;
+  }
   &:after {
     content: "";
     display: block;
-    width: 30%;
+    width: 24.3%;
   }
 }
 
@@ -165,7 +171,7 @@
   }
 
   @include pc {
-    width: 32.3%;
+    width: 24.3%;
     padding-top: 16px;
     margin-bottom: 20px;
   }
@@ -585,5 +591,118 @@
   font-size: 16px;
   @include sp {
     font-size: 15rem;
+  }
+}
+
+.top {
+  &__diary {
+    padding: 40px 0 100px;
+    width: 100%;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    @include sp {
+      margin: 0 calc(50% - 50vw);
+      width: 100vw;
+      padding: 40px 0 0;
+    }
+    h3 {
+      margin-bottom: 20px;
+      padding: 8px 0;
+      font-size: 21px;
+      text-align: center;
+      background: $Pink;
+      @include sp {
+        font-size: 28rem;
+        font-family: "Osaka", sans-serif;
+        text-align: center;
+        color: #fff;
+        background: #1e1e1e;
+        padding: 32rem 0;
+
+        margin-bottom: 24rem;
+      }
+    }
+
+    &-more {
+      margin: 80px 0 10px auto;
+      padding: 10px;
+      width: 100px;
+      text-align: center;
+      font-size: 14px;
+      background-color: $Pink;
+      border-radius: 5%;
+      @include sp {
+        margin: 5% 2% 15% auto;
+      }
+    }
+
+    .archive__post {
+      width: 19%;
+      gap: 10px 0;
+      font-size: 13px;
+
+      @include sp {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 300rem;
+      }
+
+      &-wrap {
+        width: 100%;
+        gap: 20px 0;
+        justify-content: space-between;
+
+        @include sp {
+          overflow-x: scroll;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 100%;
+          height: 560rem;
+          gap: 10px;
+        }
+      }
+      &-img {
+        height: 300px;
+
+        @include sp {
+          height: 400rem;
+          width: 300rem;
+        }
+
+        &-wrap {
+          position: relative;
+          width: 100%;
+          @include sp {
+            height: 400rem;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+
+          @include sp {
+            height: 400rem;
+          }
+        }
+      }
+      &-author {
+        font-weight: bold;
+      }
+      &-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        @include sp {
+          width: 100%;
+        }
+      }
+    }
   }
 }
