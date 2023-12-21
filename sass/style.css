@@ -316,8 +316,13 @@ ul {
   justify-content: space-between;
   width: 176px;
 }
-.header-sns-listwrap a {
+.header-sns-listwrap a,
+.header-sns-listwrap span {
   color: #fff;
+  text-align: center;
+}
+.header-sns-listwrap span {
+  margin-top: 10px;
 }
 
 .header-sns-list {

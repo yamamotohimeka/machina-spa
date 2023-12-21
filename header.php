@@ -101,21 +101,21 @@
 
                 <div class="header-logo-text-wrap sp">
                   <ul class="header-sns-listwrap">
-                    <li class="header-sns-list"><a href="http://frogspa.livedoor.blog/" target="_blank"><img
+                    <li class="header-sns-list"><a href=""><img
                           src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
                           alt="ブログアイコン"></a></li>
                     <?php if($user_twitter) : ?>
-                    <li class="header-sns-list"><a href="https://twitter.com/<?php echo $user_twitter; ?>"
-                        target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
+                    <li class="header-sns-list"><a href=""><img
+                          src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
                           alt="twitterアイコン"></a></li>
                     <?php endif;?>
-                    <li class="header-sns-list"><a href="https://line.me/ti/p/71Sadk-PUI" target="_blank"><img
+                    <li class="header-sns-list"><a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank"><img
                           src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
                           alt="LNEアイコン"></a></li>
                   </ul>
 
                   <p class="header-logo-text">南船場・堺筋本町</p>
-                  <p class="header-sns-lineid"><a href="https://line.me/ti/p/71Sadk-PUI" target="_blank">LINE
+                  <p class="header-sns-lineid"><a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank">LINE
                       ID<span>machinaspa</span></a></p>
                 </div>
               </div>
@@ -134,8 +134,10 @@
                   <li class="nav-li"><a href="<?php echo home_url('/schedule'); ?>">出勤情報<span>SCHEDULE</span></a>
                   </li>
                   <li class="nav-li"><a href="<?php echo home_url('/system'); ?>">システム料金<span>SYSTEM</span></a></li>
-                  <li class="nav-li"><a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide="
-                      target="_blank">クレジットカード決済<span>CREDIT CARD</span></a></li>
+                  <li class="nav-li">
+                    <a href="" target="_blank">
+                      クレジットカード決済<span>CREDIT CARD</span> </a>
+                  </li>
                   <li class="nav-li"><a href="<?php echo home_url('/access'); ?>">アクセス<span>ACCESS</span></a></li>
                   <li class="nav-li"><a href="http://frogspa.livedoor.blog/" target="_blank">ブログ<span>BLOG</span></a>
                   </li>
@@ -147,15 +149,22 @@
 
               <div class="header-sns-wrap pc">
                 <ul class="header-sns-listwrap">
-                  <li class="header-sns-list"><a href="http://frogspa.livedoor.blog/" target="_blank"><img
-                        src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
-                        alt="ブログアイコン"><span>BLOG</span></a></li>
+                  <li class="header-sns-list">
+                    <a href="">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
+                        alt="ブログアイコン"><span>BLOG</span> </a>
+
+                  </li>
                   <?php if($user_twitter) : ?>
-                  <li class="header-sns-list"><a href="https://twitter.com/<?php echo $user_twitter; ?>"
-                      target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
-                        alt="twitterアイコン"><span>X</span></a></li>
+                  <li class="header-sns-list">
+                    <!-- <a href="https://twitter.com/<?php echo $user_twitter; ?>" target="_blank"> -->
+                    <!-- </a> -->
+                    <img src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
+                      alt="twitterアイコン"><span>X</span>
+
+                  </li>
                   <?php endif;?>
-                  <li class="header-sns-list"><a href="https://line.me/ti/p/71Sadk-PUI" target="_blank"><img
+                  <li class="header-sns-list"><a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank"><img
                         src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
                         alt="LNEアイコン"><span>LINE</span></a></li>
                 </ul>
@@ -164,8 +173,9 @@
               <div class="header-pc-shopinfo">
                 <p class="header-pc-shopinfo-time">営業時間 12:00-27:00（受付時間 10:00〜25:30）</p>
                 <p class="header-pc-shopinfo-tel">TEL.<span>080-4395-1844</span></p>
-                <p class="header-credit"><a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide="
-                    target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/credit.png" alt=""></a>
+                <p class="header-credit">
+                  <!-- <a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide=" target="_blank"></a> -->
+                  <img src="<?php echo get_template_directory_uri() ?>/images/credit.png" alt="">
                 </p>
               </div>
             </div>
@@ -186,8 +196,10 @@
               </li>
               <li class="pc-header-menu-list"><a href="<?php echo home_url('/system'); ?>"><span>システム料金</span>SYSTEM</a>
               </li>
-              <li class="pc-header-menu-list"><a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide="
-                  target="_blank"><span>クレジットカード決済</span>CREDIT CARD</a></li>
+              <li class="pc-header-menu-list">
+                <a href="" target="_blank">
+                  <span>クレジットカード決済</span>CREDIT CARD</a>
+              </li>
               <li class="pc-header-menu-list"><a href="<?php echo home_url('/access'); ?>"><span>アクセス</span>ACCESS</a>
               </li>
               <li class="pc-header-menu-list"><a href="http://frogspa.livedoor.blog/"

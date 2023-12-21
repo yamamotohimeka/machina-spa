@@ -13,17 +13,15 @@
       </li>
       <li class="footer-spnav-list"><a href="<?php echo home_url('/system'); ?>">システム料金<span>SYSTEM</span></a>
       </li>
-      <li class="footer-spnav-list"><a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide="
-          target="_blank">クレジットカード決済<span>CREDIT CARD</span></a></li>
+      <li class="footer-spnav-list"><a href="">クレジットカード決済<span>CREDIT CARD</span></a></li>
       <li class="footer-spnav-list"><a href="https://recruit-machinaspa.com/"
           target="_blank">求人情報<span>RECRUIT</span></a>
       </li>
       <li class="footer-spnav-list"><a href="<?php echo home_url('/access'); ?>">アクセス<span>ACCESS</span></a></li>
-      <li class="footer-spnav-list"><a href="http://frogspa.livedoor.blog/" target="_blank">ブログ<span>BLOG</span></a>
+      <li class="footer-spnav-list"><a href="">ブログ<span>BLOG</span></a>
       </li>
       <?php if ($user_twitter) : ?>
-      <li class="footer-spnav-list"><a href="https://twitter.com/<?php echo $user_twitter; ?>"
-          target="_blank">エックス<span>X</span></a></li>
+      <li class="footer-spnav-list"><a href="">エックス<span>X</span></a></li>
       <?php endif; ?>
     </ul>
     <div class="footer-logo-wrap">
@@ -36,15 +34,15 @@
       <p class="footer-logo-hours">営業時間 12:00-27:00（受付時間 10:00〜25:30）</p>
       <p class="footer-logo-tel"><span>TEL.</span>080-4395-1844</p>
       <ul class="footer-logo-snswrap">
-        <li class="footer-logo-snslist"><a href="http://frogspa.livedoor.blog/" target="_blank"><img
+        <li class="footer-logo-snslist"><a href=""><img
               src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
               alt="ブログアイコン"><span>BLOG</span></a></li>
         <?php if ($user_twitter) : ?>
-        <li class="footer-logo-snslist"><a href="https://twitter.com/<?php echo $user_twitter; ?>" target="_blank"><img
+        <li class="footer-logo-snslist"><a href=""><img
               src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
               alt="twitterアイコン"><span>X</span></a></li>
         <?php endif; ?>
-        <li class="footer-logo-snslist"><a href="https://line.me/ti/p/71Sadk-PUI"><img
+        <li class="footer-logo-snslist"><a href="https://line.me/ti/p/bu-oYYu4nf#~"><img
               src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
               alt="LINEアイコン"><span>LINE</span></a></li>
       </ul>
@@ -58,10 +56,9 @@
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/ranking'); ?>">ランキング</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/newface'); ?>">新人情報</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/system'); ?>">システム料金</a></li>
-        <li class="footer-pc-nav-list"><a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide="
-            target="_blank">クレジットカード決済</a></li>
+        <li class="footer-pc-nav-list"><a href="">クレジットカード決済</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
-        <li class="footer-pc-nav-list"><a href="http://frogspa.livedoor.blog/" target="_blank">ブログ</a></li>
+        <li class="footer-pc-nav-list"><a href="">ブログ</a></li>
         <li class="footer-pc-nav-list"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a></li>
       </ul>
       <div class="footer-nav-imgwrap">
@@ -227,7 +224,7 @@
     </a>
   </li>
   <li class="footer-sp-list">
-    <a href="https://line.me/ti/p/bu-oYYu4nf#~">
+    <a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank">
       <p class="footer-sp-list-img"><img src="<?php echo get_template_directory_uri() ?>/images/line-icon.png"
           alt="LINEアイコン"></p>
     </a>
