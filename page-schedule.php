@@ -50,6 +50,7 @@
                     $option_fee = get_the_author_meta('option_fee', $val->staff_id);
                     $newfaceDate = get_the_author_meta('newface_date', $val->staff_id);
                     $date = DateTime::createFromFormat('Ymd', $newfaceDate);
+                    $c_id = "?cid=".$user_id;
                     
                     if($user_id) {
                       print('<li class="therapist-list">');
@@ -74,7 +75,8 @@
                       print('<img src="'.get_template_directory_uri().'/images/silver.jpg" alt="silver"></span></a></p>');
                       }elseif( $status == 'GOLD'){
                       print('<img src="'.get_template_directory_uri().'/images/gold.jpg" alt="gold"></span></a></p>');
-                      }                    }
+                      }
+                    }
                     if($user_id){
                       print('</div></li>');
                     }
