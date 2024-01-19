@@ -11,6 +11,8 @@
       </li>
       <li class="footer-spnav-list"><a href="<?php echo home_url('/newface'); ?>">新人情報<span>NEWFACE</span></a>
       </li>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/diary'); ?>"><span>写メ日記</span>PHOTO BBS</a>
+      </li>
       <li class="footer-spnav-list"><a href="<?php echo home_url('/system'); ?>">システム料金<span>SYSTEM</span></a>
       </li>
       <li class="footer-spnav-list"><a href="">クレジットカード決済<span>CREDIT CARD</span></a></li>
@@ -55,8 +57,9 @@
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/schedule'); ?>">出勤情報</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/ranking'); ?>">ランキング</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/newface'); ?>">新人情報</a></li>
+        <li class="footer-pc-nav-list"><a href="<?php echo home_url('/diary'); ?>">写メ日記</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/system'); ?>">システム料金</a></li>
-        <li class="footer-pc-nav-list"><a href="">クレジットカード決済</a></li>
+        <li class="footer-pc-nav-list"><a href="">クレジット<br>カード決済</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
         <li class="footer-pc-nav-list"><a href="">ブログ</a></li>
         <li class="footer-pc-nav-list"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a></li>

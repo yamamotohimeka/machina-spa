@@ -133,6 +133,7 @@
                   <li class="nav-li"><a href="<?php echo home_url('/newface'); ?>">新人情報<span>NEWFACE</span></a></li>
                   <li class="nav-li"><a href="<?php echo home_url('/schedule'); ?>">出勤情報<span>SCHEDULE</span></a>
                   </li>
+                  <li class="nav-li"><a href="<?php echo home_url('/diary'); ?>">写メ日記<span>PHOTO BBS</span></a></li>
                   <li class="nav-li"><a href="<?php echo home_url('/system'); ?>">システム料金<span>SYSTEM</span></a></li>
                   <li class="nav-li">
                     <a href="" target="_blank">
@@ -193,6 +194,8 @@
                   href="<?php echo home_url('/ranking'); ?>"><span>ランキング</span>RANKING</a>
               </li>
               <li class="pc-header-menu-list"><a href="<?php echo home_url('/newface'); ?>"><span>新人情報</span>NEWFACE</a>
+              </li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/diary'); ?>"><span>写メ日記</span>PHOTO BBS</a>
               </li>
               <li class="pc-header-menu-list"><a href="<?php echo home_url('/system'); ?>"><span>システム料金</span>SYSTEM</a>
               </li>
