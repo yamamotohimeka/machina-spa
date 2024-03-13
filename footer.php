@@ -52,8 +52,7 @@
     <div class="footer-pc-navwrap">
       <ul class="footer-pc-nav">
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/'); ?>">ホーム</a></li>
-        <li class="footer-pc-nav-list"><a href="<?php echo home_url('/therapists'); ?>">セラピスト一覧
-          </a></li>
+        <li class="footer-pc-nav-list"><a href="<?php echo home_url('/therapists'); ?>">セラピスト一覧</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/schedule'); ?>">出勤情報</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/ranking'); ?>">ランキング</a></li>
         <li class="footer-pc-nav-list"><a href="<?php echo home_url('/newface'); ?>">新人情報</a></li>

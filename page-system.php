@@ -15,6 +15,11 @@
 
 
     <div class="course">
+      <p class="introduction">
+        多量のホットオイル(水溶性)をたっぷりと使用し、全身を隈なくリンパドレナージュしていきます。<br>
+        心地良い快感に癒やされるリラクゼーション効果がとても高い当店自慢のコースとなります。
+      </p>
+
       <dl class="place-list">
         <div class="item">
           <dt class="length"><em>60</em>分コース</dt>
