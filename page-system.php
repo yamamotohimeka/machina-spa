@@ -23,19 +23,19 @@
       <dl class="place-list">
         <div class="item">
           <dt class="length"><em>60</em>分コース</dt>
-          <dd class="value"><em>10,000</em>円</dd>
+          <dd class="value"><em>12,000</em>円</dd>
         </div>
         <div class="item">
           <dt class="length"><em>90</em>分コース</dt>
-          <dd class="value"><em>13,000</em>円</dd>
+          <dd class="value"><em>14,000</em>円</dd>
         </div>
         <div class="item">
           <dt class="length"><em>120</em>分コース</dt>
-          <dd class="value"><em>16,000</em>円</dd>
+          <dd class="value"><em>19,000</em>円</dd>
         </div>
         <div class="item">
           <dt class="length"><em>150</em>分コース</dt>
-          <dd class="value"><em>20,000</em>円</dd>
+          <dd class="value"><em>24,000</em>円</dd>
         </div>
 
       </dl>
