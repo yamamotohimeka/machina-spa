@@ -107,9 +107,16 @@
             .rankicon {
               bottom: 58px;
               right: 15px;
+              @include sp {
+                bottom: 80rem;
+                right: 15rem;
+              }
             }
             .newDate {
               bottom: 58px;
+              @include sp {
+                bottom: 80rem;
+              }
             }
           }
         }
@@ -254,17 +261,25 @@
       position: relative;
       @include sp {
         width: 351rem;
+        height: 561rem;
         padding: 0;
       }
 
       .rankicon {
         bottom: 16px;
         right: 20px;
+        @include sp {
+          bottom: 80rem;
+          right: 30rem;
+        }
       }
 
       .newDate {
         left: 0;
         bottom: 16px;
+        @include sp {
+          bottom: 80rem;
+        }
       }
     }
   }

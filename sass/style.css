@@ -309,6 +309,52 @@ h2::after {
   }
 }
 
+.newDate {
+  padding: 5px 3px 5px 23px;
+  width: 140px;
+  color: #fff;
+  background-color: #147d00;
+  display: inline-block;
+  position: absolute;
+  bottom: 138px;
+  left: 0px;
+  z-index: 100;
+  font-size: 18px;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+@media screen and (max-width: 1199px) {
+  .newDate {
+    padding: 5rem 3rem 5rem 23rem;
+    width: 174rem;
+    bottom: 175rem;
+    font-size: 20rem;
+    font-weight: bold;
+  }
+}
+.newDate p {
+  padding-left: 7px;
+}
+.newDate:before {
+  content: "";
+  background-image: url(../images/newdate-icon.png);
+  background-size: 17px 22px;
+  width: 17px;
+  height: 22px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .newDate:before {
+    background-size: 17rem 24rem;
+    width: 17rem;
+    height: 24rem;
+    top: 0;
+  }
+}
+
 .header {
   padding: 20rem 0 14rem;
   background: #000;
@@ -1238,50 +1284,6 @@ h2::after {
   }
 }
 
-.newDate {
-  padding: 5px 3px 5px 23px;
-  width: 140px;
-  color: #fff;
-  background-color: #147d00;
-  display: inline-block;
-  position: absolute;
-  bottom: 138px;
-  left: 0px;
-  z-index: 100;
-  font-size: 18px;
-  font-family: a-otf-ryumin-pr6n, serif;
-  font-weight: 300;
-  font-style: normal;
-}
-@media screen and (max-width: 1199px) {
-  .newDate {
-    padding: 5rem 3rem 5rem 23rem;
-    width: 140rem;
-    bottom: 175rem;
-    font-size: 18rem;
-  }
-}
-.newDate p {
-  padding-left: 7px;
-}
-.newDate:before {
-  content: "";
-  background-image: url(../images/newdate-icon.png);
-  background-size: 17px 22px;
-  width: 17px;
-  height: 22px;
-  position: absolute;
-  top: 3px;
-  left: 5px;
-}
-@media screen and (max-width: 1199px) {
-  .newDate:before {
-    background-size: 17rem 24rem;
-    width: 17rem;
-    height: 24rem;
-  }
-}
-
 .therapist-link {
   margin: 44px auto 94px 0;
   padding: 12px;
@@ -2003,9 +2005,10 @@ h2::after {
 @media screen and (max-width: 1199px) {
   .therapist-page-list .newDate {
     padding: 5rem 3rem 5rem 23rem;
-    width: 141rem;
+    width: 174rem;
     bottom: 120rem;
-    font-size: 18rem;
+    font-size: 20rem;
+    font-weight: bold;
   }
 }
 .therapist-page-list .newDate p {
@@ -2026,6 +2029,7 @@ h2::after {
     background-size: 17rem 24rem;
     width: 17rem;
     height: 24rem;
+    top: 0;
   }
 }
 
@@ -2535,7 +2539,7 @@ h2::after {
     margin: 0 auto;
     padding-top: 50rem;
     margin-bottom: 72rem;
-    font-size: 18rem;
+    font-size: 20rem;
   }
 }
 .author-diary a,
@@ -2570,13 +2574,18 @@ h2::after {
 }
 @media screen and (max-width: 1199px) {
   .author-diary__text {
-    font-size: 21rem;
+    font-size: 23rem;
   }
 }
 .author-diary time {
   display: block;
   padding: 1% 0 3%;
   text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .author-diary time {
+    font-size: 30rem;
+  }
 }
 .author-diary-wrap {
   border: 1px solid #bd00d4;
@@ -2650,7 +2659,7 @@ h2::after {
 @media screen and (max-width: 1199px) {
   .author-description {
     padding: 0 59rem 0 40rem;
-    font-size: 19rem;
+    font-size: 28rem;
     max-height: 300rem;
     margin-right: 18rem;
   }
@@ -2727,8 +2736,9 @@ h2::after {
 @media screen and (max-width: 1199px) {
   .author-img-wrap .newDate {
     bottom: 320rem;
-    width: 230rem;
+    width: 232rem;
     font-size: 28rem;
+    font-weight: bold;
   }
   .author-img-wrap .newDate::before {
     content: "";
@@ -2921,7 +2931,7 @@ h2::after {
 @media screen and (max-width: 1199px) {
   .cell-hour .therapist-list-realtime {
     width: 228rem;
-    font-size: 17rem;
+    font-size: 26rem;
     padding: 2rem 7rem;
   }
 }
@@ -2955,7 +2965,7 @@ h2::after {
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 21rem;
+  font-size: 24rem;
   text-align: center;
   padding: 10rem 0;
   border: solid 1px #fff;
@@ -3450,8 +3460,19 @@ h2::after {
   bottom: 58px;
   right: 15px;
 }
+@media screen and (max-width: 1199px) {
+  .ranking .therapist-list-wrap .rankinlow .therapist-img-wrap .rankicon {
+    bottom: 80rem;
+    right: 15rem;
+  }
+}
 .ranking .therapist-list-wrap .rankinlow .therapist-img-wrap .newDate {
   bottom: 58px;
+}
+@media screen and (max-width: 1199px) {
+  .ranking .therapist-list-wrap .rankinlow .therapist-img-wrap .newDate {
+    bottom: 80rem;
+  }
 }
 .ranking .therapist-page-list {
   width: 100%;
@@ -3598,6 +3619,7 @@ h2::after {
 @media screen and (max-width: 1199px) {
   .ranking .therapist-img-wrap {
     width: 351rem;
+    height: 561rem;
     padding: 0;
   }
 }
@@ -3605,9 +3627,20 @@ h2::after {
   bottom: 16px;
   right: 20px;
 }
+@media screen and (max-width: 1199px) {
+  .ranking .therapist-img-wrap .rankicon {
+    bottom: 80rem;
+    right: 30rem;
+  }
+}
 .ranking .therapist-img-wrap .newDate {
   left: 0;
   bottom: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .ranking .therapist-img-wrap .newDate {
+    bottom: 80rem;
+  }
 }
 .ranking-text {
   width: 528px;

@@ -104,9 +104,10 @@
 
       @include sp {
         padding: 5rem 3rem 5rem 23rem;
-        width: 141rem;
+        width: 174rem;
         bottom: 120rem;
-        font-size: 18rem;
+        font-size: 20rem;
+        font-weight: bold;
       }
       p {
         padding-left: 7px;
@@ -126,6 +127,7 @@
           background-size: 17rem 24rem;
           width: 17rem;
           height: 24rem;
+          top: 0;
         }
       }
     }
