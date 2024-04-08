@@ -509,3 +509,7 @@ function remove_query_string_redirect() {
     }
 }
 add_action('template_redirect', 'remove_query_string_redirect');
+
+
+/*ログインしたときに管理メニューバーを非表示*/
+add_filter( 'show_admin_bar', '__return_false' );

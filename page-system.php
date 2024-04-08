@@ -1,11 +1,58 @@
 <?php /* Template Name: 料金システム */ ;?>
 <?php get_header(); ?>
 <section class="system">
-  <h2 class="section-title">料金システム</h2>
+  <h2>料金システム</h2>
 
   <div class="inner">
+
+
+
+    <div class="course">
+      <dl class="place-list">
+        <div class="item">
+          <dt class="length">60分コース</dt>
+          <dd class="value">12,000yen</dd>
+        </div>
+        <div class="item">
+          <dt class="length">90分コース</dt>
+          <dd class="value">14,000yen</dd>
+        </div>
+        <div class="item">
+          <dt class="length">120分コース</dt>
+          <dd class="value">19,000yen</dd>
+        </div>
+        <div class="item">
+          <dt class="length">150分コース</dt>
+          <dd class="value">24,000yen</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="special-reserve">
+      <p>特別指名料</p>
+      <dl>
+        <div>
+          <dt>BRONZE/ブロンズ</dt>
+          <dd>1,000yen</dd>
+        </div>
+        <div>
+          <dt>SILVER/シルバー</dt>
+          <dd>2,000yen</dd>
+        </div>
+        <div>
+          <dt>GOLD/ゴールド</dt>
+          <dd>3,000yen</dd>
+        </div>
+        <div>
+          <dt>延長/10分〜</dt>
+          <dd>2,000yen〜</dd>
+        </div>
+      </dl>
+    </div>
+
+
     <div class="about-reserve">
-      <h3 class="title">ご予約について</h3>
+      <p>ご予約について</p>
       <ul class="list">
         <li class="item">お電話でのご予約を最優先にしております。</li>
         <li class="item">LINEでのご予約の場合は、お名前・お電話番号を必ず明記してください。</li>
@@ -13,50 +60,13 @@
       </ul>
     </div>
 
-
-    <div class="course">
-      <p class="introduction">
-        多量のホットオイル(水溶性)をたっぷりと使用し、全身を隈なくリンパドレナージュしていきます。<br>
-        心地良い快感に癒やされるリラクゼーション効果がとても高い当店自慢のコースとなります。
-      </p>
-
-      <dl class="place-list">
-        <div class="item">
-          <dt class="length"><em>60</em>分コース</dt>
-          <dd class="value"><em>12,000</em>円</dd>
-        </div>
-        <div class="item">
-          <dt class="length"><em>90</em>分コース</dt>
-          <dd class="value"><em>14,000</em>円</dd>
-        </div>
-        <div class="item">
-          <dt class="length"><em>120</em>分コース</dt>
-          <dd class="value"><em>19,000</em>円</dd>
-        </div>
-        <div class="item">
-          <dt class="length"><em>150</em>分コース</dt>
-          <dd class="value"><em>24,000</em>円</dd>
-        </div>
-
-      </dl>
-      <div class="nominate">
-        <div class="nominate-inner"><span class="nominate-rank">ブロンズ</span><span>1,000円</span></div>
-        <div class="nominate-inner"><span class="nominate-rank">シルバー</span><span>2,000円</span></div>
-        <div class="nominate-inner"><span class="nominate-rank">ゴールド</span><span>3,000円</span></div>
-      </div>
-      <div class="extend">
-        <span class="length">延長/20分</span>
-        <span class="ellipsis">・・・・・・・</span>
-        <span class="value">3,000円</span>
-      </div>
-    </div>
-
     <div class="guideline">
-      <h3 class="title">ご利用規約</h3>
+      <p class="title">ご利用規約</p>
       <p class="paragraph">
         18歳未満の方、同業者、スカウト目的、暴力団関係者、薬物使用者、泥酔者その他当店がふさわしくないと判断した方の お問い合わせご利用は固くお断り致します。<br>
         当店は風俗系マッサージ店では一切御座いません。法令及び公序良俗に反するような行為も一切行っておりません。また医療法が定める病院、診療所、治療院ではございません。<br>
-        当店ではリラクゼーションオイルトリートメントを提供するサロンであり、性的サービス等を要求された場合やセラピスト が施術不可能と判断した場合は、即退店をお願いしております。 その際の料金の返金には応じませんのであらかじめ
+        当店ではリラクゼーションオイルトリートメントを提供するサロンであり、性的サービス等を要求された場合やセラピスト が施術不可能と判断した場合は、即退店をお願いしております。<br>
+        その際の料金の返金には応じませんのであらかじめ
         ご了承の程宜しくお願い致します。
       </p>
       <p class="paragraph">

@@ -1,51 +1,134 @@
-.ranking-body {
-  background: #000;
-}
 .ranking {
   background-color: #000;
   color: #fff;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-
-  .inner {
-    border: 1px solid $Pink;
-    padding: 80px 124px 128px;
-    padding-left: 124px;
-    padding-right: 124px;
-    padding-top: 80px;
-    color: $Pink;
-    @include sp {
-      border: 0;
-      padding: 40rem 5.6% 0;
-    }
+  padding-top: 84px;
+  @include sp {
+    max-width: unset;
+    padding-top: 84rem;
   }
 
-  .section-title {
-    padding: 8px 0;
-    background-color: $Pink;
-    color: #fff;
-    font-family: "Osaka", sans-serif;
-    font-size: 24px;
-    text-align: center;
+  &-body {
+    background: #000;
+  }
 
+  .inner {
+    padding-top: 45px;
+    color: $Pink;
     @include sp {
-      font-size: 28rem;
-      background-color: #1e1e1e;
-      padding: 24rem 0;
+      width: 100%;
+      padding: 0 5%;
     }
   }
 
   .therapist {
     &-list-wrap {
-      margin-bottom: 0;
+      margin-bottom: 150px;
+
+      @include sp {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150rem;
+      }
+
+      .rankinlow {
+        padding: 30px 0;
+        justify-content: center;
+        gap: 36px;
+        width: 48.5%;
+        border: #bd00d4 solid 1px;
+
+        @include sp {
+          padding: 0;
+          width: 100%;
+          border: none;
+        }
+
+        .therapist {
+          &-info-flexwrap {
+            display: none;
+          }
+          &-ranking {
+            img {
+              width: 220px;
+              @include sp {
+                width: 270rem;
+              }
+            }
+            p {
+              top: 74px;
+              left: 61px;
+              font-size: 42px;
+              @include sp {
+                font-size: 60rem;
+                top: 83rem;
+                left: 68rem;
+              }
+              span {
+                font-size: 90px;
+                @include sp {
+                  font-size: 90rem;
+                }
+              }
+            }
+            &-left {
+              padding-top: 0;
+            }
+          }
+          &-name {
+            font-size: 23px;
+            @include sp {
+              font-size: 28rem;
+            }
+          }
+          &-img-wrap {
+            width: 261px;
+            @include sp {
+              width: 351rem;
+            }
+            .ranking-author {
+              padding-top: 26px;
+              gap: 0 20px;
+              @include ryumin;
+              color: #fff;
+              font-size: 21px;
+              text-align: right;
+              @include sp {
+                font-size: 28rem;
+              }
+              a {
+                border-bottom: 1px solid;
+                color: #fff;
+              }
+            }
+
+            .rankicon {
+              bottom: 58px;
+              right: 15px;
+            }
+            .newDate {
+              bottom: 58px;
+            }
+          }
+        }
+      }
     }
     &-page-list {
       width: 100%;
       flex-wrap: nowrap;
-
+      justify-content: space-between;
+      padding-top: 67px;
       @include sp {
-        border: none;
+        padding-top: 0;
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:nth-child(6),
+      &:nth-child(7) {
+        margin-top: 50px;
       }
     }
 
@@ -63,64 +146,53 @@
         margin-bottom: 0;
       }
     }
-
-    &-ranking {
-      margin-top: 112px;
-      padding: 34px 20px;
-      border: 1px solid $Pink;
-      height: 160px;
-      position: relative;
-
+    &-name {
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+      @include ryumin;
       @include sp {
-        margin: 0 auto calc(60vw / (1119 / 100)) auto;
-        height: calc(250vw / (1119 / 100));
-        width: 50%;
-        padding: calc(60vw / (1119 / 100)) 0;
+        font-size: 28rem;
       }
+    }
+    &-ranking {
+      position: relative;
 
       &-wrap {
         display: flex;
         gap: 0 10px;
-        padding-top: calc(50vw / (1119 / 100));
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-top: 14px solid $Pink;
-        border-right: 14px solid transparent;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 0;
-        border-bottom: 14px solid $Pink;
-        border-left: 14px solid transparent;
+        @include sp {
+          justify-content: space-between;
+        }
       }
 
       img {
-        width: 120px;
+        width: 270px;
         @include sp {
-          width: calc(200vw / (1199 / 100));
-          padding-bottom: 0;
+          width: 270rem;
         }
       }
       p {
         font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro",
           serif;
-        font-size: 52px;
+        font-size: 60px;
         text-align: center;
         font-style: italic;
+        position: absolute;
+        top: 83px;
+        left: 68px;
         @include sp {
-          font-size: calc(70vw / (1199 / 100));
+          font-size: 60rem;
+          top: 83rem;
+          left: 68rem;
+        }
+
+        color: #e0ba53;
+        span {
+          font-size: 110px;
+          @include sp {
+            font-size: 110rem;
+          }
         }
       }
 
@@ -144,6 +216,14 @@
           text-align: center;
           font-style: italic;
         }
+      }
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        padding-top: 70px;
       }
     }
 
@@ -170,48 +250,53 @@
     }
 
     &-img-wrap {
-      width: 30%;
+      width: 330px;
+      position: relative;
       @include sp {
-        width: 100%;
+        width: 351rem;
         padding: 0;
       }
 
-      .newDate {
-        right: 476px;
-
-        @include sp {
-          top: calc(120vw / (1119 / 100));
-          right: calc(480vw / (1119 / 100));
-          font-size: calc(38vw / (1119 / 100));
-          width: calc(340vw / (1119 / 100));
-          background-size: calc(340vw / (1119 / 100)) auto;
-
-          &::before {
-            top: calc(25vw / (1119 / 100));
-            left: 20rem;
-            background-size: calc(23vw / (1119 / 100)) calc(26vw / (1119 / 100));
-            width: calc(23vw / (1119 / 100));
-            height: calc(26vw / (1119 / 100));
-          }
-        }
+      .rankicon {
+        bottom: 16px;
+        right: 20px;
       }
-    }
-  }
 
-  &-twitter {
-    width: 50px;
-    @include sp {
-      width: 100%;
+      .newDate {
+        left: 0;
+        bottom: 16px;
+      }
     }
   }
 
   &-text {
+    width: 528px;
     color: #fff;
-    font-size: 15px;
     line-height: 1.8;
-    border: solid 1px $Pink;
-    padding: 16px 14px;
     text-align: left;
+    border: solid 1px $Pink;
+    @include sp {
+      width: 100%;
+    }
+    p {
+      margin: 21px 12px 21px 35px;
+      padding-right: 24px;
+      max-height: 330px;
+      font-size: 21px;
+      overflow: auto;
+      @include sp {
+        font-size: 21rem;
+      }
+    }
+
+    .title {
+      background-color: #bd00d4;
+      padding: 0px 0 0px 16px;
+      font-size: 21px;
+      @include sp {
+        font-size: 21rem;
+      }
+    }
 
     a:visited,
     a:link {
@@ -226,19 +311,37 @@
   }
 
   &-realtime {
+    background-color: #bd00d4;
+    width: 300px;
+    height: 38px;
+    text-align: center;
+    padding: 1rem 0;
+    @include sp {
+      width: 300rem;
+    }
     &-wrap {
-      padding-top: 20px;
+      padding-top: 26px;
       display: flex;
+      justify-content: flex-end;
       align-items: center;
       gap: 0 20px;
-    }
+      @include ryumin;
 
-    padding: 10px;
-    color: #fff;
-    font-size: 16px;
-    background-color: #a50721;
-    width: 100%;
-    height: 38px;
+      color: #fff;
+      font-size: 28px;
+      @include sp {
+        padding-top: 26rem;
+        justify-content: space-between;
+        font-size: 28rem;
+      }
+
+      .ranking-author {
+        border-bottom: 1px solid;
+      }
+      a {
+        color: #fff;
+      }
+    }
 
     @include sp {
       padding: 6rem 0 6rem 0;

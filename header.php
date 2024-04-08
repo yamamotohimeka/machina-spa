@@ -88,7 +88,7 @@
             <div class="header-inner">
               <div class="header-logo-wrap">
 
-                <div class="header-logo-wrap-top">
+                <div class="header-logo-wrap-top" id="top">
                   <h1 class="header-logo">
                     <a href="<?php echo home_url('/'); ?>">
                       <img src="<?php echo get_template_directory_uri() ?>/images/header-logo.png"
@@ -97,27 +97,33 @@
                   <div class="toggle sp">
                     <span></span>
                   </div>
+                  <div class="header-sns-wrap pc">
+                    <ul class="header-sns-listwrap">
+                      <li class="header-sns-list">
+                        <a href="">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
+                            alt="ブログアイコン">
+                        </a>
+                      </li>
+                      <?php if($user_twitter) : ?>
+                      <li class="header-sns-list">
+                        <!-- <a href="https://twitter.com/<?php echo $user_twitter; ?>" target="_blank"> -->
+                        <!-- </a> -->
+                        <img src="<?php echo get_template_directory_uri() ?>/images/header-x-icon.png"
+                          alt="twitterアイコン">
+
+                      </li>
+                      <?php endif;?>
+                      <li class="header-sns-list">
+                        <a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank"><img
+                            src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
+                            alt="LNEアイコン"></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="header-logo-text-wrap sp">
-                  <ul class="header-sns-listwrap">
-                    <li class="header-sns-list"><a href=""><img
-                          src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
-                          alt="ブログアイコン"></a></li>
-                    <?php if($user_twitter) : ?>
-                    <li class="header-sns-list"><a href=""><img
-                          src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
-                          alt="twitterアイコン"></a></li>
-                    <?php endif;?>
-                    <li class="header-sns-list"><a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank"><img
-                          src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
-                          alt="LNEアイコン"></a></li>
-                  </ul>
 
-                  <p class="header-logo-text">南船場・堺筋本町</p>
-                  <p class="header-sns-lineid"><a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank">LINE
-                      ID<span>machinaspa</span></a></p>
-                </div>
               </div>
 
 
@@ -148,68 +154,32 @@
                 </ul>
               </nav>
 
-              <div class="header-sns-wrap pc">
-                <ul class="header-sns-listwrap">
-                  <li class="header-sns-list">
-                    <a href="">
-                      <img src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
-                        alt="ブログアイコン"><span>BLOG</span> </a>
 
-                  </li>
-                  <?php if($user_twitter) : ?>
-                  <li class="header-sns-list">
-                    <!-- <a href="https://twitter.com/<?php echo $user_twitter; ?>" target="_blank"> -->
-                    <!-- </a> -->
-                    <img src="<?php echo get_template_directory_uri() ?>/images/header-twitter.png"
-                      alt="twitterアイコン"><span>X</span>
-
-                  </li>
-                  <?php endif;?>
-                  <li class="header-sns-list"><a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank"><img
-                        src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png"
-                        alt="LNEアイコン"><span>LINE</span></a></li>
-                </ul>
-              </div>
 
               <div class="header-pc-shopinfo">
-                <p class="header-pc-shopinfo-time">営業時間 12:00-27:00（受付時間 10:00〜25:30）</p>
-                <p class="header-pc-shopinfo-tel">TEL.<span>080-4395-1844</span></p>
-                <p class="header-credit">
-                  <!-- <a href="https://pay2.star-pay.jp/site/pc/shop.php?tel=&payc=A2038&guide=" target="_blank"></a> -->
-                  <img src="<?php echo get_template_directory_uri() ?>/images/credit.png" alt="">
+                <p class="header-pc-shopinfo-desc">大阪堺筋本町・南船場 メンズエステ MACHINA SPA（マキナスパ）</p>
+                <p class="header-pc-shopinfo-time">営業時間 12:00-27:00
+                  <span>（受付時間 10:00〜25:30）</span>
                 </p>
+                <p class="header-pc-shopinfo-tel">TEL.<span>080-4395-1844</span></p>
               </div>
             </div>
 
           </div>
           <div id="global-nav" class="pc-global-navwrap">
             <ul class="pc-header-menu">
-              <li class="pc-header-menu-list"><a href="<?php echo home_url('/'); ?>"><span>ホーム</span>HOME</a></li>
-              <li class="pc-header-menu-list"><a
-                  href="<?php echo home_url('/therapists'); ?>"><span>セラピスト一覧</span>THERPIST</a></li>
-              <li class="pc-header-menu-list"><a
-                  href="<?php echo home_url('/schedule'); ?>"><span>出勤情報</span>SCHEDULE</a>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/'); ?>">トップ</a></li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/ranking'); ?>">ランキング</a> </li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/diary'); ?>">写メ日記</a></li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/schedule'); ?>">出勤情報</a> </li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/therapists'); ?>">セラピスト一覧</a></li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/newface'); ?>">新人情報</a></li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/system'); ?>">システム料金</a></li>
+              <li class="pc-header-menu-list"><a href="<?php echo home_url('/access'); ?>">アクセス</a>
               </li>
-              <li class="pc-header-menu-list"><a
-                  href="<?php echo home_url('/ranking'); ?>"><span>ランキング</span>RANKING</a>
+              <li class="pc-header-menu-list"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a>
               </li>
-              <li class="pc-header-menu-list"><a href="<?php echo home_url('/newface'); ?>"><span>新人情報</span>NEWFACE</a>
-              </li>
-              <li class="pc-header-menu-list"><a href="<?php echo home_url('/diary'); ?>"><span>写メ日記</span>PHOTO BBS</a>
-              </li>
-              <li class="pc-header-menu-list"><a href="<?php echo home_url('/system'); ?>"><span>システム料金</span>SYSTEM</a>
-              </li>
-              <li class="pc-header-menu-list">
-                <a href="" target="_blank">
-                  <span>クレジットカード決済</span>CREDIT CARD</a>
-              </li>
-              <li class="pc-header-menu-list"><a href="<?php echo home_url('/access'); ?>"><span>アクセス</span>ACCESS</a>
-              </li>
-              <li class="pc-header-menu-list"><a href="http://frogspa.livedoor.blog/"
-                  target="_blank"><span>ブログ</span>BLOG</a></li>
-              <li class="pc-header-menu-list"><a href="https://recruit-machinaspa.com/"
-                  target="_blank"><span>求人情報</span>RECRUIT</a>
-              </li>
+
             </ul>
           </div>
         </header>

@@ -1,33 +1,28 @@
 @charset "UTF-8";
 
 .header {
-  padding: 20rem 0;
+  padding: 20rem 0 14rem;
   background: #000;
 
   z-index: 1000;
 
   @include pc {
-    padding: 20px 0;
+    padding: 50px 0 0 0;
   }
 }
 
 .header-innerwrap {
   @include pc {
-    border-bottom: solid $Pink 1px;
-    transform: translateY(1px);
-    padding-bottom: 30px;
+    padding-bottom: 78px;
   }
 }
 
 .header-inner {
   display: flex;
   align-items: center;
+  align-items: flex-end;
   @include inner;
   justify-content: space-between;
-
-  @include pc {
-    justify-content: space-around;
-  }
 }
 
 .header-logo-wrap {
@@ -44,84 +39,26 @@
 
   &-top {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
   }
 }
 
 .header-logo {
   width: 100%;
-  @include sp {
-    img {
-      width: 100%;
-    }
+  img {
+    width: 518px;
   }
 
-  @include pc {
-    margin-bottom: 8px;
-    width: 382px;
+  @include sp {
+    width: calc(646vw / (900 / 100));
+    img {
+      width: calc(646vw / (900 / 100));
+    }
   }
 
   a {
     display: inline-block;
-  }
-
-  &-text {
-    @include osaka;
-    color: $Pink;
-    font-size: 28rem;
-
-    @include pc {
-      font-size: 25px;
-      margin-left: 0;
-      margin-bottom: 0;
-    }
-  }
-}
-
-.header-logo-text-wrap {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.header-sns-lineid {
-  @include sp {
-    display: none;
-  }
-
-  background: $Pink;
-  border-radius: 4px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-left: 8px;
-
-  span {
-    &:before {
-      content: "";
-      display: inline-block;
-      background-image: url(../images/arrow-right.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 10px;
-      height: 12px;
-      margin: 0 4px;
-    }
-  }
-
-  a {
-    padding: 0 24px;
-    color: #fff;
-  }
-}
-
-.header-sns-wrap {
-  @include osaka;
-
-  @include sp {
   }
 }
 
@@ -129,7 +66,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 176px;
+  gap: 10px;
+  @include osaka;
 
   a,
   span {
@@ -163,33 +101,74 @@
   @include sp {
     display: none;
   }
-
   @include osaka;
-  color: $Pink;
+  color: #b8009f;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+
+  &-desc {
+    color: #fff;
+    font-size: 15px;
+  }
 
   &-time {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    span {
+      font-size: 17px;
+      color: #fff;
+      background-color: #b8009f;
+      padding: 2px;
+      border-radius: 5px;
+      text-align: center;
+    }
   }
 
   &-tel {
     font-size: 20px;
-    text-align: right;
-    margin-bottom: 20px;
 
     span {
-      font-size: 33px;
+      font-size: 35px;
     }
   }
 }
 
 .business-hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(30vw / (900 / 100));
   color: #fff;
-  font-size: 24rem;
+  font-size: calc(40vw / (900 / 100));
   @include osaka;
+  font-weight: lighter;
+  letter-spacing: -2rem;
+
+  span {
+    padding: 2px;
+    background: #b8009f;
+    border-radius: 5px;
+    letter-spacing: initial;
+    font-size: calc(28vw / (900 / 100));
+  }
+
+  @include pc {
+    display: none;
+  }
+}
+
+.top-title {
+  margin: 26rem 0 50rem;
+  padding: 6rem 0;
+  background-color: #b8009f;
+  color: #fff;
+  font-size: 20rem;
   text-align: center;
-  background: $Pink;
-  padding: 10rem 0;
+  @include osaka;
 
   @include pc {
     display: none;
@@ -206,16 +185,6 @@
   }
 }
 
-.sp-credit {
-  @include sp {
-    padding: 16rem 24rem;
-  }
-
-  @include pc {
-    display: none;
-  }
-}
-
 .pc-header-menu {
   @include sp {
     display: none;
@@ -228,20 +197,14 @@
 }
 
 .pc-header-menu-list {
-  font-size: 12px;
-  @include myriad;
-
-  span {
-    font-size: 15px;
-    @include osaka;
-    margin-bottom: 8px;
-  }
+  @include ryumin;
+  font-size: 18px;
 
   a {
     color: #fff;
 
     @include pc {
-      padding: 30px 16px;
+      padding: 27px 0px;
       display: flex;
       flex-direction: column;
     }
@@ -255,26 +218,17 @@
   }
 }
 
-.pc-header-menu-list a::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 0;
-  height: 1px;
-  background-color: #fff;
-  transition: 0.3s;
-}
-
-.pc-header-menu-list a:hover::after {
+.pc-header-menu-list a:hover {
   @include pc {
     width: 100%;
+    color: #000;
   }
 }
 
 .pc-global-navwrap {
   width: 100%;
-  background: #000;
+  background: #bd00d4;
+  color: #fff;
 }
 
 #global-nav {

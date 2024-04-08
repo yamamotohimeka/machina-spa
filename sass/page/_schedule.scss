@@ -7,8 +7,8 @@
   }
   &-border {
     @include inner;
-    @include pc {
-      border: solid 1px $Pink;
+    @include sp {
+      width: 100%;
     }
   }
 
@@ -18,9 +18,17 @@
     margin-bottom: 40rem;
     width: 100%;
     @include pc {
-      margin-bottom: 24px;
+      margin-bottom: 43px;
       padding: 0 32px;
     }
+    @include sp {
+      width: 88.8%;
+      margin: 0 auto;
+    }
+    .selected {
+      background-color: #70007d;
+    }
+
     &-item {
       position: relative;
       width: 14%;
@@ -34,35 +42,34 @@
       }
       @include osaka;
       @include pc {
-        padding: 16px;
+        padding: 11px;
         width: 14%;
-        font-size: 21px;
+        font-size: 27px;
       }
     }
     &-week {
-      @include sp {
-        display: block;
-      }
+      display: block;
     }
   }
 
   &-title-day {
-    border-bottom: 2px solid $Pink;
     margin-bottom: 40rem;
     padding-bottom: 16rem;
     color: #fff;
-    font-size: 24rem;
-    font-weight: bold;
+    font-size: 31px;
     text-align: center;
+    @include osaka;
 
     @include sp {
-      margin-bottom: 60rem;
+      margin: 40rem 0;
+
+      font-size: 31rem;
     }
 
     @include pc {
-      margin: 0 32px 40px 32px;
+      margin-bottom: 30px;
       padding-bottom: 16px;
-      font-size: 24px;
+      font-size: 30px;
       font-weight: bold;
     }
   }
@@ -83,16 +90,12 @@
 }
 
 .page-schedule .page-title {
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 }
 
 .page-schedule-therapists .therapist-list-wrap {
   align-items: flex-start;
   justify-content: space-between;
-
-  @include pc {
-    padding: 0 32px;
-  }
 }
 
 .page-schedule .therapist-list-wrap {
@@ -100,7 +103,6 @@
     &:before {
       content: "";
       display: block;
-      width: 23%;
       order: 1;
     }
 
@@ -110,11 +112,14 @@
       width: 23%;
     }
   }
+  @include sp {
+    width: 88.8%;
+    margin: 0 auto;
+  }
 }
 
 .page-schedule .therapist-list {
   @include pc {
-    width: 23%;
     margin-bottom: 24px;
   }
 }

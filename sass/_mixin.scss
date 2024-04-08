@@ -112,4 +112,103 @@ $font_ryumin: a-otf-ryumin-pr6n, serif;
   display: flex;
 }
 
-$Pink: #ba00a1;
+$Pink: #bd00d4;
+
+h3,
+h2 {
+  margin-bottom: 15px;
+  padding: 9px 0 9px 27px;
+  font-size: 26px;
+  text-align: left;
+  background: $Pink;
+  width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  @include ryumin;
+  overflow: hidden;
+  position: relative;
+  @include sp {
+    width: 100vw;
+    font-size: 28rem;
+    padding: 5rem 0 5rem 24rem;
+    margin-bottom: 40rem;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 892px;
+    height: 0;
+    border: none;
+    border-left: solid 40px transparent;
+    border-bottom: solid 55px #ac00d4;
+    z-index: 2;
+    @include sp {
+      width: 64vw;
+    }
+  }
+}
+.rankicon {
+  width: 44px;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
+  text-align: center;
+  border-radius: 6px;
+  z-index: 10;
+  background-image: linear-gradient(
+    45deg,
+    rgba(158, 0, 0, 1),
+    rgba(225, 0, 0, 1) 50%,
+    rgba(148, 0, 0, 1)
+  );
+
+  @include sp {
+    width: 54rem;
+    padding: 8rem 0;
+    bottom: 16rem;
+    right: 20rem;
+  }
+
+  p {
+    font-size: 21px;
+    color: #fff;
+    @include ryumin;
+    @include sp {
+      font-size: 25rem;
+    }
+    span {
+      font-size: 31px;
+      @include sp {
+        font-size: 35rem;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 11px;
+  margin-right: 5px;
+  @include sp {
+    width: 11rem;
+    height: 11rem;
+    margin-right: calc(5vw / (900 / 100));
+  }
+}
+::-webkit-scrollbar-thumb {
+  background-color: #787878;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #b4b4b4;
+  border-radius: 6px;
+}
+.section-bg {
+  padding-top: 84px;
+  background: #000;
+  @include sp {
+    padding-top: 84rem;
+  }
+}

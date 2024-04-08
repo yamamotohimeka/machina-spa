@@ -4,34 +4,45 @@
   }
   &-inner {
     padding-bottom: 88rem;
-    @include inner;
+    width: 100%;
+
     @include pc {
-      border: 1px solid $Pink;
       padding-bottom: 40px;
+      @include inner;
     }
   }
   &-info {
-    margin: 56rem 40rem 48rem;
-    @include pc {
-      margin: 56px 336px 48px;
+    padding: 30px 68px 48px 68px;
+    font-size: 24px;
+    color: #fff;
+    @include sp {
+      padding: 30rem 68rem 48rem 68rem;
+      font-size: 24rem;
     }
-    &-text {
-      margin-bottom: 16rem;
-      font-size: 18rem;
-      color: $Pink;
-      @include pc {
-        font-size: 18px;
+
+    dt {
+      padding-top: 44px;
+      @include sp {
+        padding-top: 44rem;
+      }
+    }
+
+    dd {
+      span {
+        font-size: 20px;
+        @include sp {
+          font-size: 20rem;
+        }
       }
     }
   }
   &-room-name {
     color: #fff;
     font-size: 24px;
+    padding: 64px 68px 27px 68px;
     @include sp {
-      margin-bottom: 16rem;
-    }
-    @include pc {
-      margin: 0 80px 24px;
+      font-size: 24rem;
+      padding: 64rem 68rem 27rem 68rem;
     }
   }
   &-map {
@@ -39,6 +50,7 @@
     overflow: hidden;
     padding-bottom: 75%;
     position: relative;
+    margin: 0 80rem 108rem;
     iframe {
       position: absolute;
       left: 0;
@@ -47,7 +59,7 @@
       width: 100%;
     }
     @include pc {
-      margin: 0 80px;
+      margin: 0 80px 108px;
     }
   }
 }

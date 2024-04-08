@@ -5,277 +5,204 @@
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  .inner {
-    border: 1px solid $Pink;
-    padding: 80px 124px 128px;
-    padding-left: 124px;
-    padding-right: 124px;
-    padding-top: 80px;
-    color: $Pink;
-    @include sp {
-      border: 0;
-      padding: 40rem 5.6% 128px;
-    }
+  padding-top: 84px;
+  color: #fff;
+  @include sp {
+    width: 100%;
+    padding-top: 84rem;
   }
-  .section-title {
-    padding: 8px 0;
-    background-color: $Pink;
-    color: #fff;
-    font-family: "Osaka", sans-serif;
-    font-size: 24px;
-    text-align: center;
+}
+
+.course {
+  .place-list {
+    padding-top: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     @include sp {
-      font-size: 28rem;
-      background-color: #1e1e1e;
-      padding: 24rem 0;
-    }
-  }
-  .about-reserve {
-    .title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 40px;
-      font-size: 23px;
-      &::before {
-        content: "";
-        width: 70px;
-        height: 1px;
-        background-color: $Pink;
-        margin-right: 54px;
-      }
-      &::after {
-        content: "";
-        width: 70px;
-        height: 1px;
-        background-color: $Pink;
-        margin-left: 54px;
-      }
-    }
-    .list {
-      margin-bottom: 96px;
-      padding: 0 84px;
-      list-style: square;
-      @include sp {
-        margin-bottom: calc(50vw / (768 / 100));
-      }
+      padding: 0 2%;
     }
     .item {
-      font-size: 18px;
-      line-height: 2.4;
-    }
-
-    @include sp {
-      .title {
-        margin-bottom: 48rem;
-        font-size: 30rem;
-      }
-      .title::before {
-        width: 70rem;
-        margin-right: 24rem;
-      }
-      .title::after {
-        width: 70rem;
-        margin-left: 24rem;
-      }
-      .list {
-        padding: 0;
-      }
-      .item {
-        font-size: 20rem;
-      }
-    }
-  }
-
-  .course {
-    margin-bottom: 120px;
-    @include sp {
-      margin-bottom: calc(150vw / (768 / 100));
-    }
-    .title {
-      border-radius: 20px;
-      max-width: 408px;
-      margin: 0 auto 48px;
-      line-height: 54px;
-      background-color: $Pink;
-      font-size: 25px;
-      color: #fff;
-      text-align: center;
-    }
-    .introduction {
-      margin-bottom: 64px;
-      font-size: 19px;
-      line-height: 1.4;
-    }
-    .place-list {
-      .item {
-        display: flex;
-        justify-content: space-between;
-        padding: 24px 56px;
-        font-size: 55px;
-        font-family: a-otf-ryumin-pr6n, serif;
-        font-weight: 300;
-        border-bottom: 1px solid $Pink;
-        margin-bottom: 48px;
-        &:last-child {
-          border-bottom: 0;
-          margin-bottom: 80px;
-        }
-      }
-      .length {
-        width: 46%;
-        text-align: right;
-      }
-      em {
-        font-style: normal;
-        font-size: 88px;
-        letter-spacing: 0.06em;
-      }
-    }
-    .extend {
-      display: flex;
-      justify-content: center;
-      border: 1px solid $Pink;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 48px;
-      padding: 16px;
-      width: 798px;
-      font-family: a-otf-ryumin-pr6n, serif;
-      font-size: 36px;
-      .ellipsis {
-        letter-spacing: -0.4em;
-        margin: 0 1em;
-      }
-      @include sp {
-        margin-top: calc(30vw / (768 / 100));
-      }
-    }
-    .nominate {
-      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       gap: 10px;
-      width: 84%;
-      font-size: 26px;
-      font-family: a-otf-ryumin-pr6n, serif;
-      line-height: 1.8;
-
-      &-inner {
-        display: flex;
-        width: 33%;
-        gap: 22px;
-        border: 1px solid $Pink;
-        @include sp {
-          gap: 20%;
-          flex-direction: column;
-        }
-      }
-
-      &-rank {
-        background-color: $Pink;
-        color: #fff;
-        width: 50%;
-        text-align: center;
-        @include sp {
-          width: 100%;
-        }
-      }
-      span {
-        text-align: center;
+      font-size: 33px;
+      text-align: center;
+      letter-spacing: 0.5rem;
+      @include ryumin;
+      @include sp {
+        font-size: 33rem;
       }
     }
+    dt,
+    dd {
+      width: 50%;
+      border: 1px solid #bd00d4;
+      padding: 18px 0 18px 37px;
+      @include sp {
+        padding: 18rem 0 18rem 37rem;
+      }
+    }
+    dt {
+      background: #1e1e1e;
+      text-align: left;
+    }
+  }
+}
 
+.special-reserve {
+  padding-top: 90px;
+  @include sp {
+    padding: 90rem 2% 0;
+  }
+  p {
+    border: #bd00d4 solid 1px;
+    padding: 20px;
+    font-size: 27px;
+    text-align: center;
+    @include ryumin;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
     @include sp {
-      .title {
-        font-size: 32rem;
-        max-width: 90%;
-        line-height: 80rem;
+      padding: 20rem;
+      font-size: 27rem;
+    }
+  }
+  dl {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include sp {
+      padding-top: 10rem;
+      gap: 10rem;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 33px;
+      text-align: center;
+      letter-spacing: 0.5rem;
+      @include ryumin;
+      @include sp {
+        font-size: 33rem;
+        gap: 10rem;
       }
-      .introduction {
-        font-size: 20rem;
-      }
-      .place-list {
-        .item {
-          font-size: 48rem;
-          padding: 24rem 0;
-          margin-bottom: 48rem;
-          &:last-child {
-            margin-bottom: 64rem;
-          }
+
+      dt,
+      dd {
+        width: 50%;
+        border: 1px solid #bd00d4;
+        padding: 18px 0 18px 37px;
+        @include sp {
+          padding: 24rem 0 18rem 37rem;
+          height: 84rem;
         }
-        em {
-          font-size: 80rem;
-          letter-spacing: 0;
-        }
-        .length {
-          width: auto;
-        }
       }
-      .extend {
-        width: 100%;
-        font-size: 40rem;
+      dt {
+        background: #1e1e1e;
+        text-align: left;
       }
-      .nominate {
-        width: 100%;
-        font-size: 36rem;
+    }
+    :last-child {
+      padding-top: 30px;
+      @include sp {
+        padding-top: 30rem;
       }
     }
   }
+}
 
-  .guideline {
-    color: #fff;
+.about-reserve {
+  padding-top: 90px;
+  @include sp {
+    padding: 90rem 2% 0;
+  }
+  p {
+    border: #bd00d4 solid 1px;
+    padding: 20px;
+    font-size: 27px;
+    text-align: center;
+    @include ryumin;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    @include sp {
+      margin-bottom: 48rem;
+      padding: 20rem;
+      font-size: 27rem;
+    }
+  }
+  ul {
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 1.8;
+    padding-left: 13px;
+    @include sp {
+      padding-top: 40rem;
+      font-size: 24rem;
+      padding-left: 13rem;
+    }
+  }
+}
+
+.guideline {
+  padding-top: 90px;
+  @include sp {
+    padding: 90rem 2% 0;
+  }
+
+  .title {
+    border: #bd00d4 solid 1px;
+    padding: 20px;
+    font-size: 27px;
+    text-align: center;
+    @include ryumin;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    @include sp {
+      padding: 20rem;
+      font-size: 27rem;
+    }
+  }
+  .paragraph {
+    font-size: 21px;
+    line-height: 2;
+    padding: 55px 0 0 15px;
+    @include sp {
+      font-size: 21rem;
+      padding: 0 0 0 15rem;
+    }
+    &:nth-child(3) {
+      padding-top: 30px;
+    }
+  }
+  .rule {
+    padding: 27px 0 113px;
+    font-size: 21px;
+    list-style-type: square;
+    line-height: 1.8;
+    margin-left: 2.2em;
+  }
+
+  @include sp {
     .title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 40px;
-      font-size: 23px;
-      &::before {
-        content: "";
-        width: 70px;
-        height: 1px;
-        background-color: #fff;
-        margin-right: 54px;
-      }
-      &::after {
-        content: "";
-        width: 70px;
-        height: 1px;
-        background-color: #fff;
-        margin-left: 54px;
-      }
+      margin-bottom: 48rem;
+      font-size: 30rem;
+    }
+    .title::before {
+      width: 70rem;
+      margin-right: 24rem;
+    }
+    .title::after {
+      width: 70rem;
+      margin-left: 24rem;
     }
     .paragraph {
-      font-size: 17px;
-      line-height: 2;
-      margin-bottom: 1.4em;
+      font-size: 20rem;
     }
     .rule {
-      font-size: 17px;
-      list-style-type: square;
-      line-height: 1.8;
-      margin-left: 1.4em;
-    }
-    @include sp {
-      .title {
-        margin-bottom: 48rem;
-        font-size: 30rem;
-      }
-      .title::before {
-        width: 70rem;
-        margin-right: 24rem;
-      }
-      .title::after {
-        width: 70rem;
-        margin-left: 24rem;
-      }
-      .paragraph {
-        font-size: 20rem;
-      }
-      .rule {
-        font-size: 20rem;
-      }
+      font-size: 20rem;
     }
   }
 }

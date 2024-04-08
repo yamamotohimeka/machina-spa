@@ -34,9 +34,9 @@
           <?php for($k=0; $k<7; $k++):?>
           <?php $day = date('Y-m-d', strtotime('+'.$k.'day', current_time('timestamp'))); ?>
           <div class="box">
-            <h2 class="page-schedule-title-day">
+            <h4 class="page-schedule-title-day">
               <?php echo date('n/j', strtotime('+'.$k.'day', current_time('timestamp'))).'('.$week[date('w', strtotime('+'.$k.'day', current_time('timestamp')))].')'.'の出勤情報';?>
-            </h2>
+            </h4>
 
             <ul class="therapist-list-wrap">
               <?php 
@@ -51,6 +51,8 @@
                     $newfaceDate = get_the_author_meta('newface_date', $val->staff_id);
                     $date = DateTime::createFromFormat('Ymd', $newfaceDate);
                     $c_id = "?cid=".$user_id;
+                    $ranking = get_the_author_meta('ranking', $val->staff_id);
+
                     
                     if($user_id) {
                       print('<li class="therapist-list">');
@@ -61,13 +63,11 @@
                     }
                     if($user_id){
                       print('<p class="therapist-list-image">'.'<a href="'.get_author_posts_url($user_id).$c_id.'" class="expand-link">'.get_avatar($val->staff_id, 420).'</a>'.'</p>');
-                      print('<p class="therapist-list-name">'.get_the_author_meta('display_name', $val->staff_id).'<span class="age">（'.get_the_author_meta('fage', $val->staff_id).'）</span></p>');
-                      print('<p class="therapist-list-tall">'.'身長：'.get_the_author_meta('tall', $val->staff_id).' cm'.'</p>');
-                      print('<p class="therapist-list-worktime">');
-                      print(preg_replace('/([0-9]{2})\:([0-9]{2})\:(00)/','$1:$2', $val->starttime).'～'.preg_replace('/([0-9]{2})\:([0-9]{2})\:(00)/','$1:$2', $val->endtime).'</p>');
-                      print('<div class="page-schedule-staff-prof-content">');
-                    }
-                    if($option_fee && $user_id) {
+                        if($ranking){
+                        print('<div class="rankicon"><p> <span>'. $ranking.'</span>位</p></div>');
+                      }
+
+                      if($option_fee ) {
                       $status = get_the_author_meta('option_fee', $val->staff_id);
                       if($status == 'BRONZE'){ //値（Value）が「landscape」だったら
                       print('<img src="'.get_template_directory_uri().'/images/bronze.jpg" alt="bronze"></span></a></p>');
@@ -76,6 +76,11 @@
                       }elseif( $status == 'GOLD'){
                       print('<img src="'.get_template_directory_uri().'/images/gold.jpg" alt="gold"></span></a></p>');
                       }
+                    }
+                      print('<p class="therapist-list-name">'.get_the_author_meta('display_name', $val->staff_id).'<span class="age">（'.get_the_author_meta('fage', $val->staff_id).'）</span></p>');
+                      print('<p class="therapist-list-worktime">');
+                      print(preg_replace('/([0-9]{2})\:([0-9]{2})\:(00)/','$1:$2', $val->starttime).'～'.preg_replace('/([0-9]{2})\:([0-9]{2})\:(00)/','$1:$2', $val->endtime).'</p>');
+                      print('<div class="page-schedule-staff-prof-content">');
                     }
                     if($user_id){
                       print('</div></li>');

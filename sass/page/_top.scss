@@ -1,27 +1,74 @@
 @charset "UTF-8";
 
 .mainvisual {
-  background: #000;
+  background-color: #000;
+  background-image: url(../images/mainvisual-bg.png);
+  background-repeat: repeat;
+  background-size: 71px 71px;
+  padding-top: 13px;
+
+  &-payment {
+    background: #1a1a1a;
+    padding: 47px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    @include sp {
+      flex-direction: column;
+      gap: 20rem;
+      padding: 34rem 0;
+    }
+    img {
+      width: 508px;
+      @include sp {
+        width: calc(500vw / (900 / 100));
+      }
+    }
+    p {
+      font-size: 24px;
+      @include ryumin;
+      @include sp {
+        font-size: 24rem;
+      }
+      a {
+        border-bottom: 1px solid #fff;
+        color: #fff;
+      }
+    }
+  }
 }
 
 .main-img-innerwrap {
   @include pc {
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 48px;
+    padding-bottom: 12px;
+
+    .slick-dots li button:before {
+      color: #3c3c3c;
+      opacity: unset;
+      font-size: 22px;
+    }
+    .slick-dots li.slick-active button:before {
+      font-size: 22px;
+    }
+    .slick-dotted.slick-slider {
+      margin-bottom: 25px;
+    }
   }
-}
-
-.mainvisual-menu {
-  display: flex;
-  width: 100%;
-
   @include sp {
-    margin-top: 10rem;
-  }
+    padding-bottom: 19rem;
 
-  @include pc {
-    display: none;
+    .slick-dots li button:before {
+      font-size: 22rem;
+    }
+    .slick-dots li.slick-active button:before {
+      font-size: 22rem;
+    }
+    .slick-dotted.slick-slider {
+      margin-bottom: 25rem;
+    }
   }
 
   &-list {
@@ -53,31 +100,15 @@
 }
 
 .main-inner {
-  @include inner;
-}
-
-.top-therapists-bg {
-  background: #000;
-  margin: 0 calc(50% - 50vw);
-  padding: 0 calc(50vw - 50%);
-  width: 100vw;
-
-  @include pc {
-    padding-bottom: 72px;
-  }
-}
-
-.section-bg {
-  background: #000;
-
-  @include pc {
-    padding-top: 32px;
-  }
+  background-color: #000;
 }
 
 .top-therapists-container .therapist-list-wrap {
+  @include inner;
   @include sp {
     justify-content: space-between;
+    padding: 0 17rem;
+    width: 100%;
   }
 }
 
@@ -93,41 +124,29 @@
 }
 
 .therapists-wrap {
-  background: #000;
   padding-bottom: 72rem;
+  background-image: url(../images/mainvisual-bg.png);
+  background-size: 71px 71px;
+  background-repeat: repeat;
+
+  @include sp {
+    background: #000;
+  }
 
   @include pc {
     width: 100%;
     padding-bottom: 0;
   }
 }
-
 .therapists-title {
-  font-size: 28rem;
-  @include osaka;
-  text-align: center;
-  color: #fff;
-  background: #1e1e1e;
-  padding: 32rem 0;
-
-  @include sp {
-    margin: 0 calc(50% - 50vw);
-    width: 100vw;
-    margin-bottom: 24rem;
-  }
-
   @include pc {
-    font-size: 21px;
-    color: #fff;
-    background: $Pink;
-    padding: 8px 0;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 }
 
 .therapists-wrap-inner {
   @include sp {
-    width: 88.8%;
     margin: 0 auto;
   }
 }
@@ -143,7 +162,7 @@
     margin-bottom: 20px;
   }
   @include sp {
-    gap: 60rem 0;
+    gap: 37rem 0;
   }
   &:before {
     content: "";
@@ -159,8 +178,7 @@
 }
 
 .therapist-list {
-  width: 48.5%;
-  border: $Pink solid 1px;
+  width: 48.6%;
   @include matisse;
   text-align: center;
   color: #fff;
@@ -168,30 +186,32 @@
 
   @include sp {
     font-size: 26rem;
+    width: 49.5%;
   }
 
   @include pc {
     width: 24.3%;
-    padding-top: 16px;
-    margin-bottom: 20px;
   }
 
   &-image {
-    width: 88.3%;
-    margin: 18rem auto;
+    width: 100%;
+    margin: 10rem auto 0;
 
     @include pc {
       margin: 0 auto;
-      margin-bottom: 16px;
     }
   }
 
   &-name {
-    margin-bottom: 4rem;
+    @include sp {
+      margin: 16rem 0;
+      font-size: 28rem;
+    }
 
     @include pc {
-      font-size: 15px;
-      margin-bottom: 8px;
+      font-size: 23px;
+      padding: 15px 0;
+      margin-bottom: 0;
     }
   }
 
@@ -205,12 +225,13 @@
   }
 
   &-worktime {
-    background: #1e1e1e;
+    background: $Pink;
+    color: #fff;
     padding: 8rem 0;
     line-height: 1.6;
     @include pc {
-      font-size: 15px;
-      padding: 8px 0;
+      font-size: 22px;
+      padding: 4px 0;
     }
   }
 
@@ -225,24 +246,21 @@
   }
 
   &-realtime {
+    margin-bottom: 10px;
     color: #fff;
-    background-color: #a50721;
-    position: absolute;
-    padding: 5px 0;
-    width: 101%;
-    height: 23px;
-    top: -26px;
-    left: -1px;
-    font-size: 16px;
-    font-weight: bold;
+    background-color: #52079a;
+    padding: 9px 0;
+    width: 100%;
+    height: 43px;
+
+    font-size: 23px;
     text-align: center;
     font-family: "Osaka", sans-serif;
 
     @include sp {
-      padding: 5rem;
-      top: -37rem;
-      font-size: 100%;
-      height: 36rem;
+      padding: 11rem 0;
+      font-size: 30rem;
+      height: 52rem;
     }
   }
 }
@@ -269,74 +287,82 @@
     }
   }
 }
-
+.rankicon {
+  bottom: 138px;
+  right: 13px;
+  @include sp {
+    bottom: 175rem;
+    right: 7rem;
+  }
+}
 .newDate {
-  padding: 5px 0 5px 15px;
-  width: 101px;
+  padding: 5px 3px 5px 23px;
+  width: 140px;
   color: #fff;
-  background-image: url(../images/newdate-bg.png);
-  background-size: 101px 26px;
-  background-repeat: no-repeat;
+  background-color: #147d00;
   display: inline-block;
   position: absolute;
-  top: 10px;
-  right: 8px;
+  bottom: 138px;
+  left: 0px;
   z-index: 100;
-  font-size: 12px;
+  font-size: 18px;
+  @include ryumin;
 
-  @include md {
-    background-size: 200px auto;
-    width: 200px;
-    font-size: 14rem;
-  }
   @include sp {
-    top: 10rem;
-    right: 15rem;
+    padding: 5rem 3rem 5rem 23rem;
+    width: 140rem;
+    bottom: 175rem;
+    font-size: 18rem;
   }
 
   p {
     padding-left: 7px;
-    @include md {
-      padding-left: 20rem;
-    }
   }
 
   &:before {
     content: "";
     background-image: url(../images/newdate-icon.png);
-    background-size: 13px 16px;
-    width: 13px;
-    height: 16px;
+    background-size: 17px 22px;
+    width: 17px;
+    height: 22px;
     position: absolute;
     top: 3px;
     left: 5px;
 
-    @include md {
-      transform: scale(1.5);
-      top: 5rem;
-      left: 10rem;
+    @include sp {
+      background-size: 17rem 24rem;
+      width: 17rem;
+      height: 24rem;
     }
   }
 }
 
 .therapist-link {
+  margin: 44px auto 94px 0;
+  padding: 12px;
+  width: 163px;
+  text-align: center;
+  font-size: 21px;
+  background-color: $Pink;
+  border-radius: 7px;
+  @include ryumin;
+
   @include sp {
-    display: none;
+    margin: 80rem 22rem 0 auto;
+    padding: 12rem 0;
+    width: 170rem;
+    font-size: 23rem;
   }
 
-  border-bottom: solid 1px #fff;
-  display: inline-block;
-  font-size: 11px;
+  &-wrap {
+    @include inner;
+    @include sp {
+      width: 100%;
+    }
+  }
 
   a {
     color: #fff;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-
-  span {
-    margin-left: 8px;
   }
 }
 
@@ -418,149 +444,6 @@
   }
 }
 
-.about {
-  margin: 0 auto;
-  padding: 70rem 0;
-  width: 1200px;
-  text-align: center;
-  color: #000;
-  @include sp {
-    width: 100%;
-  }
-
-  &-bg {
-    margin: 0 calc(50% - 50vw);
-    width: 100vw;
-    background: url(../images/about-bg.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  @include sp {
-    padding: 72px 0 0;
-  }
-
-  &-title {
-    font-size: 41rem;
-    border-bottom: $Pink solid 1px;
-    display: inline-block;
-    padding: 0 20rem;
-    color: $Pink;
-    @include ryumin;
-    margin-bottom: 70rem;
-
-    @include pc {
-      font-size: 31px;
-    }
-
-    span {
-      font-size: 60rem;
-      @include bigcaslon;
-
-      @include pc {
-        font-size: 48px;
-      }
-    }
-  }
-
-  &-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-    gap: 40px;
-    @include sp {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    img {
-      width: 336px;
-      @include sp {
-        width: 40%;
-      }
-    }
-
-    &:last-of-type {
-      margin-bottom: 0;
-
-      @include sp {
-        margin-bottom: 48rem;
-      }
-    }
-    &:nth-of-type(2) {
-      @include sp {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-    }
-    &wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      @include sp {
-        width: 88.8%;
-        margin: 0 auto;
-      }
-    }
-    &-flexwrap {
-      @include sp {
-        width: 100%;
-        margin-bottom: 0;
-      }
-    }
-    &-title {
-      font-size: 35rem;
-      @include ryumin;
-      color: $Pink;
-      margin-bottom: 25rem;
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-
-      @include sp {
-        justify-content: center;
-      }
-
-      @include pc {
-        margin-bottom: 12px;
-      }
-
-      @include pc {
-        font-size: 29px;
-      }
-    }
-
-    &-text {
-      font-size: 21rem;
-      line-height: 1.5;
-      margin-bottom: 25rem;
-      @include ryumin;
-      font-weight: bold;
-      text-align: left;
-
-      @include pc {
-        font-size: 20px;
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
-.about-image-wrap {
-  @include pc {
-    display: none;
-  }
-}
-
-.about-image {
-  width: 247px;
-
-  @include sp {
-    width: 100%;
-  }
-}
-
 .top-schedule-therapist-wrap .oil {
   word-spacing: 0;
   font-family: "fot-matisse-pron";
@@ -596,45 +479,38 @@
 
 .top {
   &__diary {
-    padding: 40px 0 100px;
-    width: 100%;
+    padding: 56px 0 38px;
     color: #fff;
+    background-color: #000;
+    @include inner;
+    margin: 0 auto;
     a {
       color: #fff;
     }
     @include sp {
       margin: 0 calc(50% - 50vw);
       width: 100vw;
-      padding: 40px 0 0;
+      padding: 51rem 0 0;
     }
-    h3 {
-      margin-bottom: 20px;
-      padding: 8px 0;
-      font-size: 21px;
-      text-align: center;
-      background: $Pink;
-      @include sp {
-        font-size: 28rem;
-        font-family: "Osaka", sans-serif;
-        text-align: center;
-        color: #fff;
-        background: #1e1e1e;
-        padding: 32rem 0;
 
-        margin-bottom: 24rem;
+    h3 {
+      @include pc {
+        margin-bottom: 20px;
       }
     }
-
     &-more {
       margin: 80px 0 10px auto;
-      padding: 10px;
-      width: 100px;
+      padding: 12px;
+      width: 163px;
       text-align: center;
-      font-size: 14px;
+      font-size: 21px;
       background-color: $Pink;
-      border-radius: 5%;
+      border-radius: 7px;
+      @include ryumin;
       @include sp {
-        margin: 5% 2% 15% auto;
+        margin: 6% 3% 6% auto;
+        font-size: 23rem;
+        width: 172rem;
       }
     }
 
@@ -646,7 +522,8 @@
       @include sp {
         display: flex;
         flex-wrap: nowrap;
-        width: 300rem;
+        width: 280rem;
+        gap: 12rem 0;
       }
 
       &-wrap {
@@ -659,23 +536,23 @@
           flex-direction: row;
           flex-wrap: nowrap;
           width: 100%;
-          height: 560rem;
-          gap: 10px;
+          gap: 18rem;
+          padding-bottom: 20rem;
         }
       }
       &-img {
         height: 300px;
 
         @include sp {
-          height: 400rem;
-          width: 300rem;
+          height: 368rem;
+          width: 280rem;
         }
 
         &-wrap {
           position: relative;
           width: 100%;
           @include sp {
-            height: 400rem;
+            width: 280rem;
           }
         }
 
@@ -685,12 +562,17 @@
           object-fit: cover;
 
           @include sp {
-            height: 400rem;
+            height: 368rem;
+            width: 280rem;
+            max-height: unset;
           }
         }
       }
       &-author {
         font-weight: bold;
+        @include sp {
+          font-size: 19rem;
+        }
       }
       &-content {
         position: absolute;
@@ -701,8 +583,287 @@
         background-color: rgba($color: #000000, $alpha: 0.5);
         @include sp {
           width: 100%;
+          font-size: 15rem;
         }
       }
+    }
+  }
+
+  &__newface {
+    padding-top: 78px;
+    padding-bottom: 57px;
+    background-color: #1a1a1a;
+    @include sp {
+      padding-top: 20rem;
+      background-color: #000;
+    }
+
+    &-wrap {
+      margin: 0 auto;
+      width: 1200px;
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    .newface-link {
+      padding: 12px;
+      width: 163px;
+      text-align: center;
+      font-size: 21px;
+      background-color: $Pink;
+      border-radius: 7px;
+      @include ryumin;
+      margin: 80px 0 0 auto;
+      @include sp {
+        margin: 44rem 22rem 0 auto;
+        padding: 12rem 0;
+        width: 170rem;
+        font-size: 23rem;
+      }
+      &-wrap {
+        @include inner;
+        @include sp {
+          width: 100%;
+        }
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .newface-list-wrap {
+      padding-top: 38px;
+      @include sp {
+        padding-top: 0;
+        padding-right: 5rem;
+      }
+
+      .slick {
+        &-track {
+          display: flex;
+          gap: 10px;
+          @include sp {
+            gap: 10rem;
+          }
+        }
+        &-dots {
+          bottom: -15.5rem;
+          li button:before {
+            color: #3c3c3c;
+            opacity: unset;
+            font-size: 22px;
+            @include sp {
+              font-size: 22rem;
+            }
+          }
+
+          li.slick-active button:before {
+            font-size: 22px;
+            color: #787878 !important;
+            @include sp {
+              font-size: 22rem;
+            }
+          }
+        }
+      }
+
+      .therapist-list {
+        width: 48.5%;
+        @include matisse;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        @include sp {
+          width: 49.5%;
+        }
+        .newDate {
+          bottom: 92px;
+          @include sp {
+            bottom: 138rem;
+          }
+        }
+        .rankicon {
+          right: 10px;
+          bottom: 92px;
+          @include sp {
+            bottom: 138rem;
+            right: 7rem;
+          }
+        }
+        @include sp {
+          font-size: 26rem;
+        }
+
+        @include pc {
+          width: 24.3%;
+        }
+
+        &-image {
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        &-name {
+          @include pc {
+            font-size: 23px;
+            padding: 15px 0;
+            margin-bottom: 0;
+          }
+          @include sp {
+            margin-bottom: 39rem;
+          }
+        }
+
+        &-tall {
+          margin-bottom: 20rem;
+
+          @include pc {
+            font-size: 15px;
+            margin-bottom: 20px;
+          }
+        }
+
+        &-option {
+          transform: translateY(1px);
+
+          @include pc {
+            font-size: 15px;
+          }
+        }
+
+        &-newface {
+          margin-bottom: 10px;
+          color: #fff;
+          background-color: #52079a;
+          padding: 9px 0;
+          width: 100%;
+          height: 43px;
+          font-size: 23px;
+          text-align: center;
+          font-family: "Osaka", sans-serif;
+
+          @include sp {
+            margin-bottom: 0;
+            padding: 12rem 0;
+            top: -37rem;
+            font-size: 100%;
+            height: 52rem;
+            font-family: unset;
+            background-color: #bd00d4;
+          }
+        }
+      }
+    }
+  }
+
+  &__recruit {
+    padding-top: 78px;
+    padding-bottom: 106px;
+    background-image: url(../images/mainvisual-bg.png);
+    background-repeat: repeat;
+    background-size: 71px 71px;
+    @include sp {
+      padding-top: 9rem;
+      padding-bottom: 3rem;
+      background: #000;
+    }
+
+    &-img {
+      width: 1200px;
+      margin: 0 auto;
+      padding-top: 25px;
+      @include sp {
+        width: 100%;
+        padding-top: 0;
+      }
+    }
+  }
+
+  &__policy {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 48px 0;
+    font-size: 20px;
+    @include sp {
+      background: #000;
+      font-size: 21rem;
+    }
+    h4 {
+      padding: 21px 0;
+      width: 1200px;
+      font-size: 27px;
+      border: 1px solid #bd00d4;
+      margin: 0 auto;
+      text-align: center;
+      @include ryumin;
+      @include sp {
+        width: 94%;
+        font-size: 24rem;
+        padding: 17rem 0;
+      }
+    }
+    &-inner {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px 0;
+      @include sp {
+        width: 100%;
+        padding: 43rem 24rem 0;
+      }
+      p {
+        line-height: 2;
+        @include sp {
+          line-height: 1.8;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        padding: 37px 0 20px;
+        list-style-type: disc;
+        list-style-position: inside;
+        @include sp {
+          padding: 37rem 0 99rem;
+        }
+      }
+    }
+  }
+
+  &__link {
+    padding-top: 30px;
+    padding-bottom: 64px;
+    &-sp {
+      color: #fff;
+      font-size: 33rem;
+      margin-right: 36rem;
+      text-align: right;
+      @include ryumin;
+
+      a {
+        border-bottom: solid 1px;
+        color: #fff;
+      }
+
+      @include pc {
+        display: none;
+      }
+    }
+
+    &-flex {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 17px 36px;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 27px 27px 0px;
+    }
+    @include sp {
+      display: none;
     }
   }
 }

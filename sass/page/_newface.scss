@@ -55,21 +55,20 @@
     }
 
     &-list {
-      &-realtime {
-        margin-top: 5px;
-        position: initial;
+      &-newface {
+        color: #fff;
+        background-color: #bd00d4;
+        padding: 9px 0;
         width: 100%;
-        background-color: #a50721;
+        height: 43px;
+        font-size: 23px;
+        text-align: center;
+        @include ryumin;
 
         @include sp {
-          margin-top: 0;
-          padding: 6rem 0 6rem 0;
-          height: calc(57vw / (1119 / 100));
-          font-size: 26rem;
-        }
-
-        &-none {
-          height: calc(57vw / (1119 / 100));
+          padding: 12rem 0;
+          font-size: 28rem;
+          height: 52rem;
         }
       }
     }
