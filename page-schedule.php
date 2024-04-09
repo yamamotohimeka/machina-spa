@@ -59,7 +59,7 @@
                       print('<p class="therapist-list-realtime"></p>');
                     }
                     if($newfaceDate && $user_id) {
-                      print('<p class="therapist-list-newDate newDate">'. $date->format('m月d日') .'入店</p>');
+                      print('<p class="therapist-list-newDate newDate">NEW</p>');
                     }
                     if($user_id){
                       print('<p class="therapist-list-image">'.'<a href="'.get_author_posts_url($user_id).$c_id.'" class="expand-link">'.get_avatar($val->staff_id, 420).'</a>'.'</p>');

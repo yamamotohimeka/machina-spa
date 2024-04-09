@@ -113,9 +113,10 @@
               }
             }
             .newDate {
-              bottom: 58px;
+              top: 339px;
+
               @include sp {
-                bottom: 80rem;
+                top: 471rem;
               }
             }
           }
@@ -275,10 +276,11 @@
       }
 
       .newDate {
-        left: 0;
-        bottom: 16px;
+        left: 9px;
+        top: 439px;
         @include sp {
-          bottom: 80rem;
+          left: 9rem;
+          top: 469rem;
         }
       }
     }
@@ -297,7 +299,7 @@
       margin: 21px 12px 21px 35px;
       padding-right: 24px;
       max-height: 330px;
-      font-size: 21px;
+      font-size: 16px;
       overflow: auto;
       @include sp {
         font-size: 21rem;

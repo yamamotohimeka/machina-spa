@@ -32,7 +32,7 @@
           </div> <?php endif;?>
           <?php if(!empty($udata->newface_date)) : ?>
           <div class="author-newDate newDate">
-            <p><?php echo  $date->format('m月d日')?>入店</p>
+            <p>NEW</p>
           </div>
           <?php endif;?>
 

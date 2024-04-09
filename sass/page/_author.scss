@@ -9,7 +9,6 @@
 
   &-diary {
     padding-top: 50px;
-    margin-bottom: 72rem;
     font-size: 18px;
     @include sp {
       width: 88.8%;
@@ -65,12 +64,12 @@
       border: 1px solid $Pink;
       padding: 2% 15%;
       overflow-x: hidden;
-      height: 1200px;
+      height: 1038px;
       display: flex;
       flex-direction: column;
       @include sp {
         padding: 2% 8%;
-        height: 1200rem;
+        height: 1038rem;
       }
 
       .slider {
@@ -123,7 +122,7 @@
     }
     padding: 0 59px 0 40px;
     line-height: 1.65;
-    font-size: 19px;
+    font-size: 16px;
     overflow-y: auto;
     max-height: 333px;
     margin-right: 18px;
@@ -150,7 +149,6 @@
   @include pc {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 27px;
   }
 }
 
@@ -180,28 +178,35 @@
 }
 
 .author-img-wrap {
-  @include inner;
   position: relative;
   width: 549px;
 
   @include sp {
     width: 88.8%;
+    margin: 0 auto;
   }
 
   .newDate {
-    bottom: 264px;
-    width: 160px;
-    font-size: 20px;
+    top: 691px;
+    font-size: 24px;
+    &::before {
+      background-size: 120px 110px;
+      width: 120px;
+      height: 110px;
+      top: -68px;
+      left: -11px;
+      font-size: 40px;
+    }
     @include sp {
-      bottom: 320rem;
-      width: 232rem;
-      font-size: 28rem;
-      font-weight: bold;
+      top: 833rem;
+      font-size: 35rem;
       &::before {
-        content: "";
-        background-size: 20rem 29rem;
-        width: 20rem;
-        height: 29rem;
+        background-size: 180rem 160rem;
+        width: 180rem;
+        height: 160rem;
+        top: -100rem;
+        left: -11rem;
+        font-size: 40rem;
       }
     }
   }
@@ -302,7 +307,7 @@
   @include pc {
     width: 549px;
     font-size: 21px;
-    margin-bottom: 48px;
+    margin-bottom: 0;
   }
 }
 

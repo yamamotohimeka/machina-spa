@@ -98,8 +98,51 @@
     </a>
   </li>
 </ul>
-
-
+<?php if(is_front_page()):?>
+<div class="top__link">
+  <h3>リンク</h3>
+  <div class="top__link-flex">
+    <div class="top__link-bnr">
+      <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
+          alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
+          alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
+          alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
+          alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://kansai.momi-lg.com" target="_blank"><img src="https://kansai.momi-lg.com/img/FRONT/pc/200_40.gif"
+          alt="モミろぐ関西" border="0"></a>
+    </div>
+    <div class="top__link-bnr"> <a href="https://me-navi.com/job/" rel="nofollow noopener" target="_blank"><img
+          src="https://me-navi.com/asset/img/j_200_40.gif" alt="メンズエステバイト情報【メンエスナビ求人】"></a>
+    </div>
+    <div class="top__link-bnr"> <a href="https://me-navi.com" rel="nofollow noopener" target="_blank"><img
+          src="https://me-navi.com/asset/img/200_40.gif" alt="男性向けリラクゼーションサロン専門情報サイト そけい部長のメンエスナビ"></a>
+    </div>
+    <div class="top__link-bnr"> <a href="https://menes-ikitai.co.jp/osaka/sakaisuji-honmachi-ranking/" target="_blank">
+        <img src="https://menes-ikitai.co.jp/wp-content/uploads/2023/03/4-2.png" width="200" height="40" border="0"
+          alt="【厳選】堺筋本町メンズエステ_メンエスイキタイ"> </a>
+    </div>
+    <div class="top__link-bnr"> <a href="https://menesth-job.jp/25/" target="_blank">
+        <img alt="大阪府でメンズエステ求人を探すなら「リラクジョブ」にお任せ！" width="200" height="40" border="0"
+          src="https://dv6drgre1bci1.cloudfront.net/systemfiles.ranking-deli-kyujin.jp/menesth-job/assets/img/user/link/20040_rj.jpg" /></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://esta-osaka.com" target="_blank" alt="メンズエステの情報や体験談を紹介するエステーションです。"><img
+          src="https://esta-osaka.com/img/osaka/esta-200_40.jpg" width="200" height="40" /></a>
+    </div>
+  </div>
+</div>
+<?php endif;?>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/index.js"></script>
 

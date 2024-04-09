@@ -129,7 +129,7 @@ h2 {
   position: relative;
   @include sp {
     width: 100vw;
-    font-size: 28rem;
+    font-size: 38rem;
     padding: 5rem 0 5rem 24rem;
     margin-bottom: 40rem;
   }
@@ -213,45 +213,40 @@ h2 {
   }
 }
 .newDate {
-  padding: 5px 3px 5px 23px;
-  width: 140px;
   color: #fff;
-  background-color: #147d00;
   display: inline-block;
   position: absolute;
-  bottom: 138px;
-  left: 0px;
+  top: 405px;
+  left: 9px;
   z-index: 100;
-  font-size: 18px;
+  font-size: 22px;
   @include ryumin;
 
   @include sp {
-    padding: 5rem 3rem 5rem 23rem;
-    width: 174rem;
-    bottom: 175rem;
-    font-size: 20rem;
-    font-weight: bold;
-  }
-
-  p {
-    padding-left: 7px;
+    font-size: 22rem;
+    top: 501rem;
+    left: 9rem;
   }
 
   &:before {
     content: "";
-    background-image: url(../images/newdate-icon.png);
-    background-size: 17px 22px;
-    width: 17px;
-    height: 22px;
+    display: inline-block;
+    background-image: url(../images/new-bg.png);
+    background-repeat: no-repeat;
+    background-size: 120px 100px;
+    width: 120px;
+    height: 100px;
     position: absolute;
-    top: 3px;
-    left: 5px;
+    top: -62px;
+    left: -11px;
+    z-index: -1;
 
     @include sp {
-      background-size: 17rem 24rem;
-      width: 17rem;
-      height: 24rem;
-      top: 0;
+      background-size: 120rem 100rem;
+      width: 120rem;
+      height: 100rem;
+      top: -62rem;
+      left: -11rem;
     }
   }
 }

@@ -25,7 +25,7 @@
       <div class="therapist-contentwrap">
         <p class="therapist-list-newface"><?php echo  $date->format('m月d日')?>入店</p>
         <div class="therapist-img-newDate newDate">
-          <p><?php echo  $date->format('m月d日')?>入店</p>
+          <p>NEW</p>
         </div>
         <?php if($ranking): ?>
         <div class="rankicon">

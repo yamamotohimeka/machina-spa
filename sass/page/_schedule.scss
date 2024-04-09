@@ -10,6 +10,12 @@
     @include sp {
       width: 100%;
     }
+    .newDate {
+      top: 405px;
+      @include sp {
+        top: 465rem;
+      }
+    }
   }
 
   .date-tab {

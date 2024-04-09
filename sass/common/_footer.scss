@@ -157,14 +157,13 @@
   a {
     display: block;
     color: #fff;
-    padding: 10rem 0;
   }
 
   &-img {
-    width: 50%;
+    width: 34%;
     margin: 0 auto;
     img {
-      margin: 10rem 0;
+      margin: 12rem 0;
     }
   }
 }
@@ -219,10 +218,4 @@
   text-align: right;
   background: #b8009f;
   padding: 8px;
-}
-
-.footer-sp-list-img-sms {
-  img {
-    transform: translateY(12rem);
-  }
 }

@@ -212,7 +212,7 @@ h2 {
   h3,
   h2 {
     width: 100vw;
-    font-size: 28rem;
+    font-size: 38rem;
     padding: 5rem 0 5rem 24rem;
     margin-bottom: 40rem;
   }
@@ -310,48 +310,44 @@ h2::after {
 }
 
 .newDate {
-  padding: 5px 3px 5px 23px;
-  width: 140px;
   color: #fff;
-  background-color: #147d00;
   display: inline-block;
   position: absolute;
-  bottom: 138px;
-  left: 0px;
+  top: 405px;
+  left: 9px;
   z-index: 100;
-  font-size: 18px;
+  font-size: 22px;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
 }
 @media screen and (max-width: 1199px) {
   .newDate {
-    padding: 5rem 3rem 5rem 23rem;
-    width: 174rem;
-    bottom: 175rem;
-    font-size: 20rem;
-    font-weight: bold;
+    font-size: 22rem;
+    top: 501rem;
+    left: 9rem;
   }
-}
-.newDate p {
-  padding-left: 7px;
 }
 .newDate:before {
   content: "";
-  background-image: url(../images/newdate-icon.png);
-  background-size: 17px 22px;
-  width: 17px;
-  height: 22px;
+  display: inline-block;
+  background-image: url(../images/new-bg.png);
+  background-repeat: no-repeat;
+  background-size: 120px 100px;
+  width: 120px;
+  height: 100px;
   position: absolute;
-  top: 3px;
-  left: 5px;
+  top: -62px;
+  left: -11px;
+  z-index: -1;
 }
 @media screen and (max-width: 1199px) {
   .newDate:before {
-    background-size: 17rem 24rem;
-    width: 17rem;
-    height: 24rem;
-    top: 0;
+    background-size: 120rem 100rem;
+    width: 120rem;
+    height: 100rem;
+    top: -62rem;
+    left: -11rem;
   }
 }
 
@@ -784,14 +780,13 @@ h2::after {
 .footer-sp-list a {
   display: block;
   color: #fff;
-  padding: 10rem 0;
 }
 .footer-sp-list-img {
-  width: 50%;
+  width: 34%;
   margin: 0 auto;
 }
 .footer-sp-list-img img {
-  margin: 10rem 0;
+  margin: 12rem 0;
 }
 
 .footer-flexdiv {
@@ -855,10 +850,6 @@ h2::after {
   .footer-pc-copyright-wrap {
     display: none;
   }
-}
-
-.footer-sp-list-img-sms img {
-  transform: translateY(12rem);
 }
 
 .toggle {
@@ -1198,7 +1189,7 @@ h2::after {
 }
 @media screen and (min-width: 1200px) {
   .therapist-list-name {
-    font-size: 23px;
+    font-size: 18px;
     padding: 15px 0;
     margin-bottom: 0;
   }
@@ -1208,7 +1199,7 @@ h2::after {
 }
 @media screen and (min-width: 1200px) {
   .therapist-list-tall {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 20px;
   }
 }
@@ -1220,7 +1211,7 @@ h2::after {
 }
 @media screen and (min-width: 1200px) {
   .therapist-list-worktime {
-    font-size: 22px;
+    font-size: 18px;
     padding: 4px 0;
   }
 }
@@ -1236,40 +1227,19 @@ h2::after {
   margin-bottom: 10px;
   color: #fff;
   background-color: #52079a;
-  padding: 9px 0;
+  padding: 13px 0;
   width: 100%;
   height: 43px;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
   font-family: "Osaka", sans-serif;
 }
 @media screen and (max-width: 1199px) {
   .therapist-list-realtime {
+    margin-bottom: 10rem;
     padding: 11rem 0;
     font-size: 30rem;
     height: 52rem;
-  }
-}
-
-.new:before {
-  content: "";
-  font-size: 24rem;
-  width: 106rem;
-  height: 95rem;
-  background-image: url(../images/new.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  transform: translateY(-1px);
-}
-@media screen and (min-width: 1200px) {
-  .new:before {
-    width: 89px;
-    height: 80px;
   }
 }
 
@@ -1485,7 +1455,7 @@ h2::after {
 .top__diary .archive__post {
   width: 19%;
   gap: 10px 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 @media screen and (max-width: 1199px) {
   .top__diary .archive__post {
@@ -1555,12 +1525,13 @@ h2::after {
   left: 0;
   padding: 5px;
   width: 100%;
+  font-size: 14px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 1199px) {
   .top__diary .archive__post-content {
     width: 100%;
-    font-size: 15rem;
+    font-size: 20rem;
   }
 }
 .top__newface {
@@ -1675,11 +1646,11 @@ h2::after {
   }
 }
 .top__newface .newface-list-wrap .therapist-list .newDate {
-  bottom: 92px;
+  top: 402px;
 }
 @media screen and (max-width: 1199px) {
   .top__newface .newface-list-wrap .therapist-list .newDate {
-    bottom: 138rem;
+    top: 499rem;
   }
 }
 .top__newface .newface-list-wrap .therapist-list .rankicon {
@@ -1708,7 +1679,7 @@ h2::after {
 }
 @media screen and (min-width: 1200px) {
   .top__newface .newface-list-wrap .therapist-list-name {
-    font-size: 23px;
+    font-size: 18px;
     padding: 15px 0;
     margin-bottom: 0;
   }
@@ -1739,10 +1710,10 @@ h2::after {
   margin-bottom: 10px;
   color: #fff;
   background-color: #52079a;
-  padding: 9px 0;
+  padding: 13px 0;
   width: 100%;
   height: 43px;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
   font-family: "Osaka", sans-serif;
 }
@@ -1786,7 +1757,7 @@ h2::after {
   background-color: #1a1a1a;
   color: #fff;
   padding: 48px 0;
-  font-size: 20px;
+  font-size: 14px;
 }
 @media screen and (max-width: 1199px) {
   .top__policy {
@@ -1847,6 +1818,13 @@ h2::after {
 .top__link {
   padding-top: 30px;
   padding-bottom: 64px;
+  background-color: #b8009f;
+}
+.top__link h3 {
+  background-color: unset;
+}
+.top__link h3::after {
+  border-bottom: unset;
 }
 .top__link-sp {
   color: #fff;
@@ -1926,7 +1904,7 @@ h2::after {
 }
 
 .therapist-name {
-  font-size: 25px;
+  font-size: 18px;
 }
 @media screen and (max-width: 1199px) {
   .therapist-name {
@@ -1988,48 +1966,11 @@ h2::after {
   }
 }
 .therapist-page-list .newDate {
-  padding: 5px 3px 5px 23px;
-  width: 141px;
-  color: #fff;
-  background-color: #147d00;
-  display: inline-block;
-  position: absolute;
-  bottom: 82px;
-  left: 0px;
-  z-index: 100;
-  font-size: 18px;
-  font-family: a-otf-ryumin-pr6n, serif;
-  font-weight: 300;
-  font-style: normal;
+  top: 352px;
 }
 @media screen and (max-width: 1199px) {
   .therapist-page-list .newDate {
-    padding: 5rem 3rem 5rem 23rem;
-    width: 174rem;
-    bottom: 120rem;
-    font-size: 20rem;
-    font-weight: bold;
-  }
-}
-.therapist-page-list .newDate p {
-  padding-left: 7px;
-}
-.therapist-page-list .newDate:before {
-  content: "";
-  background-image: url(../images/newdate-icon.png);
-  background-size: 17px 22px;
-  width: 17px;
-  height: 22px;
-  position: absolute;
-  top: 3px;
-  left: 5px;
-}
-@media screen and (max-width: 1199px) {
-  .therapist-page-list .newDate:before {
-    background-size: 17rem 24rem;
-    width: 17rem;
-    height: 24rem;
-    top: 0;
+    top: 421rem;
   }
 }
 
@@ -2381,6 +2322,14 @@ h2::after {
     width: 100%;
   }
 }
+.page-schedule-border .newDate {
+  top: 405px;
+}
+@media screen and (max-width: 1199px) {
+  .page-schedule-border .newDate {
+    top: 465rem;
+  }
+}
 .page-schedule .date-tab {
   display: flex;
   justify-content: space-between;
@@ -2530,7 +2479,6 @@ h2::after {
 }
 .author-diary {
   padding-top: 50px;
-  margin-bottom: 72rem;
   font-size: 18px;
 }
 @media screen and (max-width: 1199px) {
@@ -2591,14 +2539,14 @@ h2::after {
   border: 1px solid #bd00d4;
   padding: 2% 15%;
   overflow-x: hidden;
-  height: 1200px;
+  height: 1038px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 1199px) {
   .author-diary-wrap {
     padding: 2% 8%;
-    height: 1200rem;
+    height: 1038rem;
   }
 }
 .author-diary-wrap .slider {
@@ -2625,7 +2573,7 @@ h2::after {
 .author-description {
   padding: 0 59px 0 40px;
   line-height: 1.65;
-  font-size: 19px;
+  font-size: 16px;
   overflow-y: auto;
   max-height: 333px;
   margin-right: 18px;
@@ -2680,7 +2628,6 @@ h2::after {
   .author-contentwrap {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 27px;
   }
 }
 
@@ -2713,38 +2660,39 @@ h2::after {
 }
 
 .author-img-wrap {
-  width: 88.8%;
-  margin: 0 auto;
   position: relative;
   width: 549px;
-}
-@media screen and (min-width: 1200px) {
-  .author-img-wrap {
-    width: 1200px;
-  }
 }
 @media screen and (max-width: 1199px) {
   .author-img-wrap {
     width: 88.8%;
+    margin: 0 auto;
   }
 }
 .author-img-wrap .newDate {
-  bottom: 264px;
-  width: 160px;
-  font-size: 20px;
+  top: 691px;
+  font-size: 24px;
+}
+.author-img-wrap .newDate::before {
+  background-size: 120px 110px;
+  width: 120px;
+  height: 110px;
+  top: -68px;
+  left: -11px;
+  font-size: 40px;
 }
 @media screen and (max-width: 1199px) {
   .author-img-wrap .newDate {
-    bottom: 320rem;
-    width: 232rem;
-    font-size: 28rem;
-    font-weight: bold;
+    top: 833rem;
+    font-size: 35rem;
   }
   .author-img-wrap .newDate::before {
-    content: "";
-    background-size: 20rem 29rem;
-    width: 20rem;
-    height: 29rem;
+    background-size: 180rem 160rem;
+    width: 180rem;
+    height: 160rem;
+    top: -100rem;
+    left: -11rem;
+    font-size: 40rem;
   }
 }
 .author-img-wrap .rankicon {
@@ -2866,7 +2814,7 @@ h2::after {
   .author-schedule {
     width: 549px;
     font-size: 21px;
-    margin-bottom: 48px;
+    margin-bottom: 0;
   }
 }
 
@@ -3467,11 +3415,11 @@ h2::after {
   }
 }
 .ranking .therapist-list-wrap .rankinlow .therapist-img-wrap .newDate {
-  bottom: 58px;
+  top: 339px;
 }
 @media screen and (max-width: 1199px) {
   .ranking .therapist-list-wrap .rankinlow .therapist-img-wrap .newDate {
-    bottom: 80rem;
+    top: 471rem;
   }
 }
 .ranking .therapist-page-list {
@@ -3634,12 +3582,13 @@ h2::after {
   }
 }
 .ranking .therapist-img-wrap .newDate {
-  left: 0;
-  bottom: 16px;
+  left: 9px;
+  top: 439px;
 }
 @media screen and (max-width: 1199px) {
   .ranking .therapist-img-wrap .newDate {
-    bottom: 80rem;
+    left: 9rem;
+    top: 469rem;
   }
 }
 .ranking-text {
@@ -3658,7 +3607,7 @@ h2::after {
   margin: 21px 12px 21px 35px;
   padding-right: 24px;
   max-height: 330px;
-  font-size: 21px;
+  font-size: 16px;
   overflow: auto;
 }
 @media screen and (max-width: 1199px) {
@@ -3803,10 +3752,10 @@ h2::after {
 .newface .therapist-list-newface {
   color: #fff;
   background-color: #bd00d4;
-  padding: 9px 0;
+  padding: 12px 0;
   width: 100%;
   height: 43px;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
@@ -3817,6 +3766,14 @@ h2::after {
     padding: 12rem 0;
     font-size: 28rem;
     height: 52rem;
+  }
+}
+.newface .therapist-contentwrap > .newDate {
+  top: 395px;
+}
+@media screen and (max-width: 1199px) {
+  .newface .therapist-contentwrap > .newDate {
+    top: 472rem;
   }
 }
 

@@ -41,7 +41,7 @@
             <div class="therapist-img-wrap">
               <?php if($userData->newface_date): ?>
               <div class="therapist-img-newDate newDate">
-                <p><?php echo  $date->format('m月d日')?>入店</p>
+                <p>NEW</p>
               </div>
               <?php endif;?>
               <?php if($girls->option_fee): ?>
@@ -126,7 +126,7 @@
               <div class="therapist-img-wrap">
                 <?php if($userData->newface_date): ?>
                 <div class="therapist-img-newDate newDate">
-                  <p><?php echo  $date->format('m月d日')?>入店</p>
+                  <p>NEW</p>
                 </div>
                 <?php endif;?>
                 <?php if($girls->option_fee): ?>
