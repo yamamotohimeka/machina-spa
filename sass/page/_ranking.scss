@@ -113,7 +113,7 @@
               }
             }
             .newDate {
-              top: 339px;
+              top: 349px;
 
               @include sp {
                 top: 471rem;
@@ -238,6 +238,7 @@
     &-info-flexwrap {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
 
       @include sp {
         gap: calc(22vw / (1119 / 100)) 0;
@@ -276,8 +277,8 @@
       }
 
       .newDate {
-        left: 9px;
-        top: 439px;
+        left: 4px;
+        top: 448px;
         @include sp {
           left: 9rem;
           top: 469rem;
@@ -292,6 +293,8 @@
     line-height: 1.8;
     text-align: left;
     border: solid 1px $Pink;
+    text-align: justify;
+
     @include sp {
       width: 100%;
     }
@@ -322,7 +325,7 @@
 
     @include sp {
       margin-top: calc(40vw / (1119 / 100));
-      padding: calc(16vw / (1119 / 100)) calc(14vw / (1119 / 100));
+
       font-size: calc(34vw / (1119 / 100));
     }
   }
@@ -332,7 +335,8 @@
     width: 300px;
     height: 38px;
     text-align: center;
-    padding: 1rem 0;
+    padding: 3rem 0;
+    font-size: 18px;
     @include sp {
       width: 300rem;
     }
@@ -341,7 +345,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: 0 20px;
+      gap: 0 42px;
       @include ryumin;
 
       color: #fff;
@@ -353,7 +357,11 @@
       }
 
       .ranking-author {
+        font-size: 18px;
         border-bottom: 1px solid;
+        @include sp {
+          font-size: 24rem;
+        }
       }
       a {
         color: #fff;

@@ -11,18 +11,19 @@
     <div class="inner">
       <div class="date-tab">
         <?php  
-        for($i=0; $i<7; $i++) {
-          $day_list = date('Y-m-d', strtotime("+".$i."day"));
-          if($i==0) {
-            echo '<label class="date-tab-item selected" for="day'.$i.'">';
-          } else {
-            echo '<label class="date-tab-item" for="day'.$i.'">';
-          }
-          echo date("n/j", strtotime("+".$i."day", current_time('timestamp')));
-          echo '<span class="date-tab-week">('.$week[date('w',strtotime("+".$i."day", current_time('timestamp')))].')</span></label>';
-          echo '</label>';
-        }
-        ?>
+for($i=0; $i<7; $i++) {
+    $day_list = date('Y-m-d', strtotime("+".$i."day"));
+    if($i==0) {
+        echo '<label class="date-tab-item selected" for="day'.$i.'">';
+    } else {
+        echo '<label class="date-tab-item" for="day'.$i.'">';
+    }
+    echo '4/<span class="date-tab-day">' . date("j", strtotime("+".$i."day", current_time('timestamp'))) . '</span>';
+    echo '<span class="date-tab-week">('.$week[date('w',strtotime("+".$i."day", current_time('timestamp')))].')</span></label>';
+}
+?>
+
+
       </div>
 
       <?php for($j=0; $j<7; $j++):?>

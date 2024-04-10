@@ -13,14 +13,17 @@
   }
   &-info {
     padding: 30px 68px 48px 68px;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
+    text-align: justify;
     @include sp {
       padding: 30rem 68rem 48rem 68rem;
       font-size: 24rem;
+      line-height: 1.5;
     }
 
     dt {
+      display: inline-block;
       padding-top: 44px;
       @include sp {
         padding-top: 44rem;
@@ -28,10 +31,15 @@
     }
 
     dd {
+      display: inline-block;
+      @include sp {
+        display: block;
+      }
       span {
-        font-size: 20px;
+        font-size: 16px;
         @include sp {
           font-size: 20rem;
+          display: block;
         }
       }
     }

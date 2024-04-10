@@ -313,10 +313,10 @@ h2::after {
   color: #fff;
   display: inline-block;
   position: absolute;
-  top: 405px;
-  left: 9px;
+  top: 414px;
+  left: 5px;
   z-index: 100;
-  font-size: 22px;
+  font-size: 18px;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
@@ -333,12 +333,12 @@ h2::after {
   display: inline-block;
   background-image: url(../images/new-bg.png);
   background-repeat: no-repeat;
-  background-size: 120px 100px;
-  width: 120px;
-  height: 100px;
+  background-size: 90px 70px;
+  width: 90px;
+  height: 70px;
   position: absolute;
-  top: -62px;
-  left: -11px;
+  top: -42px;
+  left: -6px;
   z-index: -1;
 }
 @media screen and (max-width: 1199px) {
@@ -923,7 +923,7 @@ h2::after {
   width: 100%;
   list-style-type: none;
   border-bottom: 1px solid #bd00d4;
-  font-size: 23rem;
+  font-size: 30rem;
   text-align: center;
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
@@ -945,7 +945,7 @@ h2::after {
 .global-nav .nav-li a {
   display: block;
   color: #fff;
-  padding: 24rem;
+  padding: 30rem;
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .global-nav .nav-li a {
@@ -1255,7 +1255,7 @@ h2::after {
 }
 
 .therapist-link {
-  margin: 44px auto 94px 0;
+  margin: 44px 0 94px auto;
   padding: 12px;
   width: 163px;
   text-align: center;
@@ -1268,10 +1268,9 @@ h2::after {
 }
 @media screen and (max-width: 1199px) {
   .therapist-link {
-    margin: 80rem 22rem 0 auto;
-    padding: 12rem 0;
-    width: 170rem;
+    margin: 3% 3% 6% auto;
     font-size: 23rem;
+    width: 172rem;
   }
 }
 .therapist-link-wrap {
@@ -1527,6 +1526,7 @@ h2::after {
   width: 100%;
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
 }
 @media screen and (max-width: 1199px) {
   .top__diary .archive__post-content {
@@ -1568,10 +1568,9 @@ h2::after {
 }
 @media screen and (max-width: 1199px) {
   .top__newface .newface-link {
-    margin: 44rem 22rem 0 auto;
-    padding: 12rem 0;
-    width: 170rem;
+    margin: 6% 3% 6% auto;
     font-size: 23rem;
+    width: 172rem;
   }
 }
 .top__newface .newface-link-wrap {
@@ -1646,7 +1645,7 @@ h2::after {
   }
 }
 .top__newface .newface-list-wrap .therapist-list .newDate {
-  top: 402px;
+  top: 411px;
 }
 @media screen and (max-width: 1199px) {
   .top__newface .newface-list-wrap .therapist-list .newDate {
@@ -1758,6 +1757,7 @@ h2::after {
   color: #fff;
   padding: 48px 0;
   font-size: 14px;
+  text-align: justify;
 }
 @media screen and (max-width: 1199px) {
   .top__policy {
@@ -1966,7 +1966,7 @@ h2::after {
   }
 }
 .therapist-page-list .newDate {
-  top: 352px;
+  top: 362px;
 }
 @media screen and (max-width: 1199px) {
   .therapist-page-list .newDate {
@@ -2335,16 +2335,15 @@ h2::after {
   justify-content: space-between;
   margin-bottom: 40rem;
   width: 100%;
+  line-height: 1.3;
 }
 @media screen and (min-width: 1200px) {
   .page-schedule .date-tab {
     margin-bottom: 43px;
-    padding: 0 32px;
   }
 }
 @media screen and (max-width: 1199px) {
   .page-schedule .date-tab {
-    width: 88.8%;
     margin: 0 auto;
   }
 }
@@ -2354,7 +2353,7 @@ h2::after {
 .page-schedule .date-tab-item {
   position: relative;
   width: 14%;
-  font-size: 21rem;
+  font-size: 18rem;
   background-color: #bd00d4;
   padding: 16rem;
   color: #fff;
@@ -2368,7 +2367,15 @@ h2::after {
   .page-schedule .date-tab-item {
     padding: 11px;
     width: 14%;
-    font-size: 27px;
+    font-size: 14px;
+  }
+}
+.page-schedule .date-tab-item .date-tab-day {
+  font-size: 24px;
+}
+@media screen and (max-width: 1199px) {
+  .page-schedule .date-tab-item .date-tab-day {
+    font-size: 27rem;
   }
 }
 .page-schedule .date-tab-week {
@@ -2519,6 +2526,7 @@ h2::after {
   padding-bottom: 6%;
   line-height: 1.5;
   font-size: 16px;
+  text-align: justify;
 }
 @media screen and (max-width: 1199px) {
   .author-diary__text {
@@ -2577,6 +2585,7 @@ h2::after {
   overflow-y: auto;
   max-height: 333px;
   margin-right: 18px;
+  text-align: justify;
 }
 .author-description-wrap {
   margin-top: 30px;
@@ -2979,16 +2988,19 @@ h2::after {
 }
 .access-info {
   padding: 30px 68px 48px 68px;
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
+  text-align: justify;
 }
 @media screen and (max-width: 1199px) {
   .access-info {
     padding: 30rem 68rem 48rem 68rem;
     font-size: 24rem;
+    line-height: 1.5;
   }
 }
 .access-info dt {
+  display: inline-block;
   padding-top: 44px;
 }
 @media screen and (max-width: 1199px) {
@@ -2996,12 +3008,21 @@ h2::after {
     padding-top: 44rem;
   }
 }
+.access-info dd {
+  display: inline-block;
+}
+@media screen and (max-width: 1199px) {
+  .access-info dd {
+    display: block;
+  }
+}
 .access-info dd span {
-  font-size: 20px;
+  font-size: 16px;
 }
 @media screen and (max-width: 1199px) {
   .access-info dd span {
     font-size: 20rem;
+    display: block;
   }
 }
 .access-room-name {
@@ -3068,7 +3089,7 @@ h2::after {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  font-size: 33px;
+  font-size: 26px;
   text-align: center;
   letter-spacing: 0.5rem;
   font-family: a-otf-ryumin-pr6n, serif;
@@ -3138,7 +3159,7 @@ h2::after {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  font-size: 33px;
+  font-size: 26px;
   text-align: center;
   letter-spacing: 0.5rem;
   font-family: a-otf-ryumin-pr6n, serif;
@@ -3205,7 +3226,7 @@ h2::after {
 }
 .about-reserve ul {
   padding-top: 40px;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.8;
   padding-left: 13px;
 }
@@ -3236,20 +3257,14 @@ h2::after {
   font-weight: bold;
   letter-spacing: 0.5rem;
 }
-@media screen and (max-width: 1199px) {
-  .guideline .title {
-    padding: 20rem;
-    font-size: 27rem;
-  }
-}
 .guideline .paragraph {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 2;
   padding: 55px 0 0 15px;
+  text-align: justify;
 }
 @media screen and (max-width: 1199px) {
   .guideline .paragraph {
-    font-size: 21rem;
     padding: 0 0 0 15rem;
   }
 }
@@ -3258,8 +3273,8 @@ h2::after {
 }
 .guideline .rule {
   padding: 27px 0 113px;
-  font-size: 21px;
   list-style-type: square;
+  font-size: 14px;
   line-height: 1.8;
   margin-left: 2.2em;
 }
@@ -3277,10 +3292,10 @@ h2::after {
     margin-left: 24rem;
   }
   .guideline .paragraph {
-    font-size: 20rem;
+    font-size: 24rem;
   }
   .guideline .rule {
-    font-size: 20rem;
+    font-size: 24rem;
   }
 }
 
@@ -3415,7 +3430,7 @@ h2::after {
   }
 }
 .ranking .therapist-list-wrap .rankinlow .therapist-img-wrap .newDate {
-  top: 339px;
+  top: 349px;
 }
 @media screen and (max-width: 1199px) {
   .ranking .therapist-list-wrap .rankinlow .therapist-img-wrap .newDate {
@@ -3541,6 +3556,7 @@ h2::after {
 .ranking .therapist-info-flexwrap {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1199px) {
   .ranking .therapist-info-flexwrap {
@@ -3582,8 +3598,8 @@ h2::after {
   }
 }
 .ranking .therapist-img-wrap .newDate {
-  left: 9px;
-  top: 439px;
+  left: 4px;
+  top: 448px;
 }
 @media screen and (max-width: 1199px) {
   .ranking .therapist-img-wrap .newDate {
@@ -3597,6 +3613,7 @@ h2::after {
   line-height: 1.8;
   text-align: left;
   border: solid 1px #bd00d4;
+  text-align: justify;
 }
 @media screen and (max-width: 1199px) {
   .ranking-text {
@@ -3632,7 +3649,6 @@ h2::after {
 @media screen and (max-width: 1199px) {
   .ranking-text {
     margin-top: 3.5746201966vw;
-    padding: 1.4298480786vw 1.2511170688vw;
     font-size: 3.0384271671vw;
   }
 }
@@ -3641,7 +3657,8 @@ h2::after {
   width: 300px;
   height: 38px;
   text-align: center;
-  padding: 1rem 0;
+  padding: 3rem 0;
+  font-size: 18px;
 }
 @media screen and (max-width: 1199px) {
   .ranking-realtime {
@@ -3653,7 +3670,7 @@ h2::after {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0 20px;
+  gap: 0 42px;
   font-family: a-otf-ryumin-pr6n, serif;
   font-weight: 300;
   font-style: normal;
@@ -3668,7 +3685,13 @@ h2::after {
   }
 }
 .ranking-realtime-wrap .ranking-author {
+  font-size: 18px;
   border-bottom: 1px solid;
+}
+@media screen and (max-width: 1199px) {
+  .ranking-realtime-wrap .ranking-author {
+    font-size: 24rem;
+  }
 }
 .ranking-realtime-wrap a {
   color: #fff;
@@ -3769,7 +3792,7 @@ h2::after {
   }
 }
 .newface .therapist-contentwrap > .newDate {
-  top: 395px;
+  top: 405px;
 }
 @media screen and (max-width: 1199px) {
   .newface .therapist-contentwrap > .newDate {
@@ -3831,7 +3854,7 @@ form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
 }
 
 .diary {
-  font-size: 20px;
+  font-size: 18px;
   background: #000;
   color: #fff;
   padding: 84px 0 200px;
@@ -3839,6 +3862,12 @@ form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
 @media screen and (max-width: 1199px) {
   .diary {
     padding-bottom: 15%;
+    font-size: 28rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .diary h2::after {
+    display: none;
   }
 }
 .diary a {
@@ -3896,6 +3925,7 @@ form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
 .diary__text {
   padding-top: 20px;
   line-height: 1.5;
+  text-align: justify;
 }
 .diary__archive {
   width: 1200px;
@@ -3921,7 +3951,7 @@ form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
 .archive {
   background: #000;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   padding: 84px 0 200px;
 }
 .archive a {

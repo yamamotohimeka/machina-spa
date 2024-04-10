@@ -8,18 +8,22 @@
   <div class="access-inner">
     <h2 class="page-title">アクセス</h2>
     <dl class="access-info">
-      <dt class="access-info-text">住所</dt>
-      <dd class="access-info-text"> 大阪市中央区南船場
-        <span> ※詳細な所在地については、ご予約時にお問い合わせください</span>
-      </dd>
-
-      <dt class="access-info-text">アクセス方法 </dt>
-      <dd class="access-info-text"> 地下鉄各線「長堀橋駅」1番出口より徒歩2分</dd>
-
-      <dt class="access-info-text">道案内 </dt>
-      <dd class="access-info-text">「長堀橋駅」1番出口よりお電話下さい。
-        <span>※駐車場 近隣のコインパーキングをご利用ください。</span>
-      </dd>
+      <div>
+        <dt class="access-info-text">【住所】</dt>
+        <dd class="access-info-text"> 大阪市中央区南船場
+          <span> ※詳細な所在地については、ご予約時にお問い合わせください</span>
+        </dd>
+      </div>
+      <div>
+        <dt class="access-info-text">【アクセス方法】</dt>
+        <dd class="access-info-text"> 地下鉄各線「長堀橋駅」1番出口より徒歩2分</dd>
+      </div>
+      <div>
+        <dt class="access-info-text">【道案内】 </dt>
+        <dd class="access-info-text">「長堀橋駅」1番出口よりお電話下さい。
+          <span>※駐車場 近隣のコインパーキングをご利用ください。</span>
+        </dd>
+      </div>
     </dl>
     <h4 class="access-room-name">南船場ルーム</h4>
     <div class="access-map">
@@ -31,18 +35,22 @@
 
     <h2 class="page-title">アクセス</h2>
     <dl class="access-info">
-      <dt class="access-info-text">住所</dt>
-      <dd class="access-info-text"> 大阪市中央区南久宝寺町
-        <span> ※詳細な所在地については、ご予約時にお問い合わせください</span>
-      </dd>
-
-      <dt class="access-info-text">アクセス方法 </dt>
-      <dd class="access-info-text"> 地下鉄各線「堺筋本町駅」６番出口より徒歩４分</dd>
-
-      <dt class="access-info-text">道案内 </dt>
-      <dd class="access-info-text">「堺筋本町駅」６番出口よりお電話下さい
-        <span>※駐車場 近隣のコインパーキングをご利用ください。</span>
-      </dd>
+      <div>
+        <dt class="access-info-text">【住所】</dt>
+        <dd class="access-info-text"> 大阪市中央区南久宝寺町
+          <span> ※詳細な所在地については、ご予約時にお問い合わせください</span>
+        </dd>
+      </div>
+      <div>
+        <dt class="access-info-text">【アクセス方法】 </dt>
+        <dd class="access-info-text"> 地下鉄各線「堺筋本町駅」６番出口より徒歩４分</dd>
+      </div>
+      <div>
+        <dt class="access-info-text">【道案内】 </dt>
+        <dd class="access-info-text">「堺筋本町駅」６番出口よりお電話下さい
+          <span>※駐車場 近隣のコインパーキングをご利用ください。</span>
+        </dd>
+      </div>
     </dl>
     <h4 class="access-room-name">堺筋本町ルーム</h4>
     <div class="access-map">

@@ -269,7 +269,7 @@
 }
 
 .therapist-link {
-  margin: 44px auto 94px 0;
+  margin: 44px 0 94px auto;
   padding: 12px;
   width: 163px;
   text-align: center;
@@ -279,10 +279,9 @@
   @include ryumin;
 
   @include sp {
-    margin: 80rem 22rem 0 auto;
-    padding: 12rem 0;
-    width: 170rem;
+    margin: 3% 3% 6% auto;
     font-size: 23rem;
+    width: 172rem;
   }
 
   &-wrap {
@@ -437,6 +436,7 @@
       font-size: 21px;
       background-color: $Pink;
       border-radius: 7px;
+
       @include ryumin;
       @include sp {
         margin: 6% 3% 6% auto;
@@ -513,6 +513,7 @@
         width: 100%;
         font-size: 14px;
         background-color: rgba($color: #000000, $alpha: 0.5);
+        text-align: justify;
         @include sp {
           width: 100%;
           font-size: 20rem;
@@ -548,10 +549,9 @@
       @include ryumin;
       margin: 80px 0 0 auto;
       @include sp {
-        margin: 44rem 22rem 0 auto;
-        padding: 12rem 0;
-        width: 170rem;
+        margin: 6% 3% 6% auto;
         font-size: 23rem;
+        width: 172rem;
       }
       &-wrap {
         @include inner;
@@ -611,7 +611,7 @@
           width: 49.5%;
         }
         .newDate {
-          top: 402px;
+          top: 411px;
           @include sp {
             top: 499rem;
           }
@@ -718,6 +718,7 @@
     color: #fff;
     padding: 48px 0;
     font-size: 14px;
+    text-align: justify;
     @include sp {
       background: #000;
       font-size: 21rem;

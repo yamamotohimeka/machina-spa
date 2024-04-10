@@ -26,7 +26,7 @@
       display: flex;
       justify-content: space-between;
       gap: 10px;
-      font-size: 33px;
+      font-size: 26px;
       text-align: center;
       letter-spacing: 0.5rem;
       @include ryumin;
@@ -52,6 +52,7 @@
 
 .special-reserve {
   padding-top: 90px;
+
   @include sp {
     padding: 90rem 2% 0;
   }
@@ -81,7 +82,7 @@
       display: flex;
       justify-content: space-between;
       gap: 10px;
-      font-size: 33px;
+      font-size: 26px;
       text-align: center;
       letter-spacing: 0.5rem;
       @include ryumin;
@@ -135,7 +136,7 @@
   }
   ul {
     padding-top: 40px;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 1.8;
     padding-left: 13px;
     @include sp {
@@ -160,17 +161,13 @@
     @include ryumin;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    @include sp {
-      padding: 20rem;
-      font-size: 27rem;
-    }
   }
   .paragraph {
-    font-size: 21px;
+    font-size: 14px;
     line-height: 2;
     padding: 55px 0 0 15px;
+    text-align: justify;
     @include sp {
-      font-size: 21rem;
       padding: 0 0 0 15rem;
     }
     &:nth-child(3) {
@@ -179,8 +176,8 @@
   }
   .rule {
     padding: 27px 0 113px;
-    font-size: 21px;
     list-style-type: square;
+    font-size: 14px;
     line-height: 1.8;
     margin-left: 2.2em;
   }
@@ -199,10 +196,10 @@
       margin-left: 24rem;
     }
     .paragraph {
-      font-size: 20rem;
+      font-size: 24rem;
     }
     .rule {
-      font-size: 20rem;
+      font-size: 24rem;
     }
   }
 }

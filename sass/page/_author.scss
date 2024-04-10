@@ -46,6 +46,7 @@
       padding-bottom: 6%;
       line-height: 1.5;
       font-size: 16px;
+      text-align: justify;
       @include sp {
         font-size: 23rem;
       }
@@ -126,6 +127,7 @@
     overflow-y: auto;
     max-height: 333px;
     margin-right: 18px;
+    text-align: justify;
     @include sp {
       padding: 0 59rem 0 40rem;
       font-size: 28rem;

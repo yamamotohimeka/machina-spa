@@ -216,10 +216,10 @@ h2 {
   color: #fff;
   display: inline-block;
   position: absolute;
-  top: 405px;
-  left: 9px;
+  top: 414px;
+  left: 5px;
   z-index: 100;
-  font-size: 22px;
+  font-size: 18px;
   @include ryumin;
 
   @include sp {
@@ -233,12 +233,12 @@ h2 {
     display: inline-block;
     background-image: url(../images/new-bg.png);
     background-repeat: no-repeat;
-    background-size: 120px 100px;
-    width: 120px;
-    height: 100px;
+    background-size: 90px 70px;
+    width: 90px;
+    height: 70px;
     position: absolute;
-    top: -62px;
-    left: -11px;
+    top: -42px;
+    left: -6px;
     z-index: -1;
 
     @include sp {

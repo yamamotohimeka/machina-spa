@@ -16,28 +16,28 @@
   </div>
   <div class="footer-flexdiv">
     <ul class="footer-spnav">
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/'); ?>">ホーム<span>HOME</span></a></li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/therapists'); ?>">セラピスト一覧<span>THERPIST</span></a>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/'); ?>">ホーム</a></li>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/therapists'); ?>">セラピスト一覧</a>
       </li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/schedule'); ?>">出勤情報<span>SCHEDULE</span></a>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/schedule'); ?>">出勤情報</a>
       </li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/ranking'); ?>">ランキング<span>RANKING</span></a>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/ranking'); ?>">ランキング</a>
       </li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/newface'); ?>">新人情報<span>NEWFACE</span></a>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/newface'); ?>">新人情報</a>
       </li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/diary'); ?>"><span>写メ日記</span>PHOTO BBS</a>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/diary'); ?>">写メ日記</a>
       </li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/system'); ?>">システム料金<span>SYSTEM</span></a>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/system'); ?>">システム料金</a>
       </li>
-      <li class="footer-spnav-list"><a href="">クレジットカード決済<span>CREDIT CARD</span></a></li>
+      <li class="footer-spnav-list"><a href="">クレジットカード決済</a></li>
       <li class="footer-spnav-list"><a href="https://recruit-machinaspa.com/"
           target="_blank">求人情報<span>RECRUIT</span></a>
       </li>
-      <li class="footer-spnav-list"><a href="<?php echo home_url('/access'); ?>">アクセス<span>ACCESS</span></a></li>
-      <li class="footer-spnav-list"><a href="">ブログ<span>BLOG</span></a>
+      <li class="footer-spnav-list"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
+      <li class="footer-spnav-list"><a href="">ブログ</a>
       </li>
       <?php if ($user_twitter) : ?>
-      <li class="footer-spnav-list"><a href="">エックス<span>X</span></a></li>
+      <li class="footer-spnav-list"><a href="">エックス</a></li>
       <?php endif; ?>
     </ul>
     <div class="footer-logo-wrap">

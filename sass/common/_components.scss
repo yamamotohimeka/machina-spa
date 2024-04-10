@@ -71,7 +71,7 @@
   width: 100%;
   list-style-type: none;
   border-bottom: 1px solid $Pink;
-  font-size: 23rem;
+  font-size: 30rem;
   text-align: center;
 
   @include md {
@@ -92,7 +92,7 @@
 .global-nav .nav-li a {
   display: block;
   color: #fff;
-  padding: 24rem;
+  padding: 30rem;
 
   @include md {
     padding: 15rem;

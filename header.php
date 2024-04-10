@@ -130,26 +130,25 @@
 
               <nav class="global-nav">
                 <ul>
-                  <li class="nav-li"><a href="<?php echo home_url('/'); ?>">ホーム<span>HOME</span></a>
+                  <li class="nav-li"><a href="<?php echo home_url('/'); ?>">ホーム</a>
                   </li>
-                  <li class="nav-li"><a href="<?php echo home_url('/therapists'); ?>">セラピスト一覧<span>THERPIST</span></a>
+                  <li class="nav-li"><a href="<?php echo home_url('/therapists'); ?>">セラピスト一覧</a>
                   </li>
-                  <li class="nav-li"><a href="<?php echo home_url('/ranking'); ?>">ランキング<span>RANKING</span></a>
+                  <li class="nav-li"><a href="<?php echo home_url('/ranking'); ?>">ランキング</a>
                   </li>
-                  <li class="nav-li"><a href="<?php echo home_url('/newface'); ?>">新人情報<span>NEWFACE</span></a></li>
-                  <li class="nav-li"><a href="<?php echo home_url('/schedule'); ?>">出勤情報<span>SCHEDULE</span></a>
+                  <li class="nav-li"><a href="<?php echo home_url('/newface'); ?>">新人情報</a></li>
+                  <li class="nav-li"><a href="<?php echo home_url('/schedule'); ?>">出勤情報</a>
                   </li>
-                  <li class="nav-li"><a href="<?php echo home_url('/diary'); ?>">写メ日記<span>PHOTO BBS</span></a></li>
-                  <li class="nav-li"><a href="<?php echo home_url('/system'); ?>">システム料金<span>SYSTEM</span></a></li>
+                  <li class="nav-li"><a href="<?php echo home_url('/diary'); ?>">写メ日記</a></li>
+                  <li class="nav-li"><a href="<?php echo home_url('/system'); ?>">システム料金</a></li>
                   <li class="nav-li">
                     <a href="" target="_blank">
-                      クレジットカード決済<span>CREDIT CARD</span> </a>
+                      クレジットカード決済 </a>
                   </li>
-                  <li class="nav-li"><a href="<?php echo home_url('/access'); ?>">アクセス<span>ACCESS</span></a></li>
-                  <li class="nav-li"><a href="http://frogspa.livedoor.blog/" target="_blank">ブログ<span>BLOG</span></a>
+                  <li class="nav-li"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
+                  <li class="nav-li"><a href="http://frogspa.livedoor.blog/" target="_blank">ブログ</a>
                   </li>
-                  <li class="nav-li"><a href="https://recruit-machinaspa.com/"
-                      target="_blank">求人情報<span>RECRUIT</span></a>
+                  <li class="nav-li"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a>
                   </li>
                 </ul>
               </nav>
