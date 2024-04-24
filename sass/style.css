@@ -1175,6 +1175,20 @@ h2::after {
 .therapist-list-image {
   width: 100%;
   margin: 10rem auto 0;
+  height: 385px;
+}
+@media screen and (max-width: 1199px) {
+  .therapist-list-image {
+    height: 64.3035863219vw;
+  }
+}
+.therapist-list-image img {
+  height: 385px;
+}
+@media screen and (max-width: 1199px) {
+  .therapist-list-image img {
+    height: 64.3035863219vw;
+  }
 }
 @media screen and (min-width: 1200px) {
   .therapist-list-image {
@@ -1973,6 +1987,22 @@ h2::after {
     top: 421rem;
   }
 }
+.therapist-img {
+  height: 389px;
+}
+@media screen and (max-width: 1199px) {
+  .therapist-img {
+    height: 61.0508757298vw;
+  }
+}
+.therapist-img img {
+  height: 389px;
+}
+@media screen and (max-width: 1199px) {
+  .therapist-img img {
+    height: 61.0508757298vw;
+  }
+}
 
 .recruit {
   background: #fff;
@@ -2686,8 +2716,8 @@ h2::after {
   background-size: 120px 110px;
   width: 120px;
   height: 110px;
-  top: -68px;
-  left: -11px;
+  top: -69px;
+  left: -6px;
   font-size: 40px;
 }
 @media screen and (max-width: 1199px) {
@@ -2699,7 +2729,7 @@ h2::after {
     background-size: 180rem 160rem;
     width: 180rem;
     height: 160rem;
-    top: -100rem;
+    top: -103rem;
     left: -11rem;
     font-size: 40rem;
   }
@@ -2963,6 +2993,40 @@ h2::after {
 }
 .gototherapists-pc a {
   color: #fff;
+}
+
+.author-thumbnail {
+  height: 244px;
+}
+@media screen and (max-width: 1199px) {
+  .author-thumbnail {
+    height: 39.4495412844vw;
+  }
+}
+.author-thumbnail img {
+  height: 244px;
+}
+@media screen and (max-width: 1199px) {
+  .author-thumbnail img {
+    height: 39.4495412844vw;
+  }
+}
+
+.author-img {
+  height: 732px;
+}
+@media screen and (max-width: 1199px) {
+  .author-img {
+    height: 118.4320266889vw;
+  }
+}
+.author-img img {
+  height: 732px;
+}
+@media screen and (max-width: 1199px) {
+  .author-img img {
+    height: 118.4320266889vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -4144,4 +4208,4 @@ form#attmgr_admin_scheduler table.attmgr_admin_scheduler td {
 }
 .authorArchive .slick-dots > li:first-child:last-child {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
