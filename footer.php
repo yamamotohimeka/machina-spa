@@ -45,10 +45,10 @@
         <img src="<?php echo get_template_directory_uri() ?>/images/header-logo.png" alt="MACHINA SPAロゴ画像">
       </h4>
       <ul class="footer-logo-snswrap">
-        <li class="footer-logo-snslist">
-          <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
-              alt="ブログアイコン"></a>
-        </li>
+        <!-- <li class="footer-logo-snslist">
+          <a href="https://machinaspa.blog.jp/" target="_blank"><img
+              src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png" alt="ブログアイコン"></a>
+        </li> -->
         <?php if ($user_twitter) : ?>
         <li class="footer-logo-snslist">
           <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/header-x-icon.png"
