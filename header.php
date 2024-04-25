@@ -151,6 +151,7 @@
                   <li class="nav-li"> <a href="https://twitter.com/machinaspa" target="_blank">
                       X</a>
                   </li>
+
                   <li class="nav-li"><a href="https://machinaspa.blog.jp/" target="_blank">ブログ</a>
                   </li>
                   <li class="nav-li"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a>

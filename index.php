@@ -69,7 +69,7 @@
   </div>
   <div class="mainvisual-payment">
     <img src="<?php echo get_template_directory_uri() ?>/images/card-icon.png" alt="カード会社のアイコン">
-    <p><a href="">クレジットカード決済はコチラから</a></p>
+    <p><a href="https://pay2.star-pay.jp/site/pc/shop.php?payc=A2495" target="_blank">クレジットカード決済はコチラから</a></p>
   </div>
 </div>
 
