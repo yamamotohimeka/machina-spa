@@ -97,6 +97,7 @@
                   <div class="toggle sp">
                     <span></span>
                   </div>
+
                   <div class="header-sns-wrap pc">
                     <ul class="header-sns-listwrap">
                       <li class="header-sns-list">
@@ -147,6 +148,10 @@
                       クレジットカード決済 </a>
                   </li>
                   <li class="nav-li"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
+                  <li class="nav-li"> <a href="https://twitter.com/machinaspa" target="_blank">
+                      X</a>
+                  </li>
+
                   <li class="nav-li"><a href="https://machinaspa.blog.jp/" target="_blank">ブログ</a>
                   </li>
                   <li class="nav-li"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a>

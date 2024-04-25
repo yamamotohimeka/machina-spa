@@ -4,12 +4,38 @@
 
 <div class="mainvisual">
   <div class="main-img-innerwrap">
-    <p class="business-hours">営業時間 12:00-27:00
-      <span>（受付時間 10:00〜25:30）</span>
-    </p>
+    <div class="header-sns-wrap sp">
+      <ul class="header-sns-listwrap">
+        <li class="header-sns-list">
+          <a href="https://machinaspa.blog.jp/" target="_blank">
+            <img src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png" alt="ブログアイコン">
+          </a>
+        </li>
+        <?php if($user_twitter) : ?>
+        <li class="header-sns-list">
+          <a href="https://twitter.com/machinaspa" target="_blank">
+            <img src="<?php echo get_template_directory_uri() ?>/images/header-x-icon.png" alt="twitterアイコン">
+          </a>
+
+
+        </li>
+        <?php endif;?>
+        <li class="header-sns-list">
+          <a href="https://line.me/ti/p/bu-oYYu4nf#~" target="_blank"><img
+              src="<?php echo get_template_directory_uri() ?>/images/header-line-icon.png" alt="LNEアイコン"></a>
+        </li>
+      </ul>
+
+
+      <p class="business-hours">営業時間 12:00-27:00
+        <span>（受付時間 10:00〜25:30）</span>
+      </p>
+
+    </div>
     <div class="top-title">
       大阪堺筋本町・南船場 メンズエステ MACHINA SPA（マキナスパ）
     </div>
+
     <div class="slider">
       <?php $args= array(
         'post_type' => 'banner',
@@ -45,8 +71,6 @@
     <img src="<?php echo get_template_directory_uri() ?>/images/card-icon.png" alt="カード会社のアイコン">
     <p><a href="https://pay2.star-pay.jp/site/pc/shop.php?payc=A2495" target="_blank">クレジットカード決済はコチラから</a></p>
   </div>
-
-
 </div>
 
 <main class="main">
@@ -191,17 +215,17 @@
         <div class="box">
           <ul class="therapist-list-wrap newface-list-wrap">
             <?php 
-          $users = get_users( array('order'=>'ASC', 'orderby'=>'meta_value_num', 'meta_key'=>'ranking', 'exclude'=>'') );
-          foreach($users as $girls):
-          $uid =$girls->ID;
-          $userData = get_userdata($uid);
-          $newfaceDate = get_the_author_meta('newface_date', $girls->ID);
-          $date = DateTime::createFromFormat('Ymd', $newfaceDate);
-          $user_twitter = get_field('twitter_shop','user_1');
-          $user_id = get_the_author_meta('ID', $girls->ID);
-          $user_link = get_author_posts_url($user_id);
-          if($userData->attmgr_ex_attr_staff && $newfaceDate): ?>
-
+              $users = get_users( array('order'=>'ASC', 'orderby'=>'meta_value_num', 'meta_key'=>'ranking', 'exclude'=>'') );
+              foreach($users as $girls):
+              $uid =$girls->ID;
+              $userData = get_userdata($uid);
+              $newfaceDate = get_the_author_meta('newface_date', $girls->ID);
+              $date = DateTime::createFromFormat('Ymd', $newfaceDate);
+              $user_twitter = get_field('twitter_shop','user_1');
+              $user_id = get_the_author_meta('ID', $girls->ID);
+              $user_link = get_author_posts_url($user_id);
+              if($userData->attmgr_ex_attr_staff && $newfaceDate): 
+            ?>
 
             <li class="therapist-list">
               <p class="therapist-list-newface"><?php echo  $date->format('m月d日')?>入店</p>

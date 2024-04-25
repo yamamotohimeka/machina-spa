@@ -61,7 +61,12 @@
     display: inline-block;
   }
 }
-
+.header-sns-wrap {
+  @include sp {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .header-sns-listwrap {
   display: flex;
   align-items: center;
@@ -84,6 +89,9 @@
   width: 37px;
   display: flex;
   flex-direction: column;
+  @include sp {
+    width: calc(120vw / (1199 / 100));
+  }
 
   a {
     align-items: center;
@@ -93,6 +101,11 @@
 
     span {
       margin-top: 10px;
+    }
+    img {
+      @include sp {
+        width: 100%;
+      }
     }
   }
 }
@@ -141,6 +154,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: calc(30vw / (900 / 100));
   color: #fff;
   font-size: calc(40vw / (900 / 100));
