@@ -421,6 +421,13 @@ h2::after {
   display: inline-block;
 }
 
+@media screen and (max-width: 1199px) {
+  .header-sns-wrap {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 .header-sns-listwrap {
   display: flex;
   align-items: center;
@@ -443,6 +450,11 @@ h2::after {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1199px) {
+  .header-sns-list {
+    width: 10.0083402836vw;
+  }
+}
 .header-sns-list a {
   align-items: center;
   justify-content: center;
@@ -451,6 +463,11 @@ h2::after {
 }
 .header-sns-list a span {
   margin-top: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .header-sns-list a img {
+    width: 100%;
+  }
 }
 
 .header-pc-shopinfo {
@@ -495,6 +512,7 @@ h2::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 3.3333333333vw;
   color: #fff;
   font-size: 4.4444444444vw;

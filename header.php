@@ -97,6 +97,7 @@
                   <div class="toggle sp">
                     <span></span>
                   </div>
+
                   <div class="header-sns-wrap pc">
                     <ul class="header-sns-listwrap">
                       <li class="header-sns-list">
@@ -143,10 +144,17 @@
                   <li class="nav-li"><a href="<?php echo home_url('/diary'); ?>">写メ日記</a></li>
                   <li class="nav-li"><a href="<?php echo home_url('/system'); ?>">システム料金</a></li>
                   <li class="nav-li">
-                    <a href="" target="_blank">
+                    <a href="https://pay2.star-pay.jp/site/pc/shop.php?payc=A2495" target="_blank">
                       クレジットカード決済 </a>
                   </li>
                   <li class="nav-li"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
+<<<<<<< HEAD
+=======
+                  <li class="nav-li"> <a href="https://twitter.com/machinaspa" target="_blank">
+                      X</a>
+                  </li>
+
+>>>>>>> 70b1a258007f29c4a702cea8b4888fd6a3689dc1
                   <li class="nav-li"><a href="https://machinaspa.blog.jp/" target="_blank">ブログ</a>
                   </li>
                   <li class="nav-li"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a>
