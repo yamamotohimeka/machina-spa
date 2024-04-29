@@ -386,4 +386,16 @@
       font-size: 26rem;
     }
   }
+  .therapist-img{
+    height: 440px;
+    @include sp {
+      height: calc(752vw / (1199 / 100));
+    }
+    img{
+      height: 440px;
+      @include sp {
+        height: calc(752vw / (1199 / 100));
+      }
+    }
+  }
 }

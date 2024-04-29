@@ -99,18 +99,19 @@
                   </div>
                   <div class="header-sns-wrap pc">
                     <ul class="header-sns-listwrap">
-                      <!-- <li class="header-sns-list">
+                      <li class="header-sns-list">
                         <a href="https://machinaspa.blog.jp/" target="_blank">
                           <img src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
                             alt="ブログアイコン">
                         </a>
-                      </li> -->
+                      </li>
                       <?php if($user_twitter) : ?>
                       <li class="header-sns-list">
-                        <!-- <a href="https://twitter.com/<?php echo $user_twitter; ?>" target="_blank"> -->
-                        <!-- </a> -->
-                        <img src="<?php echo get_template_directory_uri() ?>/images/header-x-icon.png"
-                          alt="twitterアイコン">
+                        <a href="https://twitter.com/machinaspa" target="_blank">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/header-x-icon.png"
+                            alt="twitterアイコン">
+                        </a>
+
 
                       </li>
                       <?php endif;?>
@@ -146,8 +147,8 @@
                       クレジットカード決済 </a>
                   </li>
                   <li class="nav-li"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
-                  <!-- <li class="nav-li"><a href="https://machinaspa.blog.jp/" target="_blank">ブログ</a>
-                  </li> -->
+                  <li class="nav-li"><a href="https://machinaspa.blog.jp/" target="_blank">ブログ</a>
+                  </li>
                   <li class="nav-li"><a href="https://recruit-machinaspa.com/" target="_blank">求人情報</a>
                   </li>
                 </ul>

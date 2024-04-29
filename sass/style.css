@@ -3780,6 +3780,22 @@ h2::after {
     font-size: 26rem;
   }
 }
+.ranking .therapist-img {
+  height: 440px;
+}
+@media screen and (max-width: 1199px) {
+  .ranking .therapist-img {
+    height: 62.7189324437vw;
+  }
+}
+.ranking .therapist-img img {
+  height: 440px;
+}
+@media screen and (max-width: 1199px) {
+  .ranking .therapist-img img {
+    height: 62.7189324437vw;
+  }
+}
 
 .newface-body {
   background: #000;
