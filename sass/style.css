@@ -3271,11 +3271,11 @@ h2::after {
   background: #1e1e1e;
   text-align: left;
 }
-.special-reserve dl :last-child {
+.special-reserve dl :nth-child(4) {
   padding-top: 30px;
 }
 @media screen and (max-width: 1199px) {
-  .special-reserve dl :last-child {
+  .special-reserve dl :nth-child(4) {
     padding-top: 30rem;
   }
 }
