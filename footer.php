@@ -46,13 +46,13 @@
       </h4>
       <ul class="footer-logo-snswrap">
         <li class="footer-logo-snslist">
-          <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png"
-              alt="ブログアイコン"></a>
+          <a href="https://machinaspa.blog.jp/" target="_blank"><img
+              src="<?php echo get_template_directory_uri() ?>/images/header-blog-icon.png" alt="ブログアイコン"></a>
         </li>
         <?php if ($user_twitter) : ?>
         <li class="footer-logo-snslist">
-          <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/header-x-icon.png"
-              alt="twitterアイコン"></a>
+          <a href="https://twitter.com/machinaspa" target="_blank"><img
+              src="<?php echo get_template_directory_uri() ?>/images/header-x-icon.png" alt="twitterアイコン"></a>
         </li>
         <?php endif; ?>
         <li class="footer-logo-snslist">
@@ -100,20 +100,7 @@
 </ul>
 <?php if(is_front_page()):?>
 <div class="top__link">
-  <h3>リンク</h3>
   <div class="top__link-flex">
-    <div class="top__link-bnr">
-      <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
-          alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
-    </div>
-    <div class="top__link-bnr">
-      <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
-          alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
-    </div>
-    <div class="top__link-bnr">
-      <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
-          alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
-    </div>
     <div class="top__link-bnr">
       <a href="https://114510.jp/"><img src="https://114510.jp/img/link/114510jp_200_40.gif"
           alt="高収入アルバイト・非風俗求人情報「メンエスバイト」" /></a>
@@ -121,6 +108,10 @@
     <div class="top__link-bnr">
       <a href="https://kansai.momi-lg.com" target="_blank"><img src="https://kansai.momi-lg.com/img/FRONT/pc/200_40.gif"
           alt="モミろぐ関西" border="0"></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://osaka.refle.info/"><img width="200" height="40" border="0"
+          src="https://osaka.refle.info/images/area/bunner200_2.gif" alt="大阪でメンズエステ・マッサージ探すならリフナビ"></a>
     </div>
     <div class="top__link-bnr"> <a href="https://me-navi.com/job/" rel="nofollow noopener" target="_blank"><img
           src="https://me-navi.com/asset/img/j_200_40.gif" alt="メンズエステバイト情報【メンエスナビ求人】"></a>
