@@ -47,6 +47,10 @@
           <dt>延長/10分〜</dt>
           <dd>2,000yen〜</dd>
         </div>
+        <div>
+          <dt>本指名</dt>
+          <dd>1,000yen</dd>
+        </div>
       </dl>
     </div>
 
