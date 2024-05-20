@@ -212,6 +212,26 @@
           width="200" height="40" border="0" alt="【セラピストの森】メンズエステ（メンエス）で稼ぎたい女性の高収入求人バイト情報サイト"></a>
     </div>
     <div class="top__link-bnr">
+      <a href="https://osaka.aroma-tsushin.com/?utm_source=shop_website&utm_medium=display&utm_campaign=link_banner_osaka_publish&utm_contents=ap_link_banner_200"
+        target="_blank"><img src="https://osaka.aroma-tsushin.com/banner/banner-200x040.gif" width="200" height="40"
+          border="0" alt="リンクバナー丨大阪のメンズエステやマッサージならアロマパンダ通信"><br>メンズエステ・出張マッサージ</a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="http://panda-job.com/?utm_source=shop_website&utm_medium=display&utm_campaign=link_banner_osaka_publish&utm_contents=pj_link_banner_200"
+        target="_blank"><img src="https://aroma-tsushin.com/banner/panda-job_200x40.jpg" width="200" height="40"
+          border="0" alt="女性の為の安心求人情報サイト"><br>女性の為の安心求人情報サイト</a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://www.serapinavi.jp/" title="セラピナビ" target="_blank"><img
+          src="https://www.serapinavi.jp/img/link/200_40.jpg" width="200" height="40"
+          alt="メンズエステのセラピスト求人を大阪・神戸・京都で検索！セラピナビ" /></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://www.hokkorin.jp/kaisyun/" title="ほっこりんR18" target="_blank"><img
+          src="https://www.hokkorin.jp/img/kaisyun/link/200_40.jpg" width="200" height="40"
+          alt="回春マッサージ・性感エステ店を検索するなら ほっこりんR18" /></a>
+    </div>
+    <div class="top__link-bnr">
       <a href="https://kamipantsu.com/" target="_blank"><img src="https://kamipantsu.com/image/banner_200x60.png"
           alt="【紙パンツ王国～推しは世界を救う～】は、推しセラピストさんの応援と、有意義なメンズエステ(メンエス)ライフを共有できる☆貴方の理想のお店選びに役立つ☆みんなで作るメンズエステ総合サイトです。セラピストの出勤情報やランキング、お得な割引クーポン情報などが満載☆ご掲載店舗様大募集中☆"></a>
     </div>
