@@ -179,6 +179,16 @@
         target="_blank">メンズエステの情報サイト『週刊エステ』</a>
     </div>
     <div class="top__link-bnr">
+      <a href="https://job.eslove.jp/kansai/osaka/search" target="_blank"><img
+          src="https://job.eslove.jp/eslove_job_front_theme/img/banner/banner_200x40.gif"
+          alt="大阪のメンズエステ求人情報ならエステラブワーク" /></a>
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://eslove.jp/kansai/osaka/shoplist" target="_blank"><img
+          src="https://eslove.jp/eslove_front_theme/banner/banner_200x40.gif" alt="大阪のメンズエステ情報ならエステラブ" /></a>
+    </div>
+
+    <div class="top__link-bnr">
       <a href='https://menesthe.co.jp/category/sakaisujihonmachi-area/' target='_blank' rel='noopener'><img
           class='aligncenter wp-image-6159 size-full'
           src='https://menesthe.co.jp/wp-content/uploads/2023/04/sakaisujihonmachi.png' alt='堺筋本町メンズエステ人気ランキング'
@@ -212,6 +222,10 @@
     <div class="top__link-bnr">
       <a href="https://h55.jp/"><img src="https://h55.jp/img2/h55_30060.jpg" alt="エスワク｜メンズエステの求人クチコミ検索"></a>
 
+    </div>
+    <div class="top__link-bnr">
+      <a href="https://www.kking.jp/ippan/area/osaka-area/" target="_blank">
+        <img src="https://www.kking.jp/img/esuteai200.gif" width="200" height="40" alt="大阪メンズエステ" /></a>
     </div>
   </div>
 </div>
