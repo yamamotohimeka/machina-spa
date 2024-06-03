@@ -10,16 +10,17 @@
     <h2 class="page-title">スケジュール</h2>
     <div class="inner">
       <div class="date-tab">
-        <?php  
-for($i=0; $i<7; $i++) {
-    $day_list = date('Y-m-d', strtotime("+".$i."day"));
-    if($i==0) {
-        echo '<label class="date-tab-item selected" for="day'.$i.'">';
-    } else {
-        echo '<label class="date-tab-item" for="day'.$i.'">';
-    }
-    echo '4/<span class="date-tab-day">' . date("j", strtotime("+".$i."day", current_time('timestamp'))) . '</span>';
-    echo '<span class="date-tab-week">('.$week[date('w',strtotime("+".$i."day", current_time('timestamp')))].')</span></label>';
+        <?php
+$current_timestamp = current_time('timestamp');
+$week = ['日', '月', '火', '水', '木', '金', '土'];
+
+for ($i = 0; $i < 7; $i++) {
+    $timestamp = strtotime("+$i days", $current_timestamp);
+    $day_list = date('Y-m-d', $timestamp);
+    $class = ($i == 0) ? 'date-tab-item selected' : 'date-tab-item';
+    echo '<label class="' . $class . '" for="day' . $i . '">';
+    echo date('n', $timestamp) . '/<span class="date-tab-day">' . date('j', $timestamp) . '</span>';
+    echo '<span class="date-tab-week">(' . $week[date('w', $timestamp)] . ')</span></label>';
 }
 ?>
 
