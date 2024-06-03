@@ -159,6 +159,31 @@ function create_post_type() {
     'rewrite' => true,
     )
   ); 
+  register_post_type('linkbnr', array(
+    'label' => 'フッターバナーリンク',
+    'labels' => array(
+      'singular_name' => 'フッターバナーリンク',
+      'menu_name' => 'フッターバナーリンク',
+      'add_new_item' => '新規フッターバナーリンクを追加',
+      'add_new' => 'フッターバナーリンクバナーを追加',
+      'new_item' => '新規フッターバナーリンク',
+      'edit_item'=>'フッターバナーリンクを編集',
+      'view_item' => 'フッターバナーリンク詳細を表示',
+      'not_found' => 'フッターバナーリンクーは見つかりませんでした',
+      'not_found_in_trash' => 'ゴミ箱にフッターバナーリンクはありません。',
+      'search_items' => 'フッターバナーリンクを検索',
+    ),
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'query_var' => true,
+    'has_archive' => true,
+    'hierarchical' => false,
+    'menu_position' => 5,
+    'rewrite' => true,
+    )
+  ); 
     register_post_type('diary', array(
     'label' => '写メ日記',
     'labels' => array(
