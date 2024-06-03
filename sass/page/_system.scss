@@ -106,7 +106,7 @@
         text-align: left;
       }
     }
-    :last-child {
+    :nth-child(4) {
       padding-top: 30px;
       @include sp {
         padding-top: 30rem;
