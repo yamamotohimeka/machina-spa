@@ -143,10 +143,6 @@
                   </li>
                   <li class="nav-li"><a href="<?php echo home_url('/diary'); ?>">写メ日記</a></li>
                   <li class="nav-li"><a href="<?php echo home_url('/system'); ?>">システム料金</a></li>
-                  <li class="nav-li">
-                    <a href="https://pay2.star-pay.jp/site/pc/shop.php?payc=A2495" target="_blank">
-                      クレジットカード決済 </a>
-                  </li>
                   <li class="nav-li"><a href="<?php echo home_url('/access'); ?>">アクセス</a></li>
                   <li class="nav-li"> <a href="https://twitter.com/machinaspa" target="_blank">
                       X</a>

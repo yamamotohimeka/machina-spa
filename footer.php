@@ -29,7 +29,6 @@
       </li>
       <li class="footer-spnav-list"><a href="<?php echo home_url('/system'); ?>">システム料金</a>
       </li>
-      <li class="footer-spnav-list"><a href="">クレジットカード決済</a></li>
       <li class="footer-spnav-list"><a href="https://recruit-machinaspa.com/"
           target="_blank">求人情報<span>RECRUIT</span></a>
       </li>
